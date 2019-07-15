@@ -117,6 +117,12 @@ class Index extends React.Component {
 
     return (
       <div className="landingPage">
+          <div className="video-wrapper">
+            <div className="video-overlay" ></div>
+            <div className="tv">
+              <div id="player" className="screen"></div>
+            </div>
+          </div>
         <div className="mainContainer">
           <Features />
           <Test />

@@ -75,7 +75,11 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+    'https://code.jquery.com/jquery-3.4.1.min.js',
+    '/js/bgyoutube.js'
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
@@ -98,6 +102,7 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
   customDocsPath: 'story',
+  stylesheets: ['css/custom.css']
 };
 
 module.exports = siteConfig;
