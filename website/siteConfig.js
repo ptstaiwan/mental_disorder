@@ -38,11 +38,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'story1', label: '故事'}
+    //{doc: 'story1', label: '故事'}
   ],
 
   /* path to images for header/footer */
-  headerIcon: 'img/logo-p-white.svg',
+  //headerIcon: 'img/logo-p-white.svg',
   footerIcon: 'img/logo-p-white.svg',
   favicon: 'img/favicon@2x.png',
 

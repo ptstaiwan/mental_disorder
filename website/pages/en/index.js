@@ -44,6 +44,7 @@ class HomeSplash extends React.Component {
       </SplashContainer>
     );
   }
+
 }
 
 class Index extends React.Component {
@@ -64,56 +65,73 @@ class Index extends React.Component {
       </Container>
     );
 
-    const Description = () => (
-      <Block background="light">
-        {[
-          {
-            content: '民國88年之前，酒駕只能依《道路交通管理處罰條例》處以罰鍰。 直到88年正式入罪化，法條頒布初期，法官認為酒駕案件只是因酒肇事， 不算是罪大惡極的行為，都是從輕判處罰金了事，使酒駕不減反增。 一直到100年在刑法中新增酒駕致死傷的刑責，以及102年明定酒測值上限後，才有效降低了死傷人數。',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
-            imageAlign: 'right',
-            title: '酒駕入刑法後的影響',
-          },
-        ]}
-      </Block>
-    );
-
-    const Features = () => (
+    const BannerTitle = () => (
       <Block layout="threeColumn" background="light">
+      {[
+          {
+            title: '酒駕罪有應得？！',
+          }
+  ]}
+  </Block>
+  );
+
+    const Banner = () => (
+      <Block layout="twoColumn" background="light">
+      {[
+          {
+            content: 'click',
+            image: `${baseUrl}img/respondent1.JPG`,
+          },
+          {
+            content: 'click',
+              image: `${baseUrl}img/respondent2.JPG`,
+          }
+          ]}
+
+      </Block>
+  );
+    const Features = () => (
+      <Block layout="Column" background="dark">
         {[
           {
             content: '你認為這是好事？還是警訊呢？酒駕在台灣一直都是備受關注的議題，108年3月和5月分別通過了《道路交通管理處罰條例》以及《刑法》修正案，讓酒駕的代價又更重了。常說重罰是為了嚇阻犯罪，那為什麼酒駕的問題「感覺上」還是那麼嚴重？',
-            image: `${baseUrl}img/hero-image-visual@2x.png`,
-            imageAlign: 'left',
             title: '108年3月 酒駕已經成為台灣的入監原因前三名了',
+          },
+          {
+            content: '民國88年之前，酒駕只能依《道路交通管理處罰條例》處以罰鍰。 直到88年正式入罪化，法條頒布初期，法官認為酒駕案件只是因酒肇事， 不算是罪大惡極的行為，都是從輕判處罰金了事，使酒駕不減反增。 一直到100年在刑法中新增酒駕致死傷的刑責，以及102年明定酒測值上限後，才有效降低了死傷人數。',
+              title: '酒駕入刑法後的影響',
           }
-        ]}
+          ]}
       </Block>
-    );
+  );
 
-    const Test = () => (
-      <Block layout="threeColumn" background="dark">
-        {[
+    const Test1image = () => (
+      <Block layout="threeColumn" background="light">
+      {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
             content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
-            image: `${baseUrl}img/a@2x.png`,
+            image: `${baseUrl}img/respondent1.JPG`,
             imageLink: `${baseUrl}docs/story1`,
+            imageAlign: 'right'
           },
+  ]}
+  </Block>
+  );
+
+    const Test1video = () => (
+      <Block layout="threeColumn" background="dark">
+      {[
           {
-            title: '林先生: 我支持酒駕未肇事無罪化。',
-            content: '林先生指出一般肇事可以和解、不起訴，酒駕沒肇事卻要強制公訴，有失公允。他認為，造成這種「差別待遇」的原因，跟人民輿論、媒體報導有很大的關係。',
-            image: `${baseUrl}img/b@2x.png`,
+            title: '李先生: 別再姑息任何一個酒駕的人。',
+            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+            image: `${baseUrl}img/respondent1.JPG`,
             imageLink: `${baseUrl}docs/story1`,
+            imageAlign: 'right'
           },
-          {
-            title: '黃小姐: 我爸爸是40年酒駕慣犯。',
-            content: '黃小姐的父親從國中開始做工，養成喝酒的習慣，如今病痛纏身卻已離不開酒。加上生活在交通不便的偏鄉，難免需要開車移動，結果就成為了天天酒駕的未爆彈。',
-            image: `${baseUrl}img/c@2x.png`,
-            imageLink: `${baseUrl}1ocs/story1`,
-          }
-        ]}
-      </Block>
-    );
+  ]}
+  </Block>
+  );
 
     return (
       <div className="landingPage">
@@ -124,9 +142,11 @@ class Index extends React.Component {
             </div>
           </div>
         <div className="mainContainer">
+          <BannerTitle />
+          <Banner />
           <Features />
-          <Test />
-          <Description />
+          <Test1image />
+      <iframe src=“https://www.youtube.com/embed/E7wJTI-1dvQ“ />
         </div>
       </div>
     );
