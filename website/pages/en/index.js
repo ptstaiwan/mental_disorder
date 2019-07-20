@@ -66,7 +66,7 @@ class Index extends React.Component {
     );
 
     const BannerTitle = () => (
-      <Block layout="threeColumn" background="light">
+      <Block layout="threeColumn" background="light" className="BannerTitle">
       {[
           {
             title: '酒駕罪有應得？！',
@@ -76,14 +76,14 @@ class Index extends React.Component {
   );
 
     const Banner = () => (
-      <Block layout="twoColumn" background="light">
+      <Block layout="Column" background="light">
       {[
           {
-            content: 'click',
+            content: '點擊觀看故事',
             image: `${baseUrl}img/respondent1.JPG`,
           },
           {
-            content: 'click',
+            content: '點擊觀看故事',
               image: `${baseUrl}img/respondent2.JPG`,
           }
           ]}
@@ -106,11 +106,10 @@ class Index extends React.Component {
   );
 
     const Test1image = () => (
-      <Block layout="threeColumn" background="light">
+      <Block layout="threeColumn" background="light" align="left">
       {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
-            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
             image: `${baseUrl}img/respondent1.JPG`,
             imageLink: `${baseUrl}docs/story1`,
             imageAlign: 'right'
@@ -118,35 +117,90 @@ class Index extends React.Component {
   ]}
   </Block>
   );
-
-    const Test1video = () => (
-      <Block layout="threeColumn" background="dark">
+    const Test1Pagetitle = () => (
+      <Block layout="Column" background="light" align="left">
       {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
-            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
-            image: `${baseUrl}img/respondent1.JPG`,
-            imageLink: `${baseUrl}docs/story1`,
-            imageAlign: 'right'
           },
+      ]}
+      </Block>
+  );
+
+
+    const Test1Page = () => (
+      <Block layout="Column" background="light" align="left">
+      {[
+          {
+            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+          },
+    {
+      content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+    },
+    {
+      content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+    }
+  ]}
+      </Block>
+      );
+
+    const Test2image = () => (
+      <Block layout="threeColumn" background="light">
+      {[
+          {
+            title: '李先生: 別再姑息任何一個酒駕的人。',
+            image: `${baseUrl}img/respondent2.JPG`,
+            imageLink: `${baseUrl}docs/story1`,
+          },
+  ]}
+  </Block>
+  );
+
+    const Test2Pagetitle = () => (
+      <Block layout="Column" background="light" align="left">
+      {[
+          {
+            title: '李先生: 別再姑息任何一個酒駕的人。',
+          },
+  ]}
+  </Block>
+  );
+
+    const Test2Page = () => (
+      <Block layout="Column" background="light" align="left">
+      {[
+          {
+            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+          },
+          {
+              content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+          },
+          {
+              content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+          }
   ]}
   </Block>
   );
 
     return (
       <div className="landingPage">
-          <div className="video-wrapper">
-            <div className="video-overlay" ></div>
-            <div className="tv">
-              <div id="player" className="screen"></div>
-            </div>
-          </div>
+
         <div className="mainContainer">
           <BannerTitle />
           <Banner />
           <Features />
           <Test1image />
-      <iframe src=“https://www.youtube.com/embed/E7wJTI-1dvQ“ />
+          <div id="video1" className ="video-container">
+            <iframe width="840" height="472.5" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <Test1Pagetitle />
+          <Test1Page />
+          <Test2image />
+          <div id="video2" className ="video-container">
+          <iframe width="840" height="472.5" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <Test2Pagetitle />
+          <Test2Page />
         </div>
       </div>
     );

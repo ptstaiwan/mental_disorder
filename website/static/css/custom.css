@@ -1,12 +1,11 @@
 /* your custom css */
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-}
 
-@media only screen and (min-width: 1024px) {
 }
 
 @media only screen and (max-width: 1023px) {
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -15,31 +14,197 @@
 @media only screen and (min-width: 1500px) {
 }
 
-.landingPage > .mainContainer {
-  padding: 0px 0px;
-}
+    .landingPage > .mainContainer {
+        padding: 0px 0px;
+    }
 
-.video-wrapper {
-  background-color: #000;
-	position: relative;
-	width: 100%;
-  min-height: 720px;
-	overflow: hidden;
-}
-.video-overlay {
-	height: 100%;
-  width: 100%;
-	opacity: .8;
-	position: absolute;
-	z-index: 2;
-}
+/* remove nav bar */
 
-.tv {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-}
+    .fixedHeaderContainer {
+        display: none;
+    }
+
+    .singleRowMobileNav.navPusher {
+        padding-top: 0px;
+    }
+
+    /* adjust video */
+
+    #video1{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    }
+    #video2{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    }
+
+/* adjust BannerTitle */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1){
+        padding: 0px;
+    }
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p{
+        font-size: 50px;
+    }
+
+/* Adjust Banner padding */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2){
+        display: flex;
+        padding-top: 10px;
+    }
+
+/* Adjust Banner img */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div.blockImage > img {
+        width: 60%;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div.blockImage > img {
+        width: 60%;
+    }
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div.blockImage{
+        margin: 0px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div.blockImage{
+        margin: 0px;
+    }
+
+/* Adjust Banner img & text */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1){
+        display:flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        font-size: 20px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2){
+        display:flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        font-size: 20px;
+    }
+
+/* Adjust Test1image */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4){
+        padding: 0px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div{
+        margin: 0px;
+        padding: 0px;
+    }
+
+/* Adjust Test1 img  */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4){
+        display: flex;
+        justify-content: flex-end;
+    }
+
+/* Adjust Test1  text */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 150px;
+        font-size: 40px;
+    }
+
+/* Adjust Test2img  */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8){
+        padding: 0px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div{
+        margin: 0px;
+        padding: 0px;
+    }
+
+/* Adjust Test2 text  */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 150px;
+        font-size: 40px;
+    }
+/* Adjust footer  */
+
+    /* Adjust footer company */
+
+    #company {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-top: 20px;
+    }
+    #footer > section.sitemap > div:nth-child(4){
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    /* Adjust footer team */
+
+    #team{
+        display: flex;
+        color: white;
+        margin-top: 20px;
+    }
+    h5{
+        font-size: 16px;
+    }
+
+    #footer > section.sitemap > div:nth-child(2){
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+/* Adjust Test1Pagetitle */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6){
+        padding: 50px;
+    }
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div{
+        margin: 0px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p{
+        font-size: 40px;
+    }
+
+/* Adjust Test1Page */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
+        padding-bottom: 100px;
+        padding-top: 20px;
+    }
+
+/* Adjust Test2Pagetitle */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10){
+        padding: 50px;
+    }
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div{
+        margin: 0px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p{
+        font-size: 40px;
+    }
+
+/* Adjust Test2Page */
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
+        padding-bottom: 100px;
+        padding-top: 20px;
+    }
+

@@ -42,13 +42,14 @@ const siteConfig = {
   ],
 
   /* path to images for header/footer */
-  //headerIcon: 'img/logo-p-white.svg',
+  headerIcon: 'img/logo-p-white.svg',
   footerIcon: 'img/logo-p-white.svg',
   favicon: 'img/favicon@2x.png',
+  footerIcon2:'img/footer-logo-pts@2x.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#2C3244',
+    primaryColor: '',
     secondaryColor: '#3C4467',
   },
 
@@ -67,7 +68,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()}公視 P# 新聞實驗室`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -102,7 +103,8 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
   customDocsPath: 'story',
-  stylesheets: ['css/custom.css']
+  stylesheets: ['css/custom.css'],
+  disableHeaderTitle: true
 };
 
 module.exports = siteConfig;
