@@ -65,6 +65,7 @@ class Index extends React.Component {
       </Container>
     );
 
+
     const BannerTitle = () => (
       <Block layout="threeColumn" background="light" className="BannerTitle">
       {[
@@ -81,10 +82,12 @@ class Index extends React.Component {
           {
             content: '點擊觀看故事',
             image: `${baseUrl}img/respondent1.JPG`,
+            imageLink: `${baseUrl}#01`
           },
           {
             content: '點擊觀看故事',
               image: `${baseUrl}img/respondent2.JPG`,
+            imageLink: `${baseUrl}#02`
           }
           ]}
 
@@ -106,12 +109,11 @@ class Index extends React.Component {
   );
 
     const Test1image = () => (
-      <Block layout="threeColumn" background="light" align="left">
+      <Block layout="Column" background="light" align="left" id="01">
       {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
             image: `${baseUrl}img/respondent1.JPG`,
-            imageLink: `${baseUrl}docs/story1`,
             imageAlign: 'right'
           },
   ]}
@@ -145,12 +147,11 @@ class Index extends React.Component {
       );
 
     const Test2image = () => (
-      <Block layout="threeColumn" background="light">
+      <Block layout="threeColumn" background="light" id="02">
       {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
-            image: `${baseUrl}img/respondent2.JPG`,
-            imageLink: `${baseUrl}docs/story1`,
+            image: `${baseUrl}img/respondent2.JPG`
           },
   ]}
   </Block>
@@ -184,20 +185,22 @@ class Index extends React.Component {
 
     return (
       <div className="landingPage">
-
+        <a class="menu-toggle rounded" href="#">
+          <i class="fas fa-bars"></i>
+        </a>
         <div className="mainContainer">
           <BannerTitle />
           <Banner />
           <Features />
-          <Test1image />
+            <Test1image />
           <div id="video1" className ="video-container">
-            <iframe width="840" height="472.5" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <Test1Pagetitle />
           <Test1Page />
-          <Test2image />
+            <Test2image />
           <div id="video2" className ="video-container">
-          <iframe width="840" height="472.5" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <Test2Pagetitle />
           <Test2Page />
