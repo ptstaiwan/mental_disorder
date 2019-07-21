@@ -79,7 +79,7 @@ const siteConfig = {
   scripts: [
     'https://buttons.github.io/buttons.js',
     'https://code.jquery.com/jquery-3.4.1.min.js',
-    '/js/bgyoutube.js'
+    'js/menu.js'
   ],
 
   // On page navigation for the current documentation page.
@@ -103,7 +103,7 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
   customDocsPath: 'story',
-  stylesheets: ['css/custom.css'],
+  stylesheets: ['css/custom.css','css/fontawesome-free-5.9.0-web/css/all.css'],
   disableHeaderTitle: true
 };
 

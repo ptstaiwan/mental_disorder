@@ -1,6 +1,96 @@
 /* your custom css */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
+    #sidebar-wrapper{
+        position:fixed;
+        z-index:2;
+        left: -250px;
+        width:250px;
+        height:100%;
+        -webkit-transition:all .4s ease 0s;
+        transition:all .4s ease 0s;
+        -webkit-transform:translateX(250px);
+        transform:translateX(250px);
+        background:rgba(1,51,83,.5);/*sidebar底色在此修改*/
+        /*border-left:1px solid rgba(255,255,255,.1)*/
+    }
+
+    .sidebar-nav{
+        /*background:#003151;*/
+        position:absolute;
+        top:0;
+        width:250px;
+        margin:0;
+        padding:0;
+        list-style:none
+    }
+    .sidebar-nav li.sidebar-nav-item a{
+        display:block;
+        text-decoration:none;
+        color:#ffffff;
+        padding:8px;
+        padding-left:40px
+    }
+    .sidebar-nav li a:hover{
+        text-decoration:none;
+        color:rgb(1,51,83);
+        background:rgba(153,236,243,.4)
+    }
+    .sidebar-nav li a:active,.sidebar-nav li a:focus{
+        text-decoration:none
+    }
+    .sidebar-nav>.sidebar-brand{
+        font-size:1.1rem;
+        /*background:;*/
+        height:80px;
+        line-height:60px;
+        padding-top:10.5px;
+        padding-bottom:1px;
+        padding-left:40px
+    }
+    .sidebar-nav>.sidebar-brand a{
+        color:#99ECF3;
+        font-weight:bold;
+    }
+    .sidebar-nav>.sidebar-brand a:hover{
+        color:rgb(1,51,83);
+        background:0 0
+    }
+
+    #sidebar-wrapper.active{
+        right:250px;
+        width:300px;
+        -webkit-transition:all .4s ease 0s;
+        transition:all .4s ease 0s
+    }
+    .menu-toggle{
+        position:fixed;
+        width:50px;
+        height:50px;
+        text-align:center;
+        color:rgb(1,51,83);
+        background:transparent;
+        line-height:50px;
+        z-index:999
+    }
+    .menu-toggle:hover{
+        color:#fff
+    }
+    .menu-toggle:hover{
+        background:transparent;
+    }
+
+    .service-icon{
+        background-color:#fff;
+        color:#1d809f;
+        height:7rem;
+        width:7rem;
+        display:block;
+        line-height:7.5rem;
+        font-size:2.25rem;
+        -webkit-box-shadow:0 3px 3px 0 rgba(0,0,0,.1);
+        box-shadow:0 3px 3px 0 rgba(0,0,0,.1)
+    }
     .landingPage > .mainContainer {
         padding: 0px;
     }
@@ -212,6 +302,97 @@
 }
 
 @media only screen and (min-device-width : 737px) and (max-width: 1024px) {
+    #sidebar-wrapper{
+        position:fixed;
+        z-index:2;
+        left: -250px;
+        width:250px;
+        height:100%;
+        -webkit-transition:all .4s ease 0s;
+        transition:all .4s ease 0s;
+        -webkit-transform:translateX(250px);
+        transform:translateX(250px);
+        background:rgba(1,51,83,.5);/*sidebar底色在此修改*/
+        /*border-left:1px solid rgba(255,255,255,.1)*/
+    }
+
+    .sidebar-nav{
+        /*background:#003151;*/
+        position:absolute;
+        top:0;
+        width:250px;
+        margin:0;
+        padding:0;
+        list-style:none
+    }
+    .sidebar-nav li.sidebar-nav-item a{
+        display:block;
+        text-decoration:none;
+        color:#ffffff;
+        padding:8px;
+        padding-left:40px
+    }
+    .sidebar-nav li a:hover{
+        text-decoration:none;
+        color:rgb(1,51,83);
+        background:rgba(153,236,243,.4)
+    }
+    .sidebar-nav li a:active,.sidebar-nav li a:focus{
+        text-decoration:none
+    }
+    .sidebar-nav>.sidebar-brand{
+        font-size:1.1rem;
+        /*background:;*/
+        height:80px;
+        line-height:60px;
+        padding-top:10.5px;
+        padding-bottom:1px;
+        padding-left:40px
+    }
+    .sidebar-nav>.sidebar-brand a{
+        color:#99ECF3;
+        font-weight:bold;
+    }
+    .sidebar-nav>.sidebar-brand a:hover{
+        color:rgb(1,51,83);
+        background:0 0
+    }
+
+    #sidebar-wrapper.active{
+        right:250px;
+        width:300px;
+        -webkit-transition:all .4s ease 0s;
+        transition:all .4s ease 0s
+    }
+    .menu-toggle{
+        position:fixed;
+        width:50px;
+        height:50px;
+        text-align:center;
+        color:rgb(1,51,83);
+        background:transparent;
+        line-height:50px;
+        z-index:999
+    }
+    .menu-toggle:hover{
+        color:#fff
+    }
+    .menu-toggle:hover{
+        background:transparent;
+    }
+
+
+    .service-icon{
+        background-color:#fff;
+        color:#1d809f;
+        height:7rem;
+        width:7rem;
+        display:block;
+        line-height:7.5rem;
+        font-size:2.25rem;
+        -webkit-box-shadow:0 3px 3px 0 rgba(0,0,0,.1);
+        box-shadow:0 3px 3px 0 rgba(0,0,0,.1)
+    }
     .landingPage > .mainContainer {
         padding: 0px 0px;
     }
@@ -430,6 +611,98 @@
 
 @media only screen and (min-device-width : 1025px) and (max-width: 1449px) {
 
+    #sidebar-wrapper{
+        position:fixed;
+        z-index:2;
+        left: -250px;
+        width:250px;
+        height:100%;
+        -webkit-transition:all .4s ease 0s;
+        transition:all .4s ease 0s;
+        -webkit-transform:translateX(250px);
+        transform:translateX(250px);
+        background:rgba(1,51,83,.5);/*sidebar底色在此修改*/
+        /*border-left:1px solid rgba(255,255,255,.1)*/
+    }
+
+    .sidebar-nav{
+        /*background:#003151;*/
+        position:absolute;
+        top:0;
+        width:250px;
+        margin:0;
+        padding:0;
+        list-style:none
+    }
+    .sidebar-nav li.sidebar-nav-item a{
+        display:block;
+        text-decoration:none;
+        color:#ffffff;
+        padding:8px;
+        padding-left:40px
+    }
+    .sidebar-nav li a:hover{
+        text-decoration:none;
+        color:rgb(1,51,83);
+        background:rgba(153,236,243,.4)
+    }
+    .sidebar-nav li a:active,.sidebar-nav li a:focus{
+        text-decoration:none
+    }
+    .sidebar-nav>.sidebar-brand{
+        font-size:1.1rem;
+        /*background:;*/
+        height:80px;
+        line-height:60px;
+        padding-top:10.5px;
+        padding-bottom:1px;
+        padding-left:40px
+    }
+    .sidebar-nav>.sidebar-brand a{
+        color:#99ECF3;
+        font-weight:bold;
+    }
+    .sidebar-nav>.sidebar-brand a:hover{
+        color:rgb(1,51,83);
+        background:0 0
+    }
+
+    #sidebar-wrapper.active{
+        right:250px;
+        width:300px;
+        -webkit-transition:all .4s ease 0s;
+        transition:all .4s ease 0s
+    }
+    .menu-toggle{
+        position:fixed;
+        width:50px;
+        height:50px;
+        text-align:center;
+        color:rgb(1,51,83);
+        background:transparent;
+        line-height:50px;
+        z-index:999
+    }
+    .menu-toggle:hover{
+        color:#fff
+    }
+    .menu-toggle:hover{
+        background:transparent;
+    }
+
+
+    .service-icon{
+        background-color:#fff;
+        color:#1d809f;
+        height:7rem;
+        width:7rem;
+        display:block;
+        line-height:7.5rem;
+        font-size:2.25rem;
+        -webkit-box-shadow:0 3px 3px 0 rgba(0,0,0,.1);
+        box-shadow:0 3px 3px 0 rgba(0,0,0,.1)
+    }
+
     .landingPage > .mainContainer {
         padding: 0px 0px;
     }
@@ -646,6 +919,97 @@
 }
 
 @media only screen and (min-width: 1500px) {
+    #sidebar-wrapper{
+        position:fixed;
+        z-index:2;
+        left: -250px;
+        width:250px;
+        height:100%;
+        -webkit-transition:all .4s ease 0s;
+        transition:all .4s ease 0s;
+        -webkit-transform:translateX(250px);
+        transform:translateX(250px);
+        background:rgba(1,51,83,.5);/*sidebar底色在此修改*/
+        /*border-left:1px solid rgba(255,255,255,.1)*/
+    }
+
+    .sidebar-nav{
+        /*background:#003151;*/
+        position:absolute;
+        top:0;
+        width:250px;
+        margin:0;
+        padding:0;
+        list-style:none
+    }
+    .sidebar-nav li.sidebar-nav-item a{
+        display:block;
+        text-decoration:none;
+        color:#ffffff;
+        padding:8px;
+        padding-left:40px
+    }
+    .sidebar-nav li a:hover{
+        text-decoration:none;
+        color:rgb(1,51,83);
+        background:rgba(153,236,243,.4)
+    }
+    .sidebar-nav li a:active,.sidebar-nav li a:focus{
+        text-decoration:none
+    }
+    .sidebar-nav>.sidebar-brand{
+        font-size:1.1rem;
+        /*background:;*/
+        height:80px;
+        line-height:60px;
+        padding-top:10.5px;
+        padding-bottom:1px;
+        padding-left:40px
+    }
+    .sidebar-nav>.sidebar-brand a{
+        color:#99ECF3;
+        font-weight:bold;
+    }
+    .sidebar-nav>.sidebar-brand a:hover{
+        color:rgb(1,51,83);
+        background:0 0
+    }
+
+    #sidebar-wrapper.active{
+        right:250px;
+        width:300px;
+        -webkit-transition:all .4s ease 0s;
+        transition:all .4s ease 0s
+    }
+    .menu-toggle{
+        position:fixed;
+        width:50px;
+        height:50px;
+        text-align:center;
+        color:rgb(1,51,83);
+        background:transparent;
+        line-height:50px;
+        z-index:999
+    }
+    .menu-toggle:hover{
+        color:#fff
+    }
+    .menu-toggle:hover{
+        background:transparent;
+    }
+
+
+    .service-icon{
+        background-color:#fff;
+        color:#1d809f;
+        height:7rem;
+        width:7rem;
+        display:block;
+        line-height:7.5rem;
+        font-size:2.25rem;
+        -webkit-box-shadow:0 3px 3px 0 rgba(0,0,0,.1);
+        box-shadow:0 3px 3px 0 rgba(0,0,0,.1)
+    }
     .landingPage > .mainContainer {
         padding: 0px 0px;
     }

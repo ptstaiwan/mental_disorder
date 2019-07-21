@@ -77,7 +77,7 @@ class Index extends React.Component {
   );
 
     const Banner = () => (
-      <Block layout="Column" background="light">
+      <Block layout="Column" background="light" id="00">
       {[
           {
             content: '點擊觀看故事',
@@ -94,7 +94,7 @@ class Index extends React.Component {
       </Block>
   );
     const Features = () => (
-      <Block layout="Column" background="dark">
+      <Block layout="Column" background="dark" id="01">
         {[
           {
             content: '你認為這是好事？還是警訊呢？酒駕在台灣一直都是備受關注的議題，108年3月和5月分別通過了《道路交通管理處罰條例》以及《刑法》修正案，讓酒駕的代價又更重了。常說重罰是為了嚇阻犯罪，那為什麼酒駕的問題「感覺上」還是那麼嚴重？',
@@ -109,7 +109,7 @@ class Index extends React.Component {
   );
 
     const Test1image = () => (
-      <Block layout="Column" background="light" align="left" id="01">
+      <Block layout="Column" background="light" align="left" id="02">
       {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
@@ -147,7 +147,7 @@ class Index extends React.Component {
       );
 
     const Test2image = () => (
-      <Block layout="threeColumn" background="light" id="02">
+      <Block layout="threeColumn" background="light" id="03">
       {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
@@ -185,9 +185,25 @@ class Index extends React.Component {
 
     return (
       <div className="landingPage">
-        <a class="menu-toggle rounded" href="#">
-          <i class="fas fa-bars"></i>
-        </a>
+      <a class="menu-toggle rounded" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+          <a href="">酒駕罪有應得</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#00">前言</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#01">人物一</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#02">人物二</a>
+          </li>
+        </ul>
+      </nav>
         <div className="mainContainer">
           <BannerTitle />
           <Banner />
