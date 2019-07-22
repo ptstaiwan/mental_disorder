@@ -82,12 +82,12 @@ class Index extends React.Component {
           {
             content: '點擊觀看故事',
             image: `${baseUrl}img/respondent1.JPG`,
-            imageLink: `${baseUrl}#01`
+            imageLink: `${baseUrl}#02`
           },
           {
             content: '點擊觀看故事',
               image: `${baseUrl}img/respondent2.JPG`,
-            imageLink: `${baseUrl}#02`
+            imageLink: `${baseUrl}#03`
           }
           ]}
 
@@ -185,22 +185,22 @@ class Index extends React.Component {
 
     return (
       <div className="landingPage">
-      <a class="menu-toggle rounded" href="#">
+      <a class="menu-toggle rounded">
         <i class="fas fa-bars"></i>
       </a>
       <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
           <li class="sidebar-brand">
-          <a href="">酒駕罪有應得</a>
+          <a>酒駕罪有應得</a>
           </li>
           <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#00">前言</a>
+            <a class="js-scroll-trigger" href="#01">前言</a>
           </li>
           <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#01">人物一</a>
+            <a class="js-scroll-trigger" href="#02">人物一</a>
           </li>
           <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#02">人物二</a>
+            <a class="js-scroll-trigger" href="#03">人物二</a>
           </li>
         </ul>
       </nav>
