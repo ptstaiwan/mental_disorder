@@ -109,7 +109,7 @@ class Index extends React.Component {
   );
 
     const Test1image = () => (
-      <Block layout="Column" background="light" align="left" id="02">
+      <Block layout="threeColumn" background="light" align="left" id="02">
       {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
@@ -185,22 +185,22 @@ class Index extends React.Component {
 
     return (
       <div className="landingPage">
-      <a class="menu-toggle rounded">
-        <i class="fas fa-bars"></i>
+      <a className="menu-toggle rounded">
+        <i className="fas fa-bars"></i>
       </a>
       <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-          <li class="sidebar-brand">
-          <a>酒駕罪有應得</a>
+        <ul className="sidebar-nav">
+          <li className="sidebar-brand">
+          <a  href="#00">酒駕罪有應得</a>
           </li>
-          <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#01">前言</a>
+          <li className="sidebar-nav-item">
+            <a className="js-scroll-trigger" href="#01">前言</a>
           </li>
-          <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#02">人物一</a>
+          <li className="sidebar-nav-item">
+            <a className="js-scroll-trigger" href="#02">人物一</a>
           </li>
-          <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#03">人物二</a>
+          <li className="sidebar-nav-item">
+            <a className="js-scroll-trigger" href="#03">人物二</a>
           </li>
         </ul>
       </nav>
@@ -210,13 +210,13 @@ class Index extends React.Component {
           <Features />
             <Test1image />
           <div id="video1" className ="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <Test1Pagetitle />
           <Test1Page />
             <Test2image />
           <div id="video2" className ="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <Test2Pagetitle />
           <Test2Page />

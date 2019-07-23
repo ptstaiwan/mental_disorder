@@ -49,7 +49,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '',
+    primaryColor: '#3C4467',
     secondaryColor: '#3C4467',
   },
 
@@ -103,7 +103,7 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
   customDocsPath: 'story',
-  stylesheets: ['css/custom.css','css/fontawesome-free-5.9.0-web/css/all.css'],
+  stylesheets: ['css/fontawesome-free-5.9.0-web/css/all.css'],
   disableHeaderTitle: true
 };
 
