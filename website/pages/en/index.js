@@ -67,7 +67,7 @@ class Index extends React.Component {
 
 
     const BannerTitle = () => (
-      <Block layout="threeColumn" background="light" className="BannerTitle">
+      <Block layout="threeColumn" background="light" className="BannerTitle" id="000">
       {[
           {
             title: '酒駕罪有應得？！',
@@ -191,7 +191,7 @@ class Index extends React.Component {
       <nav id="sidebar-wrapper">
         <ul className="sidebar-nav">
           <li className="sidebar-brand">
-          <a  href="#00">酒駕罪有應得</a>
+            <a  href="#000">酒駕罪有應得</a>
           </li>
           <li className="sidebar-nav-item">
             <a className="js-scroll-trigger" href="#01">前言</a>

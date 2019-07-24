@@ -21,7 +21,13 @@ window.addEventListener('load',function () {
       console.log("nope");
     }
   });
-  document.getElementById('00').addEventListener("click", function () {
+  document.getElementById('sidebar-wrapper').addEventListener("click", function () {
+    if(sidebarStatus.style.left === '-250px'){
+      sidebarStatus.style.cssText += 'left:-500px';
+      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
+    }
+  });
+  document.getElementsByClassName('mainContainer')[0].addEventListener("click", function () {
     if(sidebarStatus.style.left === '-250px'){
       sidebarStatus.style.cssText += 'left:-500px';
       document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';

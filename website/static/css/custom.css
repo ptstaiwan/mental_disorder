@@ -305,31 +305,6 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     padding-top: 20px;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 736px) {
-    /* Adjust Banner img */
-    body{
-        background-color: #F7F7F7;
-    }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p{
-        font-size: 10px;
-        letter-spacing: 10px;
-    }
-    .mainContainer > div:nth-child(2) > div > div{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockContent {
-        margin-right: 10px;
-        font-size: 20px;
-    }
-    img[src="/newslab-demo/img/respondent1.JPG"] {
-        height: 421px;
-        width: 300px;
-    }
-}
-
 @media only screen and (min-device-width : 320px) and (max-device-width : 735px) {
     /* Adjust Banner img */
     body{
@@ -449,6 +424,20 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         font-size: 20px;
         letter-spacing: 10px;
     }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7){
+        padding: 30px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11){
+        padding: 30px;
+    }
+    #sidebar-wrapper{
+        top:0px;
+    }
+    .menu-toggle{
+        margin-top: 15px;
+        margin-left: 15px;
+        top:0px;
+    }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 736px) {
@@ -493,6 +482,13 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         justify-content: center;
         margin-bottom: 50px;
     }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+        font-size: 40px;
+    }
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
@@ -534,9 +530,10 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
         margin: auto;
-        font-size: 18px;
+        font-size: 25px;
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
         display: flex;
         justify-content: center;
@@ -547,7 +544,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
         margin: auto;
-        font-size: 18px;
+        font-size: 25px;
         padding: 0px;
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
@@ -562,6 +559,20 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     #footer > section.sitemap > div:nth-child(2){
         margin-bottom: 40px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7){
+        padding: 30px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11){
+        padding: 30px;
+    }
+    #sidebar-wrapper{
+        top:0px;
+    }
+    .menu-toggle{
+        margin-top: 15px;
+        margin-left: 15px;
+        top:0px;
     }
 }
 
@@ -642,6 +653,14 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         justify-content: center;
         margin: 0 auto 3em;
     }
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7){
+        padding: 50px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11){
+        padding: 50px;
+    }
+
 }
 
 @media only screen and (min-width : 1025px) and (max-width: 1449px) {
