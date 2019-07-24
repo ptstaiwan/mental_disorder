@@ -114,7 +114,7 @@ class Index extends React.Component {
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
             image: `${baseUrl}img/respondent1.JPG`,
-            imageAlign: 'right'
+
           },
   ]}
   </Block>
