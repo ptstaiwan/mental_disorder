@@ -37,21 +37,27 @@ window.addEventListener('load',function () {
 
 window.addEventListener('resize',function () {
   var currentWidth = document.body.clientWidth;
+  var bannerImg1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockImage > a > img');
+  var bannerImg2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockImage > a > img');
   var img1 = document.querySelector('#\\30 2 > div > div > div > div.blockImage > img');
   var img2 = document.querySelector('#\\30 3 > div > div > div > div.blockImage > img');
   if (736 > currentWidth) {
     img1.src = "img/1.jpg";
     img2.src = 'img/2.jpg';
+    bannerImg1.src = "img/1.jpg";
+    bannerImg2.src = 'img/2.jpg';
   }else if (736 < currentWidth) {
+    if(bannerImg1.src === window.location + "img/1.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/1.jpg" || window.location + "/#03/img/1.jpg"){
+      bannerImg1.src = "img/respondent1.JPG";
+    }
+    if(bannerImg2.src === window.location + "img/2.jpg" || window.location + "/#00/img/1.jpg"  || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/2.jpg" || window.location + "/#03/img/2.jpg"){
+      bannerImg2.src = "img/respondent2.JPG";
+    }
     if(img1.src === window.location + "img/1.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/1.jpg" || window.location + "/#03/img/1.jpg"){
       img1.src = "img/respondent1.JPG";
-    }else{
-      console.log(img1.src);
     }
     if(img2.src === window.location + "img/2.jpg" || window.location + "/#00/img/1.jpg"  || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/2.jpg" || window.location + "/#03/img/2.jpg"){
       img2.src = "img/respondent2.JPG";
-    }else{
-      console.log(img2.src);
     }
   }
 });

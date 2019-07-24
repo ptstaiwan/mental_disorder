@@ -66,12 +66,14 @@
     line-height:50px;
     z-index:999;
     cursor: pointer;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
 }
+/*
 .menu-toggle:hover{
     background:transparent;
 }
+ */
 
 a:not([href]) {
     text-decoration: none;
@@ -172,6 +174,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > d
 }
 
 /* Adjust Test1image */
+/*
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) {
     padding: 0px;
 }
@@ -181,13 +184,20 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div {
     padding: 0px;
 }
 
+ */
+
 /* Adjust Test1 img  */
+/*
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockImage > img {
+    float: right;
     width: 100%;
     height: 100%;
 }
 
+ */
+
 /* Adjust Test1  text */
+/*
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockContent {
     display: flex;
     flex-direction: column;
@@ -196,7 +206,10 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > d
     font-size: 40px;
 }
 
+ */
+
 /* Adjust Test2img  */
+/*
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) {
     padding: 0px;
 }
@@ -211,7 +224,10 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > d
     height: 100%;
 }
 
+ */
+
 /* Adjust Test2 text  */
+/*
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent {
     display: flex;
     flex-direction: column;
@@ -219,6 +235,8 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > d
     margin-left: 150px;
     font-size: 40px;
 }
+
+ */
 
 /* Adjust footer  */
 /* Adjust footer company */
@@ -308,6 +326,11 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     body{
         background-color: #F7F7F7;
     }
+    .landingPage > .mainContainer {
+        padding: 0px 0px;
+        position: relative;
+        top: 28px;
+    }
     .imageAlignSide .blockImage {
         display: block;
     }
@@ -339,12 +362,15 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         flex: 0 1 0px;
         max-width: 500px;
     }
+    /*
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) {
         padding: 0px;
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
     }
+
+     */
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
@@ -361,6 +387,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         flex: 0 1 0px;
         max-width: 500px;
     }
+    /*
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) {
         padding: 0px;
         display: flex;
@@ -374,6 +401,8 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         margin-left: 0px;
         font-size: 40px;
     }
+
+     */
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
@@ -430,11 +459,16 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     #sidebar-wrapper{
         top:0px;
+        z-index: 1000;
     }
-    .menu-toggle{
-        margin-top: 15px;
-        margin-left: 15px;
-        top:0px;
+    .menu-toggle {
+        top: 0px;
+        width: 100%;
+        background-color: white;
+    }
+    i{
+        float: left;
+        margin: 20px;
     }
 }
 
@@ -442,6 +476,11 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     /* Adjust Banner img */
     body{
         background-color: #F7F7F7;
+    }
+    .landingPage > .mainContainer {
+        padding: 0px 0px;
+        position: relative;
+        top: 28px;
     }
     .imageAlignSide .blockImage {
         display: block;
@@ -474,6 +513,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         flex: 0 1 0px;
         max-width: 500px;
     }
+    /*
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) {
         padding: 0px;
         display: flex;
@@ -487,6 +527,8 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         margin-right: 0px;
         font-size: 40px;
     }
+
+     */
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
@@ -503,6 +545,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         flex: 0 1 0px;
         max-width: 500px;
     }
+    /*
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) {
         padding: 0px;
         display: flex;
@@ -516,6 +559,8 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         margin-left: 0px;
         font-size: 40px;
     }
+
+     */
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
@@ -566,11 +611,16 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     #sidebar-wrapper{
         top:0px;
+        z-index: 1000;
     }
-    .menu-toggle{
-        margin-top: 15px;
-        margin-left: 15px;
-        top:0px;
+    .menu-toggle {
+        top: 0px;
+        width: 100%;
+        background-color: white;
+    }
+    i{
+        float: left;
+        margin: 20px;
     }
 }
 
@@ -585,8 +635,8 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         line-height:50px;
         z-index:999;
         cursor: pointer;
-        margin-top: 30px;
-        margin-left: 30px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p{
@@ -594,7 +644,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         letter-spacing: 30px;
 
     }
-
+/*
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockImage{
         position: relative;
         left:-63px;
@@ -649,6 +699,8 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8)  > div > div > div > div.blockContent > h2 > div > span > p{
         font-size: 25px;
     }
+
+ */
     .video-container {
         margin: 50px;
     }
