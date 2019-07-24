@@ -103,7 +103,7 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
   customDocsPath: 'story',
-  stylesheets: ['css/fontawesome-free-5.9.0-web/css/all.css'],
+  stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'],
   disableHeaderTitle: true
 };
 
