@@ -1,5 +1,5 @@
 window.addEventListener('load',function () {
-  document.getElementById('loading').style.cssText += 'opacity:100';
+  document.getElementById('loading').style.cssText += 'opacity:100; height: 100vh;';
   var currentWidth = document.body.clientWidth;
   var bannerImg1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockImage > a > img');
   var bannerImg2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockImage > a > img');
@@ -38,10 +38,18 @@ window.addEventListener('load',function () {
       document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
+  var link1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockContent > div > span > p');
+  link1.addEventListener('click',function () {
+    window.location.href='#02';
+  });
+  var link2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockContent > div > span > p');
+  link2.addEventListener('click',function () {
+    window.location.href='#03';
+  });
 });
 
 window.addEventListener('load',function () {
-  document.getElementById('loading').style.cssText += 'opacity:0';
+  document.getElementById('loading').style.cssText += 'opacity:0; height: 0vh;';
 });
 
 
