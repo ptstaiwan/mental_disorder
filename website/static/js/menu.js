@@ -1,4 +1,4 @@
-window.addEventListener('load',function () {
+window.addEventListener('DOMContentLoaded',function () {
   document.getElementById('loading').style.cssText += 'opacity:100; height: 100vh;';
   var currentWidth = document.body.clientWidth;
   var bannerImg1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockImage > a > img');
@@ -14,7 +14,7 @@ window.addEventListener('load',function () {
   var navBar = document.getElementsByClassName('menu-toggle')[0];
   var sidebarStatus = document.getElementById('sidebar-wrapper');
   sidebarStatus.style.cssText += 'left:-500px';
-  navBar.addEventListener("click", function () {
+  navBar.addEventListener("click", function (e) {
     var sidebarStatus = document.getElementById('sidebar-wrapper');
     if (sidebarStatus.style.left === '-500px') {
       sidebarStatus.style.cssText += 'left:-250px';
@@ -25,14 +25,9 @@ window.addEventListener('load',function () {
     } else {
       console.log("nope");
     }
+    e.stopPropagation();
   });
-  document.getElementById('sidebar-wrapper').addEventListener("click", function () {
-    if(sidebarStatus.style.left === '-250px'){
-      sidebarStatus.style.cssText += 'left:-500px';
-      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
-    }
-  });
-  document.getElementsByClassName('mainContainer')[0].addEventListener("click", function () {
+  document.getElementsByTagName('body')[0].addEventListener("click", function () {
     if(sidebarStatus.style.left === '-250px'){
       sidebarStatus.style.cssText += 'left:-500px';
       document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
@@ -79,4 +74,5 @@ window.addEventListener('resize',function () {
     }
   }
 });
+
 
