@@ -185,8 +185,10 @@ class Index extends React.Component {
   </Block>
   );
 
+
     return (
       <div className="landingPage">
+        <div id="loading" className="flex aic jcc fade"></div>
       <a className="menu-toggle rounded">
         <i className="fas fa-bars"></i>
       </a>

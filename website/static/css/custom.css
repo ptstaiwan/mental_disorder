@@ -1,4 +1,19 @@
 /* your custom css */
+
+#loading.fade {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url(../img/Spin.gif);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 50%;
+    opacity: 100;
+    transition: opacity .4s cubic-bezier(.23,1,.32,1);
+    z-index: 99999;
+}
+
 #sidebar-wrapper{
     position:fixed;
     z-index:2;
@@ -69,11 +84,11 @@
     margin-top: 0px;
     margin-left: 0px;
 }
-/*
+
 .menu-toggle:hover{
     background:transparent;
 }
- */
+
 
 a:not([href]) {
     text-decoration: none;
@@ -99,7 +114,7 @@ a:not([href]) {
     padding-top: 30px;
     height: 0px;
     overflow: hidden;
-    margin: 100px;
+    margin: 80px;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
@@ -132,14 +147,9 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > d
 }
 
 /* Adjust Banner img */
-img[src="/newslab-demo/img/respondent1.JPG"] {
-    height: 421px;
-    width: 300px;
-}
 
-img[src="/newslab-demo/img/respondent2.JPG"] {
-    height: 421px;
-    width: 300px;
+img {
+    max-width: 60%;
 }
 
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div.blockImage {
@@ -158,7 +168,6 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > d
     flex-direction: column;
     align-items: center;
     font-size: 20px;
-    margin-right: 30px;
 }
 
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) {
@@ -166,77 +175,28 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > d
     flex-direction: column;
     align-items: center;
     font-size: 20px;
-    margin-left: 30px;
-}
-.imageAlignSide .blockImage {
-    flex: 0 1 450px;
-    max-width: 500px;
 }
 
-/* Adjust Test1image */
-/*
-body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) {
-    padding: 0px;
-}
 
-body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div {
-    margin: 0px;
-    padding: 0px;
-}
-
- */
-
-/* Adjust Test1 img  */
-/*
-body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockImage > img {
-    float: right;
-    width: 100%;
-    height: 100%;
-}
-
- */
 
 /* Adjust Test1  text */
-/*
+
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 150px;
-    font-size: 40px;
 }
 
- */
 
-/* Adjust Test2img  */
-/*
-body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) {
-    padding: 0px;
-}
-
-body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div {
-    margin: 0px;
-    padding: 0px;
-}
-
-body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockImage > img {
-    width: 100%;
-    height: 100%;
-}
-
- */
 
 /* Adjust Test2 text  */
-/*
+
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 150px;
-    font-size: 40px;
 }
 
- */
 
 /* Adjust footer  */
 /* Adjust footer company */
@@ -362,15 +322,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         flex: 0 1 0px;
         max-width: 500px;
     }
-    /*
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) {
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
 
-     */
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
@@ -387,27 +339,18 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         flex: 0 1 0px;
         max-width: 500px;
     }
-    /*
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) {
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0px;
-    }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 0px;
-        font-size: 40px;
-    }
-
-     */
+    #\30 2 > div > div > div > div.blockContent > h2{
+               margin: 0px;
+               font-size: 20px;
+           }
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
     .imageAlignLeft .blockImage {
         margin-right: 0px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2{
+        margin: 15px;
     }
 
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
@@ -415,7 +358,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
         margin: auto;
-        font-size: 25px;
+        font-size: 15px;
         padding: 0px;
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
@@ -428,18 +371,22 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
         margin: auto;
-        font-size: 25px;
+        font-size: 15px;
         padding: 0px;
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
         display: flex;
         justify-content: center;
     }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2{
+        margin: 15px;
+    }
     #footer > section.sitemap{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 90px;
+        position: relative;
+        padding-left: 0px;
     }
     #footer > section.sitemap > div:nth-child(2){
         margin-bottom: 40px;
@@ -453,9 +400,12 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7){
         padding: 30px;
+        padding-top: 10px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11){
         padding: 30px;
+        padding-top: 10px;
     }
     #sidebar-wrapper{
         top:0px;
@@ -487,7 +437,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p{
         font-size: 25px;
-        letter-spacing: 10px;
+        letter-spacing: 20px;
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) {
         margin-right: 0px;
@@ -504,31 +454,16 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         width: 50%;
     }
     #\30 2 > div > div > div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
            }
     .imageAlignRight .blockImage {
         margin-left: 0px;
         flex: 0 1 0px;
         max-width: 500px;
     }
-    /*
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) {
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 0px;
-        font-size: 40px;
-    }
 
-     */
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
@@ -545,27 +480,18 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         flex: 0 1 0px;
         max-width: 500px;
     }
-    /*
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) {
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0px;
-    }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 0px;
-        font-size: 40px;
-    }
-
-     */
+    #\30 2 > div > div > div > div.blockContent > h2{
+               margin: 0px;
+               font-size: 20px;
+           }
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
     .imageAlignLeft .blockImage {
         margin-right: 0px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2{
+        margin: 15px;
     }
 
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
@@ -573,10 +499,9 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
         margin: auto;
-        font-size: 25px;
+        font-size: 15px;
         padding: 0px;
     }
-
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
         display: flex;
         justify-content: center;
@@ -587,27 +512,41 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
         margin: auto;
-        font-size: 25px;
+        font-size: 15px;
         padding: 0px;
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
         display: flex;
         justify-content: center;
     }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2{
+        margin: 15px;
+    }
     #footer > section.sitemap{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 50px;
+        position: relative;
+        padding-left: 0px;
     }
     #footer > section.sitemap > div:nth-child(2){
         margin-bottom: 40px;
     }
+    p{
+        font-size: 10px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7){
         padding: 30px;
+        padding-top: 10px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11){
         padding: 30px;
+        padding-top: 10px;
     }
     #sidebar-wrapper{
         top:0px;
@@ -644,65 +583,40 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         letter-spacing: 30px;
 
     }
-/*
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockImage{
-        position: relative;
-        left:-63px;
+    .gridBlock > * {
         margin: 0px;
-        overflow: hidden;
-    }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockImage > img{
-        height: 462.44px;
-        width: 325px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > div > div > div.blockContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 10px;
-        font-size: 20px;
-        position: relative;
-        right: 70px;
-    }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4)  > div > div > div > div.blockContent > h2 > div > span > p{
-        font-size: 25px;
-    }
-    .imageAlignSide .blockImage {
-        flex: 0 1 450px;
-        max-width: 500px;
     }
 
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockImage{
-        position: relative;
-        left:-63px;
         margin: 0px;
         overflow: hidden;
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockImage > img{
         height: 462.44px;
         width: 325px;
+        position: relative;
+        left:0px;
+        margin: 0px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent {
-        margin-left: 10px;
-        font-size: 20px;
+    .imageAlignSide .blockImage {
+        flex: 0 1 365px;
+        max-width: 500px;
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 10px;
-        position: relative;
-        right: 70px;
     }
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8)  > div > div > div > div.blockContent > h2 > div > span > p{
         font-size: 25px;
     }
 
- */
     .video-container {
-        margin: 50px;
+        margin: 30px;
     }
     .nav-footer .sitemap {
         display: flex;
@@ -717,21 +631,18 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         padding: 50px;
     }
 
-}
-
-@media only screen and (min-width : 1025px) and (max-width: 1449px) {
-
-}
-@media only screen and (min-width: 1500px) {
-    /* Adjust Banner img */
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div.blockImage > img {
-        width: 60%;
-        margin-right: 20px;
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
+        font-size: 30px;
+        padding-left: 70px;
     }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div.blockImage > img {
-        width: 60%;
-        margin-left: 20px;
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
+        padding: 30px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10){
+        padding: 30px;
+    }
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
+        font-size: 30px;
+        padding-left: 70px;
     }
 }
-
