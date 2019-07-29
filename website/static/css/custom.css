@@ -167,8 +167,13 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > d
 }
 
 
-
 /* Adjust Banner img & text */
+
+.imageAlignSide .blockImage {
+    flex: 0 1 450px;
+    max-width: 500px;
+}
+
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) {
     display: flex;
     flex-direction: column;
