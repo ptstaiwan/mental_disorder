@@ -1,11 +1,12 @@
 window.addEventListener('DOMContentLoaded',function () {
   document.getElementById('loading').style.cssText += 'opacity:100; height: 100vh;';
   var currentWidth = document.body.clientWidth;
+  var limit = 1025;
   var bannerImg1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockImage > a > img');
   var bannerImg2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockImage > a > img');
   var img1 = document.querySelector('#\\30 2 > div > div > div > div.blockImage > img');
   var img2 = document.querySelector('#\\30 3 > div > div > div > div.blockImage > img');
-  if('736' > currentWidth){
+  if(limit > currentWidth){
     img1.src="img/1.jpg";
     img2.src='img/2.jpg';
     bannerImg1.src = "img/1.jpg";
@@ -54,12 +55,13 @@ window.addEventListener('resize',function () {
   var bannerImg2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockImage > a > img');
   var img1 = document.querySelector('#\\30 2 > div > div > div > div.blockImage > img');
   var img2 = document.querySelector('#\\30 3 > div > div > div > div.blockImage > img');
-  if (736 > currentWidth) {
+  var limit = 1025;
+  if (limit > currentWidth) {
     img1.src = "img/1.jpg";
     img2.src = 'img/2.jpg';
     bannerImg1.src = "img/1.jpg";
     bannerImg2.src = 'img/2.jpg';
-  }else if (736 < currentWidth) {
+  }else if (limit < currentWidth) {
     if(bannerImg1.src === window.location + "img/1.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/1.jpg" || window.location + "/#03/img/1.jpg"){
       bannerImg1.src = "img/respondent1.JPG";
     }
