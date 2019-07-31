@@ -65,6 +65,33 @@ class Index extends React.Component {
       </Container>
     );
 
+    const Loading = () => (
+      <div id="loading" className="flex aic jcc fade"/>
+    );
+
+    const HamburgerBar = () => (
+      <a className="menu-toggle rounded">
+        <i className="fas fa-bars" />
+      </a>
+      );
+    const SideBar = () => (
+      <nav id="sidebar-wrapper">
+        <ul className="sidebar-nav">
+          <li className="sidebar-brand">
+            <a  href="#000">酒駕罪有應得</a>
+          </li>
+          <li className="sidebar-nav-item">
+            <a className="js-scroll-trigger" href="#01">前言</a>
+          </li>
+          <li className="sidebar-nav-item">
+            <a className="js-scroll-trigger" href="#02">人物一</a>
+          </li>
+          <li className="sidebar-nav-item">
+            <a className="js-scroll-trigger" href="#03">人物二</a>
+          </li>
+        </ul>
+      </nav>
+    );
 
     const BannerTitle = () => (
       <Block layout="threeColumn" background="light" className="BannerTitle" id="000">
@@ -130,6 +157,11 @@ class Index extends React.Component {
       </Block>
   );
 
+    const Video1 = () => (
+      <div id="video1" className ="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      </div>
+    );
 
     const Test1Page = () => (
       <Block layout="Column" background="light" align="left">
@@ -169,6 +201,13 @@ class Index extends React.Component {
   </Block>
   );
 
+
+    const Video2 = () => (
+      <div id="video1" className ="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      </div>
+    );
+
     const Test2Page = () => (
       <Block layout="Column" background="light" align="left">
       {[
@@ -188,40 +227,19 @@ class Index extends React.Component {
 
     return (
       <div className="landingPage">
-        <div id="loading" className="flex aic jcc fade"></div>
-      <a className="menu-toggle rounded">
-        <i className="fas fa-bars"></i>
-      </a>
-      <nav id="sidebar-wrapper">
-        <ul className="sidebar-nav">
-          <li className="sidebar-brand">
-            <a  href="#000">酒駕罪有應得</a>
-          </li>
-          <li className="sidebar-nav-item">
-            <a className="js-scroll-trigger" href="#01">前言</a>
-          </li>
-          <li className="sidebar-nav-item">
-            <a className="js-scroll-trigger" href="#02">人物一</a>
-          </li>
-          <li className="sidebar-nav-item">
-            <a className="js-scroll-trigger" href="#03">人物二</a>
-          </li>
-        </ul>
-      </nav>
+        <Loading />
+        <HamburgerBar />
+        <SideBar />
         <div className="mainContainer">
           <BannerTitle />
           <Banner />
           <Features />
-            <Test1image />
-          <div id="video1" className ="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-          </div>
+          <Test1image />
+          <Video1 />
           <Test1Pagetitle />
           <Test1Page />
-            <Test2image />
-          <div id="video2" className ="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-          </div>
+          <Test2image />
+          <Video2 />
           <Test2Pagetitle />
           <Test2Page />
         </div>
