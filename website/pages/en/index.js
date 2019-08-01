@@ -65,16 +65,51 @@ class Index extends React.Component {
       </Container>
     );
 
+    const Loading = () => (
+      <div id="loading" className="fade"/>
+    );
 
+    const HamburgerBar = () => (
+      <a className="menu-toggle rounded">
+        <i className="fas fa-bars" />
+      </a>
+      );
+
+    function NumberList(props) {
+      const numbers = props.numbers;
+      function ListItem(props) {
+        // Correct! There is no need to specify the key here:
+        return <li className="sidebar-nav-item">{props.value}</li>;
+      }
+      const listItems = numbers.map((number) =>
+        <ListItem key={number.id}
+          value={number.href} />
+      );
+      return (
+          <ul className="sidebar-nav">
+            <li className="sidebar-brand">
+              <a  href="#000">酒駕罪有應得</a>
+            </li>
+            {listItems}
+          </ul>
+      );
+    }
+    const numbers = [{id : 1, href : <a className="js-scroll-trigger" href="#01">前言</a>},{id : 2, href : <a className="js-scroll-trigger" href="#02">人物一</a>}, {id : 3, href : <a className="js-scroll-trigger" href="#03">人物二</a>}];
+
+    const SideBar = () => (
+      <nav id="sidebar-wrapper">
+        <NumberList numbers={numbers}/>
+      </nav>
+    );
     const BannerTitle = () => (
       <Block layout="threeColumn" background="light" className="BannerTitle" id="000">
-      {[
+        {[
           {
             title: '酒駕罪有應得？！',
           }
-  ]}
-  </Block>
-  );
+        ]}
+      </Block>
+    );
 
     const Banner = () => (
       <Block layout="Column" background="light" id="00">
@@ -130,6 +165,11 @@ class Index extends React.Component {
       </Block>
   );
 
+    const Video1 = () => (
+      <div id="video1" className ="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      </div>
+    );
 
     const Test1Page = () => (
       <Block layout="Column" background="light" align="left">
@@ -169,6 +209,13 @@ class Index extends React.Component {
   </Block>
   );
 
+
+    const Video2 = () => (
+      <div id="video2" className ="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      </div>
+    );
+
     const Test2Page = () => (
       <Block layout="Column" background="light" align="left">
       {[
@@ -185,41 +232,22 @@ class Index extends React.Component {
   </Block>
   );
 
+
     return (
       <div className="landingPage">
-      <a className="menu-toggle rounded">
-        <i className="fas fa-bars"></i>
-      </a>
-      <nav id="sidebar-wrapper">
-        <ul className="sidebar-nav">
-          <li className="sidebar-brand">
-            <a  href="#000">酒駕罪有應得</a>
-          </li>
-          <li className="sidebar-nav-item">
-            <a className="js-scroll-trigger" href="#01">前言</a>
-          </li>
-          <li className="sidebar-nav-item">
-            <a className="js-scroll-trigger" href="#02">人物一</a>
-          </li>
-          <li className="sidebar-nav-item">
-            <a className="js-scroll-trigger" href="#03">人物二</a>
-          </li>
-        </ul>
-      </nav>
+        <Loading />
+        <HamburgerBar />
+        <SideBar/>
         <div className="mainContainer">
           <BannerTitle />
           <Banner />
           <Features />
-            <Test1image />
-          <div id="video1" className ="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-          </div>
+          <Test1image />
+          <Video1 />
           <Test1Pagetitle />
           <Test1Page />
-            <Test2image />
-          <div id="video2" className ="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-          </div>
+          <Test2image />
+          <Video2 />
           <Test2Pagetitle />
           <Test2Page />
         </div>
