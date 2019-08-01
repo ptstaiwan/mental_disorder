@@ -782,4 +782,7 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     #footer{
         padding: 30px;
     }
+    .menu-toggle:hover{
+        background:white;
+    }
 }
