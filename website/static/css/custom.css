@@ -10,83 +10,89 @@
     background-size: 100px;
     background-position: 50%;
     opacity: 1;
-    transition: opacity .4s cubic-bezier(.23,1,.32,1);
+    transition: opacity .4s cubic-bezier(.23, 1, .32, 1);
     z-index: 99999;
 }
 
-#sidebar-wrapper{
-    position:fixed;
-    z-index:2;
+#sidebar-wrapper {
+    position: fixed;
+    z-index: 2;
     left: -500px;
-    width:250px;
-    height:100%;
-    -webkit-transition:all .4s ease 0s;
-    transition:all .4s ease 0s;
-    -webkit-transform:translateX(250px);
-    transform:translateX(250px);
-    background:rgba(1,51,83,.5);/*sidebar底色在此修改*/
+    width: 250px;
+    height: 100%;
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+    background: rgba(1, 51, 83, .5); /*sidebar底色在此修改*/
     /*border-left:1px solid rgba(255,255,255,.1)*/
 }
 
-.sidebar-nav{
+.sidebar-nav {
     /*background:#003151;*/
-    position:absolute;
-    top:0;
-    width:250px;
-    margin:0;
-    padding:0;
-    list-style:none
-}
-.sidebar-nav li.sidebar-nav-item a{
-    display:block;
-    text-decoration:none;
-    color:#ffffff;
-    padding:8px;
-    padding-left:40px;
-}
-.sidebar-nav li a:hover{
-    text-decoration:none;
-    color:rgb(1,51,83);
-    background:rgba(153,236,243,.4)
-}
-.sidebar-nav li a,.sidebar-nav li a:focus{
-    text-decoration:none
-}
-.sidebar-nav>.sidebar-brand{
-    font-size:1.1rem;
-    /*background:;*/
-    height:80px;
-    line-height:60px;
-    padding-top:10.5px;
-    padding-bottom:1px;
-    padding-left:40px;
-    margin-top:60px;
-}
-.sidebar-nav>.sidebar-brand a{
-    color:#99ECF3;
-    font-weight:bold;
-}
-.sidebar-nav>.sidebar-brand a:hover{
-    color:rgb(1,51,83);
-    background:0 0
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none
 }
 
-.menu-toggle{
-    position:fixed;
-    width:50px;
-    height:50px;
-    text-align:center;
-    color:rgb(1,51,83);
-    background:transparent;
-    line-height:50px;
-    z-index:999;
+.sidebar-nav li.sidebar-nav-item a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px;
+    padding-left: 40px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: rgb(1, 51, 83);
+    background: rgba(153, 236, 243, .4)
+}
+
+.sidebar-nav li a, .sidebar-nav li a:focus {
+    text-decoration: none
+}
+
+.sidebar-nav > .sidebar-brand {
+    font-size: 1.1rem;
+    /*background:;*/
+    height: 80px;
+    line-height: 60px;
+    padding-top: 10.5px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    margin-top: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #99ECF3;
+    font-weight: bold;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: rgb(1, 51, 83);
+    background: 0 0
+}
+
+.menu-toggle {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: rgb(1, 51, 83);
+    background: transparent;
+    line-height: 50px;
+    z-index: 999;
     cursor: pointer;
     margin-top: 0px;
     margin-left: 0px;
 }
 
-.menu-toggle:hover{
-    background:transparent;
+.menu-toggle:hover {
+    background: transparent;
 }
 
 
@@ -155,12 +161,20 @@ img {
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div.blockImage {
     margin: 0px;
 }
-#\30 0 > div > div > div:nth-child(1) > div.blockImage > a > img:hover{
-           opacity: 0.6;
-       }
-#\30 0 > div > div > div:nth-child(2) > div.blockImage > a > img:hover{
-           opacity: 0.6;
-       }
+
+#\30
+
+0
+> div > div > div:nth-child(1) > div.blockImage > a > img:hover {
+    opacity: 0.6;
+}
+
+#\30
+
+0
+> div > div > div:nth-child(2) > div.blockImage > a > img:hover {
+    opacity: 0.6;
+}
 
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div.blockImage {
     margin: 0px;
@@ -188,19 +202,33 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > d
     font-size: 20px;
 }
 
-#\30 0 > div > div > div:nth-child(1) > div.blockContent > div > span > p{
-    cursor: pointer;
-       }
-#\30 0 > div > div > div:nth-child(1) > div.blockContent > div > span > p:hover{
-           color: #99ecf3;
-       }
+#\30
 
-#\30 0 > div > div > div:nth-child(2) > div.blockContent > div > span > p{
-           cursor: pointer;
-       }
-#\30 0 > div > div > div:nth-child(2) > div.blockContent > div > span > p:hover{
-           color: #99ecf3;
-       }
+0
+> div > div > div:nth-child(1) > div.blockContent > div > span > p {
+    cursor: pointer;
+}
+
+#\30
+
+0
+> div > div > div:nth-child(1) > div.blockContent > div > span > p:hover {
+    color: #99ecf3;
+}
+
+#\30
+
+0
+> div > div > div:nth-child(2) > div.blockContent > div > span > p {
+    cursor: pointer;
+}
+
+#\30
+
+0
+> div > div > div:nth-child(2) > div.blockContent > div > span > p:hover {
+    color: #99ecf3;
+}
 
 /* Adjust Test1  text */
 
@@ -209,7 +237,6 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(4) > div > d
     flex-direction: column;
     justify-content: center;
 }
-
 
 
 /* Adjust Test2 text  */
@@ -304,53 +331,66 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     padding-top: 20px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 735px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 735px) {
     img {
         max-width: 100%;
     }
+
     /* Adjust Banner img */
-    body{
+    body {
         background-color: #F7F7F7;
     }
+
     .landingPage > .mainContainer {
         padding: 0px 0px;
         position: relative;
         top: 28px;
     }
+
     .container.paddingBottom {
         padding-bottom: 20px;
     }
+
     .imageAlignSide .blockImage {
         display: block;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p{
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
         font-size: 25px;
         letter-spacing: 20px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) {
         margin-right: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) {
         margin-left: 0px;
     }
-    .mainContainer > div:nth-child(2) > div > div{
+
+    .mainContainer > div:nth-child(2) > div > div {
         display: flex;
         flex-direction: column;
         align-content: center;
     }
-    #01{
+
+    #01 {
         padding-bottom: 20px;
     }
 
-    ＃01 > .wrapper > .gridBlock{
+    ＃01 > .wrapper > .gridBlock {
         width: 50%;
     }
-    #\30 2 > div > div > div{
-               display: flex;
-               flex-direction: column-reverse;
-               justify-content: center;
-               align-items: center;
-           }
+
+    #\30
+
+2 > div > div > div {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+  }
+
     .imageAlignRight .blockImage {
         margin-left: 0px;
         flex: 0 1 0px;
@@ -360,105 +400,131 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
+
     .video-container {
         margin: 0px;
     }
 
-    #\30 3 > div > div > div{
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-               align-items: center;
-           }
+    #\30
+
+3 > div > div > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
     .imageAlignSide .blockImage {
         flex: 0 1 0px;
         max-width: 500px;
     }
-    #\30 2 > div > div > div > div.blockContent > h2{
-               margin: 0px;
-               font-size: 20px;
-           }
+
+    #\30
+
+2 > div > div > div > div.blockContent > h2 {
+      margin: 0px;
+      font-size: 20px;
+  }
+
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
+
     .imageAlignLeft .blockImage {
         margin-right: 0px;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2{
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 {
         margin: 15px;
     }
 
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
         margin: auto;
         font-size: 15px;
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
         display: flex;
         justify-content: center;
     }
 
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7){
+    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) {
         padding-bottom: 0px;
     }
-    #\30 3 > div > div > div > div.blockContent > h2{
-               margin: 0px;
-           }
+
+    #\30
+
+3 > div > div > div > div.blockContent > h2 {
+      margin: 0px;
+  }
 
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
         margin: auto;
         font-size: 15px;
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
         display: flex;
         justify-content: center;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2{
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 {
         margin: 15px;
     }
-    #footer > section.sitemap{
+
+    #footer > section.sitemap {
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: relative;
         padding-left: 50px;
     }
-    #footer > section.sitemap > div:nth-child(2){
+
+    #footer > section.sitemap > div:nth-child(2) {
         margin-bottom: 40px;
     }
-    p{
+
+    p {
         font-size: 14px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
         font-size: 20px;
         letter-spacing: 10px;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7){
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
         padding: 30px;
         padding-top: 10px;
     }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11){
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         padding: 30px;
         padding-top: 10px;
     }
-    #sidebar-wrapper{
-        top:0px;
+
+    #sidebar-wrapper {
+        top: 0px;
         z-index: 1000;
     }
+
     .menu-toggle {
         top: 0px;
         width: 100%;
         background-color: white;
     }
-    i{
+
+    i {
         float: left;
         margin: 20px;
     }
@@ -466,53 +532,66 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
 
 }
 
-@media only screen and (min-width : 320px) and (max-width : 736px) {
+@media only screen and (min-width: 320px) and (max-width: 736px) {
     img {
         max-width: 100%;
     }
+
     /* Adjust Banner img */
-    body{
+    body {
         background-color: #F7F7F7;
     }
+
     .landingPage > .mainContainer {
         padding: 0px 0px;
         position: relative;
         top: 28px;
     }
+
     .container.paddingBottom {
         padding-bottom: 20px;
     }
+
     .imageAlignSide .blockImage {
         display: block;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p{
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
         font-size: 25px;
         letter-spacing: 20px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) {
         margin-right: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) {
         margin-left: 0px;
     }
-    .mainContainer > div:nth-child(2) > div > div{
+
+    .mainContainer > div:nth-child(2) > div > div {
         display: flex;
         flex-direction: column;
         align-content: center;
     }
-    #01{
+
+    #01 {
         padding-bottom: 20px;
     }
-    ＃01 > .wrapper > .gridBlock{
+
+    ＃01 > .wrapper > .gridBlock {
         width: 50%;
     }
 
-    #\30 2 > div > div > div{
-               display: flex;
-               flex-direction: column-reverse;
-               justify-content: center;
-               align-items: center;
-           }
+    #\30
+
+2 > div > div > div {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+  }
+
     .imageAlignRight .blockImage {
         margin-left: 0px;
         flex: 0 1 0px;
@@ -522,146 +601,182 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
+
     .video-container {
         margin: 0px;
     }
 
-    #\30 3 > div > div > div{
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-               align-items: center;
-           }
+    #\30
+
+3 > div > div > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
     .imageAlignSide .blockImage {
         flex: 0 1 0px;
         max-width: 500px;
     }
-    #\30 2 > div > div > div > div.blockContent > h2{
-               margin-top: 20px;
-               font-size: 20px;
-           }
+
+    #\30
+
+2 > div > div > div > div.blockContent > h2 {
+      margin-top: 20px;
+      font-size: 20px;
+  }
+
     .container .wrapper .alignCenter h2 {
         text-align: center;
     }
+
     .imageAlignLeft .blockImage {
         margin-right: 0px;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2{
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 {
         margin: 15px;
     }
 
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
         margin: auto;
         font-size: 15px;
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
         display: flex;
         justify-content: center;
     }
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7){
+
+    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) {
         padding-bottom: 0px;
     }
-    #\30 3 > div > div > div > div.blockContent > h2{
-               margin-top: 20px;
-               font-size: 20px;
-           }
+
+    #\30
+
+3 > div > div > div > div.blockContent > h2 {
+      margin-top: 20px;
+      font-size: 20px;
+  }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
         margin: auto;
         font-size: 15px;
         padding: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
         display: flex;
         justify-content: center;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2{
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 {
         margin: 15px;
     }
 
-    #footer > section.sitemap{
+    #footer > section.sitemap {
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: relative;
         padding-left: 50px;
     }
-    #footer > section.sitemap > div:nth-child(2){
+
+    #footer > section.sitemap > div:nth-child(2) {
         margin-bottom: 40px;
     }
-    p{
+
+    p {
         font-size: 10px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
         font-size: 20px;
         letter-spacing: 10px;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7){
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
         padding: 30px;
         padding-top: 10px;
     }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11){
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         padding: 30px;
         padding-top: 10px;
     }
-    #sidebar-wrapper{
-        top:0px;
+
+    #sidebar-wrapper {
+        top: 0px;
         z-index: 1000;
     }
+
     .menu-toggle {
         top: 0px;
         width: 100%;
         background-color: white;
     }
-    i{
+
+    i {
         float: left;
         margin: 20px;
     }
-    #01{
+
+    #01 {
         padding-bottom: 20px;
     }
 }
 
-@media only screen and (min-width : 736px) and (max-width: 1024px) {
+@media only screen and (min-width: 736px) and (max-width: 1024px) {
     img {
         max-width: 100%;
     }
-    .wrapper{
+
+    .wrapper {
         padding: 40px;
     }
-    #\30 00 > div{
-                padding: 0px;
-            }
-    .menu-toggle{
-        position:fixed;
-        width:50px;
-        height:50px;
-        text-align:center;
-        color:rgb(1,51,83);
-        background:transparent;
-        line-height:50px;
-        z-index:999;
+
+    #\30
+
+00 > div {
+       padding: 0px;
+   }
+
+    .menu-toggle {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: rgb(1, 51, 83);
+        background: transparent;
+        line-height: 50px;
+        z-index: 999;
         cursor: pointer;
         margin-top: 0px;
         margin-left: 0px;
     }
 
-    #\30 1 > div{
-               padding-left: 40px;
-               padding-right: 40px;
-           }
+    #\30
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p{
+1 > div {
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
         font-size: 30px;
         letter-spacing: 30px;
     }
+
     .gridBlock > * {
         margin: 0px;
     }
@@ -669,16 +784,20 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     .container.paddingBottom {
         padding-bottom: 50px;
     }
+
     .imageAlignSide .blockImage {
         flex: 0 1 100px;
         max-width: 800px;
     }
+
     .imageAlignRight .blockImage {
         margin-left: 0px;
     }
+
     .imageAlignLeft .blockImage {
         margin-right: 0px;
     }
+
     .container .wrapper .imageAlignSide p {
         margin: 0;
         margin-bottom: 40px;
@@ -690,9 +809,11 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
         flex-direction: column;
         justify-content: center;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8)  > div > div > div > div.blockContent > h2 > div > span > p{
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent > h2 > div > span > p {
         font-size: 25px;
     }
+
     .container.paddingBottom {
         padding-bottom: 20px;
     }
@@ -700,89 +821,119 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
     .video-container {
         margin: 50px;
     }
-    #\30 2{
+
+    #\30
+
+2 {
     padding: 0px;
 }
-    #\30 2 > div{
-    padding-bottom: 0px;
-           }
-    #\30 2 > div > div > div{
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: center;
-               align-items: center;
-           }
+    #\30
+
+2 > div {
+      padding-bottom: 0px;
+  }
+
+    #\30
+
+2 > div > div > div {
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: center;
+      align-items: center;
+  }
+
     .container.paddingTop {
         padding-top: 50px;
     }
 
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) > div{
+    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) > div {
         padding-bottom: 0px;
     }
-    #\30 3 > div{
-    padding-bottom: 0px;
-           }
-    #\30 3 > div > div > div{
-               display: flex;
-               flex-direction: column;
-               align-content: center;
-               align-items: center;
-           }
-    #\30 3{
+
+    #\30
+
+3 > div {
+      padding-bottom: 0px;
+  }
+
+    #\30
+
+3 > div > div > div {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+  }
+
+    #\30
+
+3 {
     padding: 0px;
 }
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(10) > div{
+    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(10) > div {
         padding: 0px;
     }
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(10){
+
+    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(10) {
         padding-bottom: 0px;
     }
+
     .nav-footer .sitemap {
         display: flex;
         justify-content: center;
         margin: 0 auto 3em;
     }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7){
-        padding: 0px;
-    }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11){
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
         padding: 0px;
     }
 
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(6){
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
+        padding: 0px;
+    }
+
+    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(6) {
         padding-bottom: 0px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
         font-size: 30px;
         padding-left: 70px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
         padding: 30px;
     }
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10){
+
+    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
         padding: 30px;
     }
+
     body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
         font-size: 30px;
         padding-left: 70px;
     }
+
     .menu-toggle {
         top: 0px;
         width: 100%;
         background-color: white;
     }
-    i{
+
+    i {
         float: left;
         margin: 20px;
     }
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer{
+
+    body > div.navPusher.singleRowMobileNav > div > div.mainContainer {
         margin-top: 50px;
     }
-    #footer{
+
+    #footer {
         padding: 30px;
     }
-    .menu-toggle:hover{
-        background:white;
+
+    .menu-toggle:hover {
+        background: white;
     }
 }

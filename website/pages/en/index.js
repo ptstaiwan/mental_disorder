@@ -39,7 +39,7 @@ class HomeSplash extends React.Component {
     return (
       <SplashContainer>
         <div className="inner">
-          <ProjectTitle siteConfig={siteConfig} />
+          <ProjectTitle siteConfig={siteConfig}/>
         </div>
       </SplashContainer>
     );
@@ -71,30 +71,36 @@ class Index extends React.Component {
 
     const HamburgerBar = () => (
       <a className="menu-toggle rounded">
-        <i className="fas fa-bars" />
+        <i className="fas fa-bars"/>
       </a>
-      );
+    );
 
     function NumberList(props) {
       const numbers = props.numbers;
+
       function ListItem(props) {
         // Correct! There is no need to specify the key here:
         return <li className="sidebar-nav-item">{props.value}</li>;
       }
+
       const listItems = numbers.map((number) =>
         <ListItem key={number.id}
-          value={number.href} />
+                  value={number.href}/>
       );
       return (
-          <ul className="sidebar-nav">
-            <li className="sidebar-brand">
-              <a  href="#000">酒駕罪有應得</a>
-            </li>
-            {listItems}
-          </ul>
+        <ul className="sidebar-nav">
+          <li className="sidebar-brand">
+            <a href="#000">酒駕罪有應得</a>
+          </li>
+          {listItems}
+        </ul>
       );
     }
-    const numbers = [{id : 1, href : <a className="js-scroll-trigger" href="#01">前言</a>},{id : 2, href : <a className="js-scroll-trigger" href="#02">人物一</a>}, {id : 3, href : <a className="js-scroll-trigger" href="#03">人物二</a>}];
+
+    const numbers = [{id: 1, href: <a className="js-scroll-trigger" href="#01">前言</a>}, {
+      id: 2,
+      href: <a className="js-scroll-trigger" href="#02">人物一</a>
+    }, {id: 3, href: <a className="js-scroll-trigger" href="#03">人物二</a>}];
 
     const SideBar = () => (
       <nav id="sidebar-wrapper">
@@ -113,7 +119,7 @@ class Index extends React.Component {
 
     const Banner = () => (
       <Block layout="Column" background="light" id="00">
-      {[
+        {[
           {
             content: '點擊觀看故事',
             image: `${baseUrl}img/respondent1.JPG`,
@@ -121,13 +127,13 @@ class Index extends React.Component {
           },
           {
             content: '點擊觀看故事',
-              image: `${baseUrl}img/respondent2.JPG`,
+            image: `${baseUrl}img/respondent2.JPG`,
             imageLink: `${baseUrl}#03`
           }
-          ]}
+        ]}
 
       </Block>
-  );
+    );
     const Features = () => (
       <Block layout="Column" background="dark" id="01">
         {[
@@ -137,119 +143,121 @@ class Index extends React.Component {
           },
           {
             content: '民國88年之前，酒駕只能依《道路交通管理處罰條例》處以罰鍰。 直到88年正式入罪化，法條頒布初期，法官認為酒駕案件只是因酒肇事， 不算是罪大惡極的行為，都是從輕判處罰金了事，使酒駕不減反增。 一直到100年在刑法中新增酒駕致死傷的刑責，以及102年明定酒測值上限後，才有效降低了死傷人數。',
-              title: '酒駕入刑法後的影響',
+            title: '酒駕入刑法後的影響',
           }
-          ]}
+        ]}
       </Block>
-  );
+    );
 
     const Test1image = () => (
       <Block layout="threeColumn" background="light" align="left" id="02">
-      {[
+        {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
             content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
             image: `${baseUrl}img/respondent1.JPG`,
             imageAlign: 'right'
           },
-  ]}
-  </Block>
-  );
+        ]}
+      </Block>
+    );
     const Test1Pagetitle = () => (
       <Block layout="Column" background="light" align="left">
-      {[
+        {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
           },
-      ]}
+        ]}
       </Block>
-  );
+    );
 
     const Video1 = () => (
-      <div id="video1" className ="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      <div id="video1" className="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
       </div>
     );
 
     const Test1Page = () => (
       <Block layout="Column" background="light" align="left">
-      {[
+        {[
           {
             content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
           },
-    {
-      content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
-    },
-    {
-      content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
-    }
-  ]}
+          {
+            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+          },
+          {
+            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+          }
+        ]}
       </Block>
-      );
+    );
 
     const Test2image = () => (
       <Block layout="threeColumn" background="light" id="03">
-      {[
+        {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
             content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
             image: `${baseUrl}img/respondent2.JPG`
           },
-  ]}
-  </Block>
-  );
+        ]}
+      </Block>
+    );
 
     const Test2Pagetitle = () => (
       <Block layout="Column" background="light" align="left">
-      {[
+        {[
           {
             title: '李先生: 別再姑息任何一個酒駕的人。',
           },
-  ]}
-  </Block>
-  );
+        ]}
+      </Block>
+    );
 
 
     const Video2 = () => (
-      <div id="video2" className ="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      <div id="video2" className="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
       </div>
     );
 
     const Test2Page = () => (
       <Block layout="Column" background="light" align="left">
-      {[
+        {[
           {
             content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
           },
           {
-              content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
           },
           {
-              content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
+            content: '反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。反酒駕聯盟自107年1月成立，持續針對酒駕修法進行倡議，創辦人李先生表示，因為酒駕的刑責太輕，才讓心懷僥倖的酒駕者滿街跑。',
           }
-  ]}
-  </Block>
-  );
+        ]}
+      </Block>
+    );
 
 
     return (
       <div className="landingPage">
-        <Loading />
-        <HamburgerBar />
+        <Loading/>
+        <HamburgerBar/>
         <SideBar/>
         <div className="mainContainer">
-          <BannerTitle />
-          <Banner />
-          <Features />
-          <Test1image />
-          <Video1 />
-          <Test1Pagetitle />
-          <Test1Page />
-          <Test2image />
-          <Video2 />
-          <Test2Pagetitle />
-          <Test2Page />
+          <BannerTitle/>
+          <Banner/>
+          <Features/>
+          <Test1image/>
+          <Video1/>
+          <Test1Pagetitle/>
+          <Test1Page/>
+          <Test2image/>
+          <Video2/>
+          <Test2Pagetitle/>
+          <Test2Page/>
         </div>
       </div>
     );
