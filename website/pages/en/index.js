@@ -107,48 +107,17 @@ class Index extends React.Component {
         <NumberList numbers={numbers}/>
       </nav>
     );
+
+
     const BannerTitle = () => (
-      <Block id="BannerTitle" layout="threeColumn" background="light" className="BannerTitle" id="000">
-        {[
-          {
-            title: '酒駕罪有應得？！',
-          }
-        ]}
-      </Block>
-    );
+      <div id="BannerTitle">
 
-    const Banner = () => (
-      <Block id="Banner" layout="Column" background="light" id="00">
-        {[
-          {
-            content: '點擊觀看故事',
-            image: `${baseUrl}img/respondent1.JPG`,
-            imageLink: `${baseUrl}#02`,
-            title: '',
-          },
-          {
-            content: '點擊觀看故事',
-            image: `${baseUrl}img/respondent2.JPG`,
-            imageLink: `${baseUrl}#03`,
-            title: '',
-          }
-        ]}
-
-      </Block>
-    );
-    const Features = () => (
-      <Block id="Features" layout="Column" background="dark" id="01">
-        {[
-          {
-            content: '你認為這是好事？還是警訊呢？酒駕在台灣一直都是備受關注的議題，108年3月和5月分別通過了《道路交通管理處罰條例》以及《刑法》修正案，讓酒駕的代價又更重了。常說重罰是為了嚇阻犯罪，那為什麼酒駕的問題「感覺上」還是那麼嚴重？',
-            title: '108年3月 酒駕已經成為台灣的入監原因前三名了',
-          },
-          {
-            content: '民國88年之前，酒駕只能依《道路交通管理處罰條例》處以罰鍰。 直到88年正式入罪化，法條頒布初期，法官認為酒駕案件只是因酒肇事， 不算是罪大惡極的行為，都是從輕判處罰金了事，使酒駕不減反增。 一直到100年在刑法中新增酒駕致死傷的刑責，以及102年明定酒測值上限後，才有效降低了死傷人數。',
-            title: '酒駕入刑法後的影響',
-          }
-        ]}
-      </Block>
+        <img src= "http://localhost:3000/newslab-demo/img/c1c.png" alt="text" className="textImg c1"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c2c.png" alt="text" className="textImg c2"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c3c.png" alt="text" className="textImg c3"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c4c.png" alt="text" className="textImg c4"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c5c.png" alt="text" className="textImg c5"/>
+      </div>
     );
 
     const Test1image = () => (
@@ -256,8 +225,6 @@ class Index extends React.Component {
         <SideBar/>
         <div className="mainContainer">
           <BannerTitle/>
-          <Banner/>
-          <Features/>
           <Test1image/>
           <Video1/>
           <Test1Pagetitle/>

@@ -154,9 +154,83 @@ body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > d
 
 /* Adjust Banner img */
 
-img {
-    max-width: 60%;
+#BannerTitle {
+    position:relative;
+    margin:0 auto;
+    height:925px;
+    background-repeat: no-repeat;
+    background-image:
+            url("../img/pc.jpg");
+    background-size:
+            100%;
+    background-position:
+            left top;
 }
+.textImg{
+    width: 15%;
+}
+
+
+.c1 {
+    position: relative;
+    margin-left: 30%;
+    margin-top: 18%;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+.c1:hover {
+    opacity:1;
+}
+
+.c2 {
+    position: relative;
+    margin-left: -13%;
+    margin-bottom: 9%;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+.c2:hover {
+    opacity:1;
+}
+
+.c3 {
+    position: relative;
+    margin-left: -18%;
+    margin-bottom: 9%;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0;
+}
+.c3:hover {
+    opacity:1;
+}
+
+.c4 {
+    position: relative;
+    margin-left: 4%;
+    margin-bottom: 12%;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0;
+}
+.c4:hover {
+    opacity:1;
+}
+
+.c5 {
+    position: relative;
+    margin-left: -30%;
+    margin-bottom: 0%;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+}
+.c5:hover {
+    opacity:1;
+}
+
 
 body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div.blockImage {
     margin: 0px;
