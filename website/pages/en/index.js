@@ -111,12 +111,20 @@ class Index extends React.Component {
 
     const BannerTitle = () => (
       <div id="BannerTitle">
-
-        <img src= "http://localhost:3000/newslab-demo/img/c1c.png" alt="text" className="textImg c1"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c2c.png" alt="text" className="textImg c2"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c3c.png" alt="text" className="textImg c3"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c4c.png" alt="text" className="textImg c4"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c5c.png" alt="text" className="textImg c5"/>
+        <div className="Feature">
+          <h2><p>108年3月 酒駕已經成為台灣的入監原因前三名了</p></h2>
+          <p>你認為這是好事？還是警訊呢？酒駕在台灣一直都是備受關注的議題，108年3月和5月分別通過了《道路交通管理處罰條例》以及《刑法》修正案，讓酒駕的代價又更重了。常說重罰是為了嚇阻犯罪，那為什麼酒駕的問題「感覺上」還是那麼嚴重？</p>
+        </div>
+        <img src= "http://localhost:3000/newslab-demo/img/c1c.png" alt="text" className="textImg c1c"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c1.png" alt="text" className="textImg c1"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c2c.png" alt="text" className="textImg c2c"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c2.png" alt="text" className="textImg c2"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c3c.png" alt="text" className="textImg c3c"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c3.png" alt="text" className="textImg c3"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c4c.png" alt="text" className="textImg c4c"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c4.png" alt="text" className="textImg c4"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c5c.png" alt="text" className="textImg c5c"/>
+        <img src= "http://localhost:3000/newslab-demo/img/c5.png" alt="text" className="textImg c5"/>
       </div>
     );
 

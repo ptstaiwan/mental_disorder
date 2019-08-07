@@ -30,12 +30,12 @@ window.addEventListener('DOMContentLoaded', function () {
       document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
-  var link1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockContent > div > span > p');
-  link1.addEventListener('click', function () {
+  var link1 = document.getElementsByClassName('c1');
+  link1[0].addEventListener('click', function () {
     window.location.href = '#02';
   });
-  var link2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockContent > div > span > p');
-  link2.addEventListener('click', function () {
+  var link2 = document.getElementsByClassName('c2');
+  link2[0].addEventListener('click', function () {
     window.location.href = '#03';
   });
 });
@@ -47,7 +47,6 @@ window.addEventListener('load', function () {
 
 window.addEventListener('resize', function () {
   var currentWidth = document.body.clientWidth;
-  banner.style.cssText += 'height:' + currentHeight + 'px';
   var img1 = document.querySelector('#\\30 2 > div > div > div > div.blockImage > img');
   var img2 = document.querySelector('#\\30 3 > div > div > div > div.blockImage > img');
   var limit = 1025;
