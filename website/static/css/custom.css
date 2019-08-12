@@ -1,96 +1,808 @@
 /* loading page */
 
 #loading.fade {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    background-image: url(../img/Spin.gif);
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-position: 50%;
-    opacity: 1;
-    transition: opacity .4s cubic-bezier(.23, 1, .32, 1);
-    z-index: 99999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  background-image: url(../img/Spin.gif);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 50%;
+  opacity: 1;
+  transition: opacity .4s cubic-bezier(.23, 1, .32, 1);
+  z-index: 99999;
 }
 
 /* p */
 
 p {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 3px;
-    font-family: "WebFont Noto Sens TC";
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: 3px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* h1 */
+
+#BannerTitle > div > h2 > p{
+  font-size: 60px;
+}
+
+/* h2 */
+
+#Test1image > div > div > div > div.blockContent > h2 > div > span > p,
+#Test2image > div > div > div > div.blockContent > h2 > div > span > p{
+  font-size: 40px;
+}
+
+/* h3 */
+
+#Test1Pagetitle > div > div > div > div > h2 > div > span > p,
+#Test2Pagetitle > div > div > div > div > h2 > div > span > p {
+  font-size: 28px;
 }
 
 /* sidebar */
 
 #sidebar-wrapper {
-    position: fixed;
-    z-index: 2;
-    left: -500px;
-    width: 250px;
-    height: 100%;
-    -webkit-transition: all .4s ease 0s;
-    transition: all .4s ease 0s;
-    -webkit-transform: translateX(250px);
-    transform: translateX(250px);
-    background: rgba(1, 51, 83, .5); /*sidebar底色在此修改*/
-    /*border-left:1px solid rgba(255,255,255,.1)*/
+  position: fixed;
+  z-index: 2;
+  left: -500px;
+  width: 250px;
+  height: 100%;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  -webkit-transform: translateX(250px);
+  transform: translateX(250px);
+  background: rgba(1, 51, 83, .5); /*sidebar底色在此修改*/
+  /*border-left:1px solid rgba(255,255,255,.1)*/
 }
 
 .sidebar-nav {
-    /*background:#003151;*/
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none
+  /*background:#003151;*/
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none
 }
 
 .sidebar-nav li.sidebar-nav-item a {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 8px;
-    padding-left: 40px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px;
+  padding-left: 40px;
 }
 
 .sidebar-nav li a:hover {
-    text-decoration: none;
-    color: rgb(1, 51, 83);
-    background: rgba(153, 236, 243, .4)
+  text-decoration: none;
+  color: rgb(1, 51, 83);
+  background: rgba(153, 236, 243, .4)
 }
 
 .sidebar-nav li a, .sidebar-nav li a:focus {
-    text-decoration: none
+  text-decoration: none
 }
 
 .sidebar-nav > .sidebar-brand {
-    font-size: 1.1rem;
-    /*background:;*/
-    height: 80px;
-    line-height: 60px;
-    padding-top: 10.5px;
-    padding-bottom: 1px;
-    padding-left: 40px;
-    margin-top: 60px;
+  font-size: 1.1rem;
+  /*background:;*/
+  height: 80px;
+  line-height: 60px;
+  padding-top: 10.5px;
+  padding-bottom: 1px;
+  padding-left: 40px;
+  margin-top: 60px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #99ECF3;
-    font-weight: bold;
+  color: #99ECF3;
+  font-weight: bold;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: rgb(1, 51, 83);
-    background: 0 0
+  color: rgb(1, 51, 83);
+  background: 0 0
 }
 
 /* hamburger bar */
 
 .menu-toggle {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: rgb(1, 51, 83);
+  background: transparent;
+  line-height: 50px;
+  z-index: 999;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.menu-toggle:hover {
+  background: transparent;
+}
+
+
+a:not([href]) {
+  text-decoration: none;
+}
+
+.landingPage > .mainContainer {
+  padding: 0px 0px;
+}
+
+/* remove nav bar */
+.fixedHeaderContainer {
+  display: none;
+}
+
+.singleRowMobileNav.navPusher {
+  padding-top: 0px;
+}
+
+/* adjust video */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0px;
+  overflow: hidden;
+  margin: 50px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust Banner img */
+
+#BannerTitle {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-image: url("../img/pc.jpg");
+  background-size: 100%;
+  background-position: left top;
+  max-height: 1360px;
+}
+
+/* Dialog size */
+
+.textImg {
+  width: 15%;
+}
+
+/* character 1*/
+
+.c1 {
+  position: relative;
+  margin-left: -3.1%;
+  margin-top: 17.5%;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  width: 20.5%;
+}
+
+.c1:hover {
+  opacity: 1;
+}
+
+.c1c {
+  position: relative;
+  margin-left: 30%;
+  margin-bottom: 28%;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+/* character 2*/
+
+.c2 {
+  position: relative;
+  margin-left: 0.69%;
+  margin-bottom: 30.3%;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0;
+  width: 15.9%;
+}
+
+.c2:hover {
+  opacity: 1;
+}
+
+.c2c {
+  position: relative;
+  margin-left: -32%;
+  margin-bottom: 37%;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0;
+}
+
+/* character 3*/
+
+.c3 {
+  position: relative;
+  margin-left: -27.8%;
+  margin-bottom: 22%;
+  cursor: pointer;
+  z-index: 4;
+  opacity: 0;
+  width: 20%;
+}
+
+.c3:hover {
+  opacity: 1;
+}
+
+.c3c {
+  position: relative;
+  margin-left: -31%;
+  margin-bottom: 35%;
+  cursor: pointer;
+  z-index: 4;
+  opacity: 0;
+}
+
+/* character 4*/
+
+.c4 {
+  position: relative;
+  margin-left: -4.1%;
+  margin-bottom: 18%;
+  cursor: pointer;
+  z-index: 5;
+  opacity: 0;
+  width: 19.4%;
+}
+
+.c4:hover {
+  opacity: 1;
+}
+
+.c4c {
+  position: relative;
+  margin-left: 10%;
+  margin-bottom: 42%;
+  cursor: pointer;
+  z-index: 5;
+  opacity: 0;
+}
+
+/* character 5*/
+
+.c5 {
+  position: relative;
+  margin-left: -34.3%;
+  margin-bottom: 1%;
+  cursor: pointer;
+  z-index: 6;
+  opacity: 0;
+  width: 20%;
+}
+
+.c5:hover {
+  opacity: 1;
+}
+
+.c5c {
+  position: relative;
+  margin-left: -50%;
+  margin-bottom: 27%;
+  cursor: pointer;
+  z-index: 6;
+  opacity: 0;
+  width: 20%;
+}
+
+/* Adjust Banner test */
+
+.Feature {
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  bottom: 8%;
+  left: 30%;
+  color: white;
+  z-index: 7;
+}
+
+/* Make paragraph center */
+
+.blockContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gridBlock > * {
+  margin: 0px;
+}
+
+/* Adjust Pagetitle */
+
+.container.paddingTop {
+  padding-top: 50px;
+}
+
+.container.paddingBottom {
+  padding-bottom: 50px;
+}
+
+#Test1Page {
+  padding-top: 0px;
+}
+
+#Test2Page {
+  padding-top: 0px;
+}
+
+/* Adjust footer  */
+/* Adjust footer company */
+#company {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 20px;
+}
+
+#footer > section.sitemap > div:nth-child(4) {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* Adjust footer team */
+#team {
+  display: flex;
+  color: white;
+  margin-top: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+#footer > section.sitemap > div:nth-child(2) {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 735px) {
+  img {
+    max-width: 100%;
+  }
+
+  /* Adjust Banner img */
+  body {
+    background-color: #F7F7F7;
+  }
+
+  .landingPage > .mainContainer {
+    padding: 0px 0px;
+    position: relative;
+    top: 28px;
+  }
+
+  .container.paddingBottom {
+    padding-bottom: 20px;
+  }
+
+  .imageAlignSide .blockImage {
+    display: block;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
+    font-size: 25px;
+    letter-spacing: 20px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) {
+    margin-left: 0px;
+  }
+
+  .mainContainer > div:nth-child(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #01 {
+    padding-bottom: 20px;
+  }
+
+  ＃01 > .wrapper > .gridBlock {
+    width: 50%;
+  }
+
+  #\30
+
+2 > div > div > div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageAlignRight .blockImage {
+    margin-left: 0px;
+    flex: 0 1 0px;
+    max-width: 500px;
+  }
+
+  .container .wrapper .alignCenter h2 {
+    text-align: center;
+  }
+
+  .video-container {
+    margin: 0px;
+  }
+
+  #\30
+
+3 > div > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageAlignSide .blockImage {
+    flex: 0 1 0px;
+    max-width: 500px;
+  }
+
+  #\30
+
+2 > div > div > div > div.blockContent > h2 {
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  .container .wrapper .alignCenter h2 {
+    text-align: center;
+  }
+
+  .imageAlignLeft .blockImage {
+    margin-right: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 {
+    margin: 15px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
+    padding: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
+    margin: auto;
+    font-size: 15px;
+    padding: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) {
+    padding-bottom: 0px;
+  }
+
+  #\30
+
+3 > div > div > div > div.blockContent > h2 {
+    margin: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
+    padding: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
+    margin: auto;
+    font-size: 15px;
+    padding: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 {
+    margin: 15px;
+  }
+
+  #footer > section.sitemap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left: 50px;
+  }
+
+  #footer > section.sitemap > div:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
+    padding: 30px;
+    padding-top: 10px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
+    padding: 30px;
+    padding-top: 10px;
+  }
+
+  #sidebar-wrapper {
+    top: 0px;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    top: 0px;
+    width: 100%;
+    background-color: white;
+  }
+
+  i {
+    float: left;
+    margin: 20px;
+  }
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 735px) {
+  img {
+    max-width: 100%;
+  }
+
+  /* Adjust Banner img */
+  body {
+    background-color: #F7F7F7;
+  }
+
+  .landingPage > .mainContainer {
+    padding: 0px 0px;
+    position: relative;
+    top: 28px;
+  }
+
+  .container.paddingBottom {
+    padding-bottom: 20px;
+  }
+
+  .imageAlignSide .blockImage {
+    display: block;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
+    font-size: 25px;
+    letter-spacing: 20px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) {
+    margin-left: 0px;
+  }
+
+  .mainContainer > div:nth-child(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #01 {
+    padding-bottom: 20px;
+  }
+
+  ＃01 > .wrapper > .gridBlock {
+    width: 50%;
+  }
+
+  #\30
+
+2 > div > div > div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageAlignRight .blockImage {
+    margin-left: 0px;
+    flex: 0 1 0px;
+    max-width: 500px;
+  }
+
+  .container .wrapper .alignCenter h2 {
+    text-align: center;
+  }
+
+  .video-container {
+    margin: 0px;
+  }
+
+  #\30
+
+3 > div > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageAlignSide .blockImage {
+    flex: 0 1 0px;
+    max-width: 500px;
+  }
+
+  #\30
+
+2 > div > div > div > div.blockContent > h2 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .container .wrapper .alignCenter h2 {
+    text-align: center;
+  }
+
+  .imageAlignLeft .blockImage {
+    margin-right: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 {
+    margin: 15px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
+    padding: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
+    margin: auto;
+    font-size: 15px;
+    padding: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) {
+    padding-bottom: 0px;
+  }
+
+  #\30
+
+3 > div > div > div > div.blockContent > h2 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
+    padding: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
+    margin: auto;
+    font-size: 15px;
+    padding: 0px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 {
+    margin: 15px;
+  }
+
+  #footer > section.sitemap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left: 50px;
+  }
+
+  #footer > section.sitemap > div:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
+    padding: 30px;
+    padding-top: 10px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
+    padding: 30px;
+    padding-top: 10px;
+  }
+
+  #sidebar-wrapper {
+    top: 0px;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    top: 0px;
+    width: 100%;
+    background-color: white;
+  }
+
+  i {
+    float: left;
+    margin: 20px;
+  }
+
+  #01 {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 736px) and (max-width: 1024px) {
+  img {
+    max-width: 100%;
+  }
+
+  .wrapper {
+    padding: 40px;
+  }
+
+  #\30
+
+00 > div {
+     padding: 0px;
+   }
+
+  /* hamburger bar */
+  .menu-toggle {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -102,51 +814,10 @@ p {
     cursor: pointer;
     margin-top: 0px;
     margin-left: 0px;
-}
+  }
 
-.menu-toggle:hover {
-    background: transparent;
-}
-
-
-a:not([href]) {
-    text-decoration: none;
-}
-
-.landingPage > .mainContainer {
-    padding: 0px 0px;
-}
-
-/* remove nav bar */
-.fixedHeaderContainer {
-    display: none;
-}
-
-.singleRowMobileNav.navPusher {
-    padding-top: 0px;
-}
-
-/* adjust video */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0px;
-    overflow: hidden;
-    margin: 50px;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Adjust Banner img */
-
-#BannerTitle {
+  /* Adjust Banner img */
+  #BannerTitle {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -155,17 +826,16 @@ a:not([href]) {
     background-size: 100%;
     background-position: left top;
     max-height: 1360px;
-}
+    top: 0px;
+  }
 
-/* Dialog size */
-
-.textImg {
+  /* Dialog size */
+  .textImg {
     width: 15%;
-}
+  }
 
-/* character 1*/
-
-.c1 {
+  /* character 1*/
+  .c1 {
     position: relative;
     margin-left: -3.1%;
     margin-top: 17.5%;
@@ -173,24 +843,23 @@ a:not([href]) {
     z-index: 2;
     opacity: 0;
     width: 20.5%;
-}
+  }
 
-.c1:hover {
+  .c1:hover {
     opacity: 1;
-}
+  }
 
-.c1c {
+  .c1c {
     position: relative;
     margin-left: 30%;
     margin-bottom: 28%;
     cursor: pointer;
     z-index: 2;
     opacity: 0;
-}
+  }
 
-/* character 2*/
-
-.c2 {
+  /* character 2*/
+  .c2 {
     position: relative;
     margin-left: 0.69%;
     margin-bottom: 30.3%;
@@ -198,24 +867,23 @@ a:not([href]) {
     z-index: 3;
     opacity: 0;
     width: 15.9%;
-}
+  }
 
-.c2:hover {
+  .c2:hover {
     opacity: 1;
-}
+  }
 
-.c2c {
+  .c2c {
     position: relative;
     margin-left: -32%;
     margin-bottom: 37%;
     cursor: pointer;
     z-index: 3;
     opacity: 0;
-}
+  }
 
-/* character 3*/
-
-.c3 {
+  /* character 3*/
+  .c3 {
     position: relative;
     margin-left: -27.8%;
     margin-bottom: 22%;
@@ -223,24 +891,23 @@ a:not([href]) {
     z-index: 4;
     opacity: 0;
     width: 20%;
-}
+  }
 
-.c3:hover {
+  .c3:hover {
     opacity: 1;
-}
+  }
 
-.c3c {
+  .c3c {
     position: relative;
     margin-left: -31%;
     margin-bottom: 35%;
     cursor: pointer;
     z-index: 4;
     opacity: 0;
-}
+  }
 
-/* character 4*/
-
-.c4 {
+  /* character 4*/
+  .c4 {
     position: relative;
     margin-left: -4.1%;
     margin-bottom: 18%;
@@ -248,24 +915,23 @@ a:not([href]) {
     z-index: 5;
     opacity: 0;
     width: 19.4%;
-}
+  }
 
-.c4:hover {
+  .c4:hover {
     opacity: 1;
-}
+  }
 
-.c4c {
+  .c4c {
     position: relative;
     margin-left: 10%;
     margin-bottom: 42%;
     cursor: pointer;
     z-index: 5;
     opacity: 0;
-}
+  }
 
-/* character 5*/
-
-.c5 {
+  /* character 5*/
+  .c5 {
     position: relative;
     margin-left: -34.3%;
     margin-bottom: 1%;
@@ -273,13 +939,13 @@ a:not([href]) {
     z-index: 6;
     opacity: 0;
     width: 20%;
-}
+  }
 
-.c5:hover {
+  .c5:hover {
     opacity: 1;
-}
+  }
 
-.c5c {
+  .c5c {
     position: relative;
     margin-left: -50%;
     margin-bottom: 27%;
@@ -287,819 +953,177 @@ a:not([href]) {
     z-index: 6;
     opacity: 0;
     width: 20%;
-}
+  }
 
-/* Adjust Banner test */
+  #\30
 
-.Feature {
-    width: 40%;
-    margin: auto;
-    position: absolute;
-    bottom: 8%;
-    left: 30%;
-    color: white;
-    z-index: 7;
-}
+1 > div {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-/* Make paragraph center */
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
+    font-size: 30px;
+    letter-spacing: 30px;
+  }
 
-.blockContent {
+  .gridBlock > * {
+    margin: 0px;
+  }
+
+  .container.paddingBottom {
+    padding-bottom: 50px;
+  }
+
+  .imageAlignSide .blockImage {
+    flex: 0 1 100px;
+    max-width: 800px;
+  }
+
+  .imageAlignRight .blockImage {
+    margin-left: 0px;
+  }
+
+  .imageAlignLeft .blockImage {
+    margin-right: 0px;
+  }
+
+  .container .wrapper .imageAlignSide p {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 800px;
+  }
+
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-/* Adjust Pagetitle */
-
-.container.paddingTop {
-    padding-top: 50px;
-}
-
-.container.paddingBottom {
-    padding-bottom: 50px;
-}
-
-#Test1Page {
-    padding-top: 0px;
-}
-
-#Test2Page {
-    padding-top: 0px;
-}
-
-/* Adjust footer  */
-/* Adjust footer company */
-#company {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-top: 20px;
-}
-
-#footer > section.sitemap > div:nth-child(4) {
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-/* Adjust footer team */
-#team {
-    display: flex;
-    color: white;
-    margin-top: 20px;
-}
-
-h5 {
-    font-size: 16px;
-}
-
-#footer > section.sitemap > div:nth-child(2) {
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 735px) {
-    img {
-        max-width: 100%;
-    }
-
-    /* Adjust Banner img */
-    body {
-        background-color: #F7F7F7;
-    }
-
-    .landingPage > .mainContainer {
-        padding: 0px 0px;
-        position: relative;
-        top: 28px;
-    }
-
-    .container.paddingBottom {
-        padding-bottom: 20px;
-    }
-
-    .imageAlignSide .blockImage {
-        display: block;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
-        font-size: 25px;
-        letter-spacing: 20px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) {
-        margin-right: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) {
-        margin-left: 0px;
-    }
-
-    .mainContainer > div:nth-child(2) > div > div {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    #01 {
-        padding-bottom: 20px;
-    }
-
-    ＃01 > .wrapper > .gridBlock {
-        width: 50%;
-    }
-
-    #\30
-
-2 > div > div > div {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
   }
 
-    .imageAlignRight .blockImage {
-        margin-left: 0px;
-        flex: 0 1 0px;
-        max-width: 500px;
-    }
-
-    .container .wrapper .alignCenter h2 {
-        text-align: center;
-    }
-
-    .video-container {
-        margin: 0px;
-    }
-
-    #\30
-
-3 > div > div > div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent > h2 > div > span > p {
+    font-size: 25px;
   }
 
-    .imageAlignSide .blockImage {
-        flex: 0 1 0px;
-        max-width: 500px;
-    }
-
-    #\30
-
-2 > div > div > div > div.blockContent > h2 {
-      margin: 0px;
-      font-size: 20px;
+  .container.paddingBottom {
+    padding-bottom: 20px;
   }
 
-    .container .wrapper .alignCenter h2 {
-        text-align: center;
-    }
-
-    .imageAlignLeft .blockImage {
-        margin-right: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 {
-        margin: 15px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
-        padding: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
-        margin: auto;
-        font-size: 15px;
-        padding: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
-        display: flex;
-        justify-content: center;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) {
-        padding-bottom: 0px;
-    }
-
-    #\30
-
-3 > div > div > div > div.blockContent > h2 {
-      margin: 0px;
+  .video-container {
+    margin: 50px;
   }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
-        padding: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
-        margin: auto;
-        font-size: 15px;
-        padding: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
-        display: flex;
-        justify-content: center;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 {
-        margin: 15px;
-    }
-
-    #footer > section.sitemap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        padding-left: 50px;
-    }
-
-    #footer > section.sitemap > div:nth-child(2) {
-        margin-bottom: 40px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
-        font-size: 20px;
-        letter-spacing: 10px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
-        padding: 30px;
-        padding-top: 10px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
-        padding: 30px;
-        padding-top: 10px;
-    }
-
-    #sidebar-wrapper {
-        top: 0px;
-        z-index: 1000;
-    }
-
-    .menu-toggle {
-        top: 0px;
-        width: 100%;
-        background-color: white;
-    }
-
-    i {
-        float: left;
-        margin: 20px;
-    }
-
-
-}
-
-@media only screen and (min-width: 320px) and (max-width: 735px) {
-    img {
-        max-width: 100%;
-    }
-
-    /* Adjust Banner img */
-    body {
-        background-color: #F7F7F7;
-    }
-
-    .landingPage > .mainContainer {
-        padding: 0px 0px;
-        position: relative;
-        top: 28px;
-    }
-
-    .container.paddingBottom {
-        padding-bottom: 20px;
-    }
-
-    .imageAlignSide .blockImage {
-        display: block;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
-        font-size: 25px;
-        letter-spacing: 20px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(1) {
-        margin-right: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(2) > div > div > div:nth-child(2) {
-        margin-left: 0px;
-    }
-
-    .mainContainer > div:nth-child(2) > div > div {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    #01 {
-        padding-bottom: 20px;
-    }
-
-    ＃01 > .wrapper > .gridBlock {
-        width: 50%;
-    }
-
-    #\30
-
-2 > div > div > div {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-  }
-
-    .imageAlignRight .blockImage {
-        margin-left: 0px;
-        flex: 0 1 0px;
-        max-width: 500px;
-    }
-
-    .container .wrapper .alignCenter h2 {
-        text-align: center;
-    }
-
-    .video-container {
-        margin: 0px;
-    }
-
-    #\30
-
-3 > div > div > div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-    .imageAlignSide .blockImage {
-        flex: 0 1 0px;
-        max-width: 500px;
-    }
-
-    #\30
-
-2 > div > div > div > div.blockContent > h2 {
-      margin-top: 20px;
-      font-size: 20px;
-  }
-
-    .container .wrapper .alignCenter h2 {
-        text-align: center;
-    }
-
-    .imageAlignLeft .blockImage {
-        margin-right: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 {
-        margin: 15px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
-        padding: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
-        margin: auto;
-        font-size: 15px;
-        padding: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div {
-        display: flex;
-        justify-content: center;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) {
-        padding-bottom: 0px;
-    }
-
-    #\30
-
-3 > div > div > div > div.blockContent > h2 {
-      margin-top: 20px;
-      font-size: 20px;
-  }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
-        padding: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
-        margin: auto;
-        font-size: 15px;
-        padding: 0px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div {
-        display: flex;
-        justify-content: center;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 {
-        margin: 15px;
-    }
-
-    #footer > section.sitemap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        padding-left: 50px;
-    }
-
-    #footer > section.sitemap > div:nth-child(2) {
-        margin-bottom: 40px;
-    }
-
-    p {
-        font-size: 10px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
-        font-size: 20px;
-        letter-spacing: 10px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
-        padding: 30px;
-        padding-top: 10px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
-        padding: 30px;
-        padding-top: 10px;
-    }
-
-    #sidebar-wrapper {
-        top: 0px;
-        z-index: 1000;
-    }
-
-    .menu-toggle {
-        top: 0px;
-        width: 100%;
-        background-color: white;
-    }
-
-    i {
-        float: left;
-        margin: 20px;
-    }
-
-    #01 {
-        padding-bottom: 20px;
-    }
-}
-
-@media only screen and (min-width: 736px) and (max-width: 1024px) {
-    img {
-        max-width: 100%;
-    }
-
-    .wrapper {
-        padding: 40px;
-    }
-
-    #\30
-
-00 > div {
-       padding: 0px;
-   }
-
-    /* hamburger bar */
-    .menu-toggle {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        color: rgb(1, 51, 83);
-        background: transparent;
-        line-height: 50px;
-        z-index: 999;
-        cursor: pointer;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    /* Adjust Banner img */
-    #BannerTitle {
-        display: block;
-        position: relative;
-        margin: 0 auto;
-        background-repeat: no-repeat;
-        background-image: url("../img/pc.jpg");
-        background-size: 100%;
-        background-position: left top;
-        max-height: 1360px;
-        top: 0px;
-    }
-
-    /* Dialog size */
-    .textImg {
-        width: 15%;
-    }
-
-    /* character 1*/
-    .c1 {
-        position: relative;
-        margin-left: -3.1%;
-        margin-top: 17.5%;
-        cursor: pointer;
-        z-index: 2;
-        opacity: 0;
-        width: 20.5%;
-    }
-
-    .c1:hover {
-        opacity: 1;
-    }
-
-    .c1c {
-        position: relative;
-        margin-left: 30%;
-        margin-bottom: 28%;
-        cursor: pointer;
-        z-index: 2;
-        opacity: 0;
-    }
-
-    /* character 2*/
-    .c2 {
-        position: relative;
-        margin-left: 0.69%;
-        margin-bottom: 30.3%;
-        cursor: pointer;
-        z-index: 3;
-        opacity: 0;
-        width: 15.9%;
-    }
-
-    .c2:hover {
-        opacity: 1;
-    }
-
-    .c2c {
-        position: relative;
-        margin-left: -32%;
-        margin-bottom: 37%;
-        cursor: pointer;
-        z-index: 3;
-        opacity: 0;
-    }
-
-    /* character 3*/
-    .c3 {
-        position: relative;
-        margin-left: -27.8%;
-        margin-bottom: 22%;
-        cursor: pointer;
-        z-index: 4;
-        opacity: 0;
-        width: 20%;
-    }
-
-    .c3:hover {
-        opacity: 1;
-    }
-
-    .c3c {
-        position: relative;
-        margin-left: -31%;
-        margin-bottom: 35%;
-        cursor: pointer;
-        z-index: 4;
-        opacity: 0;
-    }
-
-    /* character 4*/
-    .c4 {
-        position: relative;
-        margin-left: -4.1%;
-        margin-bottom: 18%;
-        cursor: pointer;
-        z-index: 5;
-        opacity: 0;
-        width: 19.4%;
-    }
-
-    .c4:hover {
-        opacity: 1;
-    }
-
-    .c4c {
-        position: relative;
-        margin-left: 10%;
-        margin-bottom: 42%;
-        cursor: pointer;
-        z-index: 5;
-        opacity: 0;
-    }
-
-    /* character 5*/
-    .c5 {
-        position: relative;
-        margin-left: -34.3%;
-        margin-bottom: 1%;
-        cursor: pointer;
-        z-index: 6;
-        opacity: 0;
-        width: 20%;
-    }
-
-    .c5:hover {
-        opacity: 1;
-    }
-
-    .c5c {
-        position: relative;
-        margin-left: -50%;
-        margin-bottom: 27%;
-        cursor: pointer;
-        z-index: 6;
-        opacity: 0;
-        width: 20%;
-    }
-
-    #\30
-
-1 > div {
-      padding-left: 40px;
-      padding-right: 40px;
-  }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(1) > div > div > div > div > h2 > div > span > p {
-        font-size: 30px;
-        letter-spacing: 30px;
-    }
-
-    .gridBlock > * {
-        margin: 0px;
-    }
-
-    .container.paddingBottom {
-        padding-bottom: 50px;
-    }
-
-    .imageAlignSide .blockImage {
-        flex: 0 1 100px;
-        max-width: 800px;
-    }
-
-    .imageAlignRight .blockImage {
-        margin-left: 0px;
-    }
-
-    .imageAlignLeft .blockImage {
-        margin-right: 0px;
-    }
-
-    .container .wrapper .imageAlignSide p {
-        margin: 0;
-        margin-bottom: 40px;
-        max-width: 800px;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(8) > div > div > div > div.blockContent > h2 > div > span > p {
-        font-size: 25px;
-    }
-
-    .container.paddingBottom {
-        padding-bottom: 20px;
-    }
-
-    .video-container {
-        margin: 50px;
-    }
-
-    #\30
+  #\30
 
 2 {
-    padding: 0px;
+  padding: 0px;
 }
-    #\30
+  #\30
 
 2 > div {
-      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
 
-    #\30
+  #\30
 
 2 > div > div > div {
-      display: flex;
-      flex-direction: column-reverse;
-      align-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
   }
 
-    .container.paddingTop {
-        padding-top: 50px;
-    }
+  .container.paddingTop {
+    padding-top: 50px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) > div {
-        padding-bottom: 0px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(7) > div {
+    padding-bottom: 0px;
+  }
 
-    #\30
+  #\30
 
 3 > div {
-      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
 
-    #\30
+  #\30
 
 3 > div > div > div {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
 
-    #\30
+  #\30
 
 3 {
-    padding: 0px;
+  padding: 0px;
 }
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(10) > div {
-        padding: 0px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(10) > div {
+    padding: 0px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(10) {
-        padding-bottom: 0px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(10) {
+    padding-bottom: 0px;
+  }
 
-    .nav-footer .sitemap {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 3em;
-    }
+  .nav-footer .sitemap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 3em;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
-        padding: 0px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(7) {
+    padding: 0px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
-        padding: 0px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(11) {
+    padding: 0px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(6) {
-        padding-bottom: 0px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div.mainContainer > div:nth-child(6) {
+    padding-bottom: 0px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
-        font-size: 30px;
-        padding-left: 70px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) > div > div > div > div > h2 > div > span > p {
+    font-size: 30px;
+    padding-left: 70px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
-        padding: 30px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(6) {
+    padding: 30px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
-        padding: 30px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) {
+    padding: 30px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
-        font-size: 30px;
-        padding-left: 70px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div > div:nth-child(10) > div > div > div > div > h2 > div > span > p {
+    font-size: 30px;
+    padding-left: 70px;
+  }
 
-    .menu-toggle {
-        top: 0px;
-        width: 100%;
-        background-color: white;
-    }
+  .menu-toggle {
+    top: 0px;
+    width: 100%;
+    background-color: white;
+  }
 
-    i {
-        float: left;
-        margin: 20px;
-    }
+  i {
+    float: left;
+    margin: 20px;
+  }
 
-    body > div.navPusher.singleRowMobileNav > div > div.mainContainer {
-        margin-top: 50px;
-    }
+  body > div.navPusher.singleRowMobileNav > div > div.mainContainer {
+    margin-top: 50px;
+  }
 
-    #footer {
-        padding: 30px;
-    }
+  #footer {
+    padding: 30px;
+  }
 
-    .menu-toggle:hover {
-        background: white;
-    }
+  .menu-toggle:hover {
+    background: white;
+  }
 }
