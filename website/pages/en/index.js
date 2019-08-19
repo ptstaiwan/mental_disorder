@@ -90,7 +90,7 @@ class Index extends React.Component {
       return (
         <ul className="sidebar-nav">
           <li className="sidebar-brand">
-            <a href="#BannerTitle">酒駕罪有應得</a>
+            <a href="#BannerTitle">與精神疾病的真實距離</a>
           </li>
           {listItems}
         </ul>
@@ -110,7 +110,7 @@ class Index extends React.Component {
     const BannerTitle = () => (
       <div id="BannerTitle">
         <div className="Feature">
-          <h2><p>我有病嗎？與精神疾病的真實距離</p></h2>
+          <h2><p>我有病嗎？<br/>與精神疾病的真實距離</p></h2>
           <p>什麼是精神疾病？所謂的精神症狀距離我們究竟有多遠？宗辰曾經是咖啡店員，玉如是護理師，他們都在二十多歲發病，同一般人的外表下，他們和精神症狀共處多年。點選人物，或往下閱讀，他們的故事。</p>
         </div>
         <img src= "http://localhost:3000/newslab-demo/img/c1c.png" alt="text" className="textImg c1c"/>
@@ -127,7 +127,7 @@ class Index extends React.Component {
     );
 
     const Test1image = () => (
-      <Block id="Test1image" layout="threeColumn" background="light" align="left">
+      <Block id="Test1image" layout="twoColumn" background="light" align="left">
         {[
           {
             title: '玉如與「思覺失調症」共處6年',
@@ -176,7 +176,7 @@ class Index extends React.Component {
     );
 
     const Test2image = () => (
-      <Block id="Test2image" layout="threeColumn" background="light">
+      <Block id="Test2image" layout="twoColumn" background="light">
         {[
           {
             title: '宗辰與「強迫症」共處15年',

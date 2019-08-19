@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     e.stopPropagation();
   });
-  navBar.addEventListener("touchend", function (e) {
+  navBar.addEventListener("touch", function (e) {
     var sidebarStatus = document.getElementById('sidebar-wrapper');
     if (sidebarStatus.style.left === '-500px') {
       sidebarStatus.style.cssText += 'left:-250px';
@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', function () {
       document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
-  document.getElementsByTagName('body')[0].addEventListener("touchend", function () {
+  document.getElementsByTagName('body')[0].addEventListener("touch", function () {
     if (sidebarStatus.style.left === '-250px') {
       sidebarStatus.style.cssText += 'left:-500px';
       document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
