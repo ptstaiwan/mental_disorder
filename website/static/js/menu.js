@@ -75,18 +75,19 @@ window.addEventListener('DOMContentLoaded', function () {
   /* add mouseover event on character pictures */
 
   var dialog = document.getElementsByClassName('textImg');
-  for(var i = 0; i < 5; i++){
+  for (var i = 0; i < 5; i++) {
     character[i].addEventListener('mouseover', add(i));
   }
+
   function add(i) {
-    return function(){
+    return function () {
       dialog[i].style.cssText += 'opacity: 1';
     }
   }
 
   /* add mouseout event on character pictures */
 
-  for(let i = 0; i < 5; i++){
+  for (let i = 0; i < 5; i++) {
     character[i].addEventListener('mouseout', function () {
       dialog[i].style.cssText += 'opacity: 0';
     });

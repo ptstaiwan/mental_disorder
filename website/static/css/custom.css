@@ -385,36 +385,37 @@ h5 {
 @media only screen and (min-width: 320px) and (max-width: 735px) {
 
   /* Adjust hamburger bar */
-
   #sidebar-wrapper {
     top: 0px;
     z-index: 1000;
   }
+
   .menu-toggle {
     top: 0px;
     width: 100%;
     background-color: white;
   }
+
   i {
     float: left;
     margin: 20px;
   }
+
   .mainContainer {
     margin-top: 50px;
   }
 
   /* Adjust Banner */
-
   /* Adjust words */
-  h2{
+  h2 {
     margin-bottom: 0px;
   }
 
   /* All div's padding */
-
   .container.paddingTop {
     padding-top: 0px;
   }
+
   .container.paddingBottom {
     padding-bottom: 50px;
   }
@@ -423,12 +424,15 @@ h5 {
   #Test1image h2 {
     width: 100%;
   }
+
   .imageAlignSide .blockImage {
     display: block;
   }
+
   .imageAlignRight .blockImage, .imageAlignLeft .blockImage {
     margin: 0px;
   }
+
   #Test1image > .wrapper > .gridBlock > .blockElement {
     display: flex;
     flex-direction: column;
@@ -442,30 +446,30 @@ h5 {
     justify-content: center;
     align-content: center;
   }
+
   .imageAlignSide .blockImage {
     flex: 0;
   }
 
   /* Test1Pagetitle & Test2Pagetitle */
-
   #Test1Pagetitle.container.paddingBottom, #Test2Pagetitle.container.paddingBottom {
     padding-bottom: 0px;
   }
 
   /* video margin */
-
   .video-container {
     margin: 0px;
   }
 
-/* Adjust footer */
+  /* Adjust footer */
   #footer > section.sitemap {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
   }
-/* Adjust footer PTS block */
+
+  /* Adjust footer PTS block */
   #footer > section.sitemap > div:nth-child(2) {
     margin-bottom: 40px;
   }

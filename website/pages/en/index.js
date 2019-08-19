@@ -98,7 +98,7 @@ class Index extends React.Component {
     }
 
     const numbers = [{id: 2, href: <a className="js-scroll-trigger" href="#Test1image">人物一</a>},
-                     {id: 3, href: <a className="js-scroll-trigger" href="#Test2image">人物二</a>}];
+      {id: 3, href: <a className="js-scroll-trigger" href="#Test2image">人物二</a>}];
 
     const SideBar = () => (
       <nav id="sidebar-wrapper">
@@ -113,16 +113,16 @@ class Index extends React.Component {
           <h2><p>我有病嗎？<br/>與精神疾病的真實距離</p></h2>
           <p>什麼是精神疾病？所謂的精神症狀距離我們究竟有多遠？宗辰曾經是咖啡店員，玉如是護理師，他們都在二十多歲發病，同一般人的外表下，他們和精神症狀共處多年。點選人物，或往下閱讀，他們的故事。</p>
         </div>
-        <img src= "http://localhost:3000/newslab-demo/img/c1c.png" alt="text" className="textImg c1c"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c1.png" alt="text" className=" character c1"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c2c.png" alt="text" className="textImg c2c"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c2.png" alt="text" className=" character c2"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c3c.png" alt="text" className="textImg c3c"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c3.png" alt="text" className=" character c3"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c4c.png" alt="text" className="textImg c4c"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c4.png" alt="text" className=" character c4"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c5c.png" alt="text" className="textImg c5c"/>
-        <img src= "http://localhost:3000/newslab-demo/img/c5.png" alt="text" className=" character c5"/>
+        <img src="http://localhost:3000/newslab-demo/img/c1c.png" alt="text" className="textImg c1c"/>
+        <img src="http://localhost:3000/newslab-demo/img/c1.png" alt="text" className=" character c1"/>
+        <img src="http://localhost:3000/newslab-demo/img/c2c.png" alt="text" className="textImg c2c"/>
+        <img src="http://localhost:3000/newslab-demo/img/c2.png" alt="text" className=" character c2"/>
+        <img src="http://localhost:3000/newslab-demo/img/c3c.png" alt="text" className="textImg c3c"/>
+        <img src="http://localhost:3000/newslab-demo/img/c3.png" alt="text" className=" character c3"/>
+        <img src="http://localhost:3000/newslab-demo/img/c4c.png" alt="text" className="textImg c4c"/>
+        <img src="http://localhost:3000/newslab-demo/img/c4.png" alt="text" className=" character c4"/>
+        <img src="http://localhost:3000/newslab-demo/img/c5c.png" alt="text" className="textImg c5c"/>
+        <img src="http://localhost:3000/newslab-demo/img/c5.png" alt="text" className=" character c5"/>
       </div>
     );
 
@@ -138,6 +138,15 @@ class Index extends React.Component {
         ]}
       </Block>
     );
+
+
+    const Video1 = () => (
+      <div id="Video1" className="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      </div>
+    );
+
     const Test1Pagetitle = () => (
       <Block id="Test1Pagetitle" layout="Column" background="light" align="left">
         {[
@@ -146,13 +155,6 @@ class Index extends React.Component {
           },
         ]}
       </Block>
-    );
-
-    const Video1 = () => (
-      <div id="Video1" className="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
-      </div>
     );
 
     const Test1Page = () => (
@@ -187,6 +189,14 @@ class Index extends React.Component {
       </Block>
     );
 
+
+    const Video2 = () => (
+      <div id="Video2" className="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      </div>
+    );
+
     const Test2Pagetitle = () => (
       <Block id="Test2Pagetitle" layout="Column" background="light" align="left">
         {[
@@ -195,14 +205,6 @@ class Index extends React.Component {
           },
         ]}
       </Block>
-    );
-
-
-    const Video2 = () => (
-      <div id="Video2" className="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
-      </div>
     );
 
     const Test2Page = () => (
