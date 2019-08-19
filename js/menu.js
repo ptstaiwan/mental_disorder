@@ -1,20 +1,26 @@
-window.addEventListener('DOMContentLoaded',function () {
+window.addEventListener('DOMContentLoaded', function () {
+
+  /* add css attribute on loading page */
+
   document.getElementById('loading').style.cssText += 'opacity:100; height: 100vh;';
+
+  /* when the page loading, get the current width to display the right img */
+
   var currentWidth = document.body.clientWidth;
   var limit = 1025;
-  var bannerImg1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockImage > a > img');
-  var bannerImg2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockImage > a > img');
-  var img1 = document.querySelector('#\\30 2 > div > div > div > div.blockImage > img');
-  var img2 = document.querySelector('#\\30 3 > div > div > div > div.blockImage > img');
-  if(limit > currentWidth){
-    img1.src="img/1.jpg";
-    img2.src='img/2.jpg';
-    bannerImg1.src = "img/1.jpg";
-    bannerImg2.src = 'img/2.jpg';
+  var img1 = document.querySelector('#Test1image > div > div > div > div.blockImage > img');
+  var img2 = document.querySelector('#Test2image > div > div > div > div.blockImage > img');
+  if (limit > currentWidth) {
+    img1.src = "img/1.jpg";
+    img2.src = 'img/2.jpg';
   }
+
   var navBar = document.getElementsByClassName('menu-toggle')[0];
   var sidebarStatus = document.getElementById('sidebar-wrapper');
   sidebarStatus.style.cssText += 'left:-500px';
+
+  /* when we click on icon, close or open hamburger bar & change icon */
+
   navBar.addEventListener("click", function (e) {
     var sidebarStatus = document.getElementById('sidebar-wrapper');
     if (sidebarStatus.style.left === '-500px') {
@@ -28,50 +34,87 @@ window.addEventListener('DOMContentLoaded',function () {
     }
     e.stopPropagation();
   });
+  navBar.addEventListener("touch", function (e) {
+    var sidebarStatus = document.getElementById('sidebar-wrapper');
+    if (sidebarStatus.style.left === '-500px') {
+      sidebarStatus.style.cssText += 'left:-250px';
+      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-times"></i>';
+    } else if (sidebarStatus.style.left === '-250px') {
+      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
+      sidebarStatus.style.cssText += 'left:-500px';
+    } else {
+      console.log("nope");
+    }
+    e.stopPropagation();
+  });
+  /* when we click on body, close hamburger bar */
+
   document.getElementsByTagName('body')[0].addEventListener("click", function () {
-    if(sidebarStatus.style.left === '-250px'){
+    if (sidebarStatus.style.left === '-250px') {
       sidebarStatus.style.cssText += 'left:-500px';
       document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
-  var link1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockContent > div > span > p');
-  link1.addEventListener('click',function () {
-    window.location.href='#02';
+  document.getElementsByTagName('body')[0].addEventListener("touch", function () {
+    if (sidebarStatus.style.left === '-250px') {
+      sidebarStatus.style.cssText += 'left:-500px';
+      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
+    }
   });
-  var link2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockContent > div > span > p');
-  link2.addEventListener('click',function () {
-    window.location.href='#03';
+
+  /* add click event on character pictures */
+
+  var character = document.getElementsByClassName('character');
+  character[0].addEventListener('click', function () {
+    window.location.href = '#Test1image';
   });
+  character[1].addEventListener('click', function () {
+    window.location.href = '#Test2image';
+  });
+
+  /* add mouseover event on character pictures */
+
+  var dialog = document.getElementsByClassName('textImg');
+  for (var i = 0; i < 5; i++) {
+    character[i].addEventListener('mouseover', add(i));
+  }
+
+  function add(i) {
+    return function () {
+      dialog[i].style.cssText += 'opacity: 1';
+    }
+  }
+
+  /* add mouseout event on character pictures */
+
+  for (let i = 0; i < 5; i++) {
+    character[i].addEventListener('mouseout', function () {
+      dialog[i].style.cssText += 'opacity: 0';
+    });
+  }
 });
 
-window.addEventListener('load',function () {
+/* when the page is already rendered, the loading page will disappear */
+
+window.addEventListener('load', function () {
   document.getElementById('loading').style.cssText += 'opacity:0; height: 0vh;';
 });
 
+/* when the page resizing, get the current width to display the right img */
 
-window.addEventListener('resize',function () {
+window.addEventListener('resize', function () {
   var currentWidth = document.body.clientWidth;
-  var bannerImg1 = document.querySelector('#\\30 0 > div > div > div:nth-child(1) > div.blockImage > a > img');
-  var bannerImg2 = document.querySelector('#\\30 0 > div > div > div:nth-child(2) > div.blockImage > a > img');
-  var img1 = document.querySelector('#\\30 2 > div > div > div > div.blockImage > img');
-  var img2 = document.querySelector('#\\30 3 > div > div > div > div.blockImage > img');
+  var img1 = document.querySelector('#Test1image > div > div > div > div.blockImage > img');
+  var img2 = document.querySelector('#Test2image > div > div > div > div.blockImage > img');
   var limit = 1025;
   if (limit > currentWidth) {
     img1.src = "img/1.jpg";
     img2.src = 'img/2.jpg';
-    bannerImg1.src = "img/1.jpg";
-    bannerImg2.src = 'img/2.jpg';
-  }else if (limit < currentWidth) {
-    if(bannerImg1.src === window.location + "img/1.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/1.jpg" || window.location + "/#03/img/1.jpg"){
-      bannerImg1.src = "img/respondent1.JPG";
-    }
-    if(bannerImg2.src === window.location + "img/2.jpg" || window.location + "/#00/img/1.jpg"  || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/2.jpg" || window.location + "/#03/img/2.jpg"){
-      bannerImg2.src = "img/respondent2.JPG";
-    }
-    if(img1.src === window.location + "img/1.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/1.jpg" || window.location + "/#03/img/1.jpg"){
+  } else if (limit < currentWidth) {
+    if (img1.src === window.location + "img/1.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/1.jpg" || window.location + "/#03/img/1.jpg") {
       img1.src = "img/respondent1.JPG";
     }
-    if(img2.src === window.location + "img/2.jpg" || window.location + "/#00/img/1.jpg"  || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/2.jpg" || window.location + "/#03/img/2.jpg"){
+    if (img2.src === window.location + "img/2.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/2.jpg" || window.location + "/#03/img/2.jpg") {
       img2.src = "img/respondent2.JPG";
     }
   }
