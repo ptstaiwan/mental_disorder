@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '酒駕罪有應得？！', // Title for your website.
+  title: '我有病嗎？與精神疾病的真實距離', // Title for your website.
   tagline: '公視 P# 新聞實驗室',
   url: 'https://newmedia.pts.org.tw', // Your website URL
   baseUrl: '/newslab-demo/', // Base URL for your project */
