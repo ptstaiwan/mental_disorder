@@ -139,6 +139,9 @@ class Index extends React.Component {
       </Block>
     );
 
+    const Scroll1 = () => (
+      <div id="scroll1"/>
+    );
 
     const Video1 = () => (
       <div id="Video1" className="video-container">
@@ -189,6 +192,9 @@ class Index extends React.Component {
       </Block>
     );
 
+    const Scroll2 = () => (
+      <div id="scroll2"/>
+    );
 
     const Video2 = () => (
       <div id="Video2" className="video-container">
@@ -235,10 +241,12 @@ class Index extends React.Component {
         <div className="mainContainer">
           <BannerTitle/>
           <Test1image/>
+          <Scroll1/>
           <Video1/>
           <Test1Pagetitle/>
           <Test1Page/>
           <Test2image/>
+          <Scroll2/>
           <Video2/>
           <Test2Pagetitle/>
           <Test2Page/>
