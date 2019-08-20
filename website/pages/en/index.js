@@ -154,7 +154,7 @@ class Index extends React.Component {
       <Block id="Test1Pagetitle" layout="Column" background="light" align="left">
         {[
           {
-            title: '人物一',
+            title: '玉如與「思覺失調症」共處6年',
           },
         ]}
       </Block>
@@ -207,7 +207,7 @@ class Index extends React.Component {
       <Block id="Test2Pagetitle" layout="Column" background="light" align="left">
         {[
           {
-            title: '人物二',
+            title: '宗辰與「強迫症」共處15年',
           },
         ]}
       </Block>
