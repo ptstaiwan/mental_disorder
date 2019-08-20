@@ -34,6 +34,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     e.stopPropagation();
   });
+  /* when we touch on icon, close or open hamburger bar & change icon */
   navBar.addEventListener("touch", function (e) {
     var sidebarStatus = document.getElementById('sidebar-wrapper');
     if (sidebarStatus.style.left === '-500px') {
@@ -55,6 +56,9 @@ window.addEventListener('DOMContentLoaded', function () {
       document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
+
+  /* when we touch on body, close hamburger bar */
+
   document.getElementsByTagName('body')[0].addEventListener("touch", function () {
     if (sidebarStatus.style.left === '-250px') {
       sidebarStatus.style.cssText += 'left:-500px';
