@@ -21,25 +21,17 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '酒駕罪有應得？！', // Title for your website.
+  title: '我有病嗎？與精神疾病的真實距離', // Title for your website.
   tagline: '公視 P# 新聞實驗室',
   url: 'https://newmedia.pts.org.tw', // Your website URL
   baseUrl: '/newslab-demo/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
 
   // Used for publishing and more
   projectName: 'newslab-demo',
   organizationName: 'ptstaiwan',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [
-    //{doc: 'story1', label: '故事'}
-  ],
+  headerLinks: [],
 
   /* path to images for header/footer */
   headerIcon: 'img/logo-p-white.svg',
@@ -54,18 +46,12 @@ const siteConfig = {
   },
 
   /* Custom fonts for website */
-  /*
   fonts: {
     myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
+      "Noto Sans TC",
+      "sans-serif"
     ]
   },
-  */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()}公視 P# 新聞實驗室`,
@@ -84,7 +70,6 @@ const siteConfig = {
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
-  // No .html extensions for paths.
   cleanUrl: true,
 
   docsSideNavCollapsible: true,
@@ -93,15 +78,6 @@ const siteConfig = {
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
 
-  // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
-
-  // Show documentation's last update time.
-  // enableUpdateTime: true,
-
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
   customDocsPath: 'story',
   stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css','https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional'],
   disableHeaderTitle: true

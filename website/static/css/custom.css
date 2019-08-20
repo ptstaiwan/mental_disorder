@@ -20,7 +20,6 @@ p {
   font-size: 18px;
   line-height: 1.6em;
   letter-spacing: 0.02em;
-  font-family: 'Noto Sans TC', sans-serif;
 }
 
 /* h1 */
@@ -470,6 +469,13 @@ h5 {
     padding-bottom: 0px;
   }
 
+  /* Scroll */
+  #scroll1, #scroll2 {
+    background-attachment: initial;
+    height: 0px;
+    min-height: 300px;
+  }
+
   /* video margin */
   .video-container {
     margin: 0px;
@@ -580,6 +586,13 @@ h5 {
 
   #Test1Page > .wrapper {
     padding-bottom: 0px;
+  }
+
+  /* Scroll */
+  #scroll1, #scroll2 {
+    background-attachment: initial;
+    min-height: 600px;
+    height: 0px;
   }
 
   /* Adjust video margin */
