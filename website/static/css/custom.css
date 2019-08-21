@@ -264,11 +264,6 @@ a:not([href]) {
   margin: 0px;
 }
 
-/* Extend Test1image width*/
-#Test1image h2 {
-  width: 110%;
-}
-
 /* Adjust Pagetitle */
 
 .container.paddingTop {
@@ -308,8 +303,9 @@ a:not([href]) {
 #Test1Page-1 .imageAlignLeft, #Test2Page-1 .imageAlignLeft{
   display: flex;
   flex-direction: column;
+  align-content: center;
   margin: auto;
-  max-width: 100%;
+  max-width: 70%;
 }
 #Test1Page-1 .imageAlignSide .blockImage, #Test2Page-1 .imageAlignSide .blockImage{
   display: block;
@@ -360,7 +356,8 @@ a:not([href]) {
   background-color: white;
   opacity: 0.7;
   bottom: 0%;
-  top: 100vh;
+  top: 98vh;
+  padding-left: 20px;
 }
 
 
@@ -457,6 +454,7 @@ h5 {
   }
 
   /* Adjust Test1img & Test1img */
+
   #Test1image h2 {
     width: 100%;
   }
