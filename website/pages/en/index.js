@@ -131,7 +131,7 @@ class Index extends React.Component {
       <Block id="Test1image" layout="twoColumn" background="light" align="left">
         {[
           {
-            title: '玉如與「思覺失調症」共處6年',
+            title: '玉如｜與思覺失調症共處6年',
             content: '6年前，玉如在診所上班，那時候她總覺得去看病的病人，其實都是去看她出糗、去嘲笑她，當她的腦海裡出現想傷害別人和傷害自己的想法時，玉如知道那是一種精神症狀，對精神疾病的了解，讓她意識到自己需要幫助，她知道這時候的頭腦不值得信任，那些並不是她真實的想法，在她心底並不想傷害任何人，從那時候起，玉如開始學習與這些症狀共處。',
             image: `${baseUrl}img/people1.jpg`,
             imageAlign: 'right'
@@ -147,18 +147,8 @@ class Index extends React.Component {
       </div>
     );
 
-    const People1Pagetitle = () => (
-      <Block id="Test1Pagetitle" layout="Column" background="light" align="left">
-        {[
-          {
-            title: '玉如與「思覺失調症」共處6年',
-          },
-        ]}
-      </Block>
-    );
-
     const People1Page_1 = () => (
-      <Block id="Test1Page" className="Test1Page" layout="Column" background="light" align="left">
+      <Block id="Test1Page-1" layout="Column" background="light" align="left">
         {[
           {
             title: '精神症狀的出現',
@@ -170,7 +160,6 @@ class Index extends React.Component {
           {
             title: '',
             image: `${baseUrl}img/img_1_2.jpg`,
-            imageAlign: 'top',
             content:'玉如現在依然與精神症狀共處著。',
           },
           {
@@ -184,13 +173,12 @@ class Index extends React.Component {
 
     const Scroll1 = () => (
       <div id="scroll1">
-        <img src = "http://localhost:3000/mental_disorder/img/parallax_1.jpg" alt="parallax_1"/>
         <p>玉如和姊姊很親密，也經常去姊姊家，跟「花生兄妹」一起玩。</p>
       </div>
     );
 
     const People1Page_2 = () => (
-      <Block className="Test1Page" layout="Column" background="light" align="left">
+      <Block id="Test1Page-2" layout="Column" background="light" align="left">
         {[
           {
             title: '陪伴是最好的支持',
@@ -218,19 +206,8 @@ class Index extends React.Component {
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
       </div>
     );
-
-    const People2Pagetitle = () => (
-      <Block id="Test2Pagetitle" layout="Column" background="light" align="left">
-        {[
-          {
-            title: '宗辰與「強迫症」共處15年',
-          },
-        ]}
-      </Block>
-    );
-
     const People2Page_1 = () => (
-      <Block id="Test2Page" className="Test2Page" layout="Column" background="light" align="left">
+      <Block id="Test2Page-1" className="Test2Page" layout="Column" background="light" align="left">
         {[
           {
             title: '精神症狀的出現',
@@ -242,7 +219,6 @@ class Index extends React.Component {
           {
             title: '',
             image: `${baseUrl}img/img_2_2.jpg`,
-            imageAlign: 'top',
             content:'宗辰和家人的關係很緊密，就算現在沒有住在一起，也經常與家人通電話。',
           },
           {
@@ -261,7 +237,7 @@ class Index extends React.Component {
     );
 
     const People2Page_2 = () => (
-      <Block className="Test2Page" layout="Column" background="light" align="left">
+      <Block id="Test2Page-2" layout="Column" background="light" align="left">
         {[
           {
             title: '工作與生活慢慢調適',
@@ -283,32 +259,36 @@ class Index extends React.Component {
     );
 
     const Link = () => (
-      <Block id="Test1image" layout="twoColumn" background="light" align="left">
+      <Block id="link" layout="twoColumn" background="light" align="left">
         {[
           {
             title: '延伸閱讀'
+          }
+        ]}
+      </Block>
+    );
+
+    const Linkimg = () => (
+      <Block id="link_image" layout="fourColumn" background="light" align="left">
+        {[
+          {
+            title: '',
+            image: `${baseUrl}img/link.png`,
+            content: '工作倦怠就是生病？'
           },
           {
             title: '',
-            image: `${baseUrl}img/people1.jpg`,
-            imageAlign: 'top',
-            content: '工作倦怠就是生病？WHO列疾病分類項目！'
+            image: `${baseUrl}img/link.png`,
+            content: '重回社區有多難？'
           },
           {
             title: '',
-            image: `${baseUrl}img/people1.jpg`,
-            imageAlign: 'top',
-            content: '重回社區有多難？ 談精神疾病社區照護困境'
+            image: `${baseUrl}img/link.png`,
+            content: '為精障者去汙名化'
           },
           {
             title: '',
-            image: `${baseUrl}img/people1.jpg`,
-            imageAlign: 'top',
-            content: '為精障者去汙名化 新北製作影片宣導'
-          },
-          {
-            title: '',
-            image: `${baseUrl}img/people1.jpg`,
+            image: `${baseUrl}img/link.png`,
             content: '延伸'
           },
         ]}
@@ -324,18 +304,17 @@ class Index extends React.Component {
           <BannerTitle/>
           <People1image/>
           <Video1/>
-          <People1Pagetitle/>
           <People1Page_1/>
           <Scroll1/>
           <People1Page_2/>
           <People2image/>
           <Video2/>
-          <People2Pagetitle/>
           <People2Page_1/>
           <Scroll2/>
           <People2Page_2/>
           <Conclusion/>
           <Link/>
+          <Linkimg/>
         </div>
       </div>
     );

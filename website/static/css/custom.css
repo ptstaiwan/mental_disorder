@@ -34,13 +34,17 @@ h1 p{
 
 /* h2 */
 
-.Feature h2 p, #Test1image h2 p, #Test2image h2 p, #Test1Pagetitle h2 p, #Test2Pagetitle h2 p{
+.Feature h2 p,
+#Test1image h2 p, #Test2image h2 p{
   font-size: 40px;
 }
 
+
 /* h3 */
 
-.Test1Page h2 p, .Test2Page h2 p {
+#Test1Page-1 h2 p, #Test1Page-2 h2 p,
+#Test2Page-1 h2 p, #Test2Page-2 h2 p,
+#conclusion h2 p, #link h2 p{
   font-size: 28px;
 }
 
@@ -235,6 +239,17 @@ a:not([href]) {
   margin-bottom: 0em;
 }
 
+/* people img & text */
+
+[src *="people"]{
+  width: 50vh;
+}
+#Test1image h2 p{
+  color: #D65856;
+}
+#Test2image h2 p{
+  color: #67BEB4;
+}
 
 /* Make paragraph center */
 
@@ -263,13 +278,44 @@ a:not([href]) {
   padding-bottom: 50px;
 }
 
-.Test1Page {
+#Test1Page-1, #Test1Page-2, #Test2Page-1, #Test2Page-2{
   padding-top: 0px;
+}
+#Test1Page-1 h2 p, #Test1Page-2 h2 p{
+  color: #D65856;
 }
 
-.Test2Page {
-  padding-top: 0px;
+#Test2Page-1 h2 p, #Test2Page-2 h2 p{
+  color: #67BEB4;
 }
+
+#Test1Page-1 h2, #Test1Page-2 h2, #Test2Page-1 h2, #Test2Page-2 h2{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vh;
+}
+
+#conclusion h2, #link h2{
+  display: flex;
+  justify-content: center;
+  width: 100vh;
+}
+
+/* adjust img */
+
+#Test1Page-1 .imageAlignLeft, #Test2Page-1 .imageAlignLeft{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 100%;
+}
+#Test1Page-1 .imageAlignSide .blockImage, #Test2Page-1 .imageAlignSide .blockImage{
+  display: block;
+  flex: 0 1 100px;
+  max-width: 100%;
+}
+
 
 /* adjust video */
 .video-container {
@@ -292,24 +338,40 @@ a:not([href]) {
 /* Scroll */
 
 /*
-#scroll1 {
-  background-image: url("../img/parallax_1.png");
-}
-#scroll2 {
-  background-image: url("../img/parallax_2.png");
+＃Test1Page-1,＃Test2Page-1,＃Test1Page-2,＃Test2Page-2{
+  position: relative;
+  //z-index: 50;
+  background-image:  url(../img/parallax_1.jpg);
 }
 #scroll1, #scroll2 {
-  display: block;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: left top;
-  background-attachment: fixed;
-  height: 1000px;
+  position: relative;
+  z-index: auto;
+  //background-image:  url(../img/parallax_1.jpg);
+  min-height: 100vh;
+  z-index: auto;
 }
  */
 
 
+/* link */
+
+#link{
+  padding: 0px;
+}
+#link .blockContent > *{
+  margin: 0px;
+}
+
+#link_image .wrapper .gridBlock{
+  display: flex;
+}
+
+/* img comments */
+#Test1Page-1 .imageAlignSide .blockContent p, #scroll1 p,
+#Test2Page-1 .imageAlignSide .blockContent p, #scroll2 p,
+#link_image .imageAlignSide .blockContent p{
+  font-size: 14px;
+}
 
 /* Adjust footer  */
 /* Adjust footer company */
@@ -390,6 +452,8 @@ h5 {
 
   .imageAlignSide .blockImage {
     display: block;
+    flex: 0 1 100px;
+    max-width: 100%;
   }
 
   .imageAlignRight .blockImage, .imageAlignLeft .blockImage {
@@ -408,15 +472,6 @@ h5 {
     flex-direction: column-reverse;
     justify-content: center;
     align-content: center;
-  }
-
-  .imageAlignSide .blockImage {
-    flex: 0;
-  }
-
-  /* Test1Pagetitle & Test2Pagetitle */
-  #Test1Pagetitle.container.paddingBottom, #Test2Pagetitle.container.paddingBottom {
-    padding-bottom: 0px;
   }
 
   /* Scroll */
@@ -520,17 +575,12 @@ h5 {
   .imageAlignRight .blockImage {
     margin-left: 0px;
   }
-
   .imageAlignLeft .blockImage {
     margin-right: 0px;
   }
 
 
   /* Adjust page title & text */
-  #Test1Pagetitle > .wrapper, #Test2Pagetitle > .wrapper {
-    padding-bottom: 0px;
-    padding-left: 70px;
-  }
 
   .Test1Page > .wrapper, .Test2Page > .wrapper {
     padding-top: 0px;
