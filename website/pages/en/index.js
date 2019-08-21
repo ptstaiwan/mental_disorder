@@ -103,8 +103,10 @@ class Index extends React.Component {
     const SideBar = () => (
       <nav id="sidebar-wrapper">
         <NumberList numbers={numbers}/>
-        <img src="http://localhost:3000/mental_disorder/img/share_nav_fb.svg" alt="fb_share" className="share"/>
-        <img src="http://localhost:3000/mental_disorder/img/share_nav_line.svg" alt="line_share" className="share"/>
+        <div className="share">
+        <img src="http://localhost:3000/mental_disorder/img/share_nav_fb.svg" alt="fb_share"/>
+        <img src="http://localhost:3000/mental_disorder/img/share_nav_line.svg" alt="line_share"/>
+        </div>
       </nav>
     );
 
@@ -112,7 +114,8 @@ class Index extends React.Component {
     const BannerTitle = () => (
       <div id="BannerTitle">
         <div className="Feature">
-          <h2><p>我有病嗎？<br/>與精神疾病的真實距離</p></h2>
+          <h2><p>我有病嗎？</p></h2>
+          <h1><p>與精神疾病的真實距離</p></h1>
           <p>什麼是精神疾病？所謂的精神症狀距離我們究竟有多遠？宗辰曾經是咖啡店員，玉如是護理師，他們都在二十多歲發病，同一般人的外表下，他們和精神症狀共處多年。點選人物，或往下閱讀，他們的故事。</p>
         </div>
         <img src="http://localhost:3000/mental_disorder/img/web_final_left.png" alt="character2" className=" character c2"/>

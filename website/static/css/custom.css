@@ -18,27 +18,29 @@
 
 p {
   font-size: 18px;
-  line-height: 1.6em;
-  letter-spacing: 0.02em;
+  line-height: 2em;
+  letter-spacing: 0.03em;
+  color: #707070;
 }
 
 /* h1 */
 
-#BannerTitle > div > h2 > p {
+h1 p{
   font-size: 60px;
+  font-weight: 300;
+  color: #7B7B7B;
+  letter-spacing: 0em;
 }
 
 /* h2 */
 
-#Test1image > div > div > div > div.blockContent > h2 > div > span > p,
-#Test2image > div > div > div > div.blockContent > h2 > div > span > p {
+.Feature h2 p, #Test1image h2 p, #Test2image h2 p, #Test1Pagetitle h2 p, #Test2Pagetitle h2 p{
   font-size: 40px;
 }
 
 /* h3 */
 
-#Test1Pagetitle > div > div > div > div > h2 > div > span > p,
-#Test2Pagetitle > div > div > div > div > h2 > div > span > p {
+.Test1Page h2 p, .Test2Page h2 p {
   font-size: 28px;
 }
 
@@ -46,7 +48,7 @@ p {
 
 #sidebar-wrapper {
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   left: -500px;
   width: 250px;
   height: 100%;
@@ -59,7 +61,6 @@ p {
 }
 
 .sidebar-nav {
-  /*background:#003151;*/
   position: absolute;
   top: 0;
   width: 250px;
@@ -72,14 +73,14 @@ p {
   display: block;
   text-decoration: none;
   color: #707070;
-  padding: 8px;
-  padding-left: 40px;
+  padding: 8px 8px 8px 20px;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: rgb(1, 51, 83);
-  background: rgba(153, 236, 243, .4)
+  color: #8B5618;
+  background: #EED38E;
+  opacity: 0.7;
 }
 
 .sidebar-nav li a, .sidebar-nav li a:focus {
@@ -88,13 +89,10 @@ p {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.1rem;
-  /*background:;*/
-  height: 80px;
+  height: 90px;
   line-height: 60px;
-  padding-top: 10.5px;
-  padding-bottom: 1px;
-  padding-left: 40px;
-  margin-top: 60px;
+  padding: 10.5px 0px 1px 20px;
+  margin-top: 30px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -103,8 +101,18 @@ p {
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-  color: rgb(1, 51, 83);
+  color: #8B5618;
   background: 0 0
+}
+
+.share{
+  position: absolute;
+  top: 245px;
+  left: 25px;
+}
+
+[alt="fb_share"]{
+  padding-right: 30px;
 }
 
 /* hamburger bar */
@@ -157,7 +165,7 @@ a:not([href]) {
   background-image: url("../img/web_final.jpg");
   background-size: 100%;
   background-position: left top;
-  max-height: 1360px;
+  min-height: 100vh;
 }
 
 /* character 1*/
@@ -195,14 +203,38 @@ a:not([href]) {
 /* Adjust Banner test */
 
 .Feature {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
   position: absolute;
-  bottom: 8%;
-  left: 25%;
+  top: 3%;
   color: white;
-  z-index: 7;
+  z-index: 4;
 }
+.Feature h1, .Feature h2, .Feature h1 p, .Feature h2 p{
+  margin: 0px;
+}
+.Feature h2 p{
+  color: #F7BF68;
+}
+.Feature > p{
+  width: 40%;
+}
+
+#comment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+#comment img{
+  padding-right: 10px;
+}
+#comment p{
+  margin-bottom: 0em;
+}
+
 
 /* Make paragraph center */
 

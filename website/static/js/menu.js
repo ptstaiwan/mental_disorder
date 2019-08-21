@@ -69,10 +69,10 @@ window.addEventListener('DOMContentLoaded', function () {
   /* add click event on character pictures */
 
   var character = document.getElementsByClassName('character');
-  character[0].addEventListener('click', function () {
+  character[1].addEventListener('click', function () {
     window.location.href = '#Test1image';
   });
-  character[1].addEventListener('click', function () {
+  character[0].addEventListener('click', function () {
     window.location.href = '#Test2image';
   });
 
