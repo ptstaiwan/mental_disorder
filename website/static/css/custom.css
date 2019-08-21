@@ -148,16 +148,10 @@ a:not([href]) {
   position: relative;
   margin: 0 auto;
   background-repeat: no-repeat;
-  background-image: url("../img/pc.jpg");
+  background-image: url("../img/web_final.jpg");
   background-size: 100%;
   background-position: left top;
   max-height: 1360px;
-}
-
-/* Dialog size */
-
-.textImg {
-  width: 15%;
 }
 
 /* character 1*/
@@ -176,15 +170,6 @@ a:not([href]) {
   opacity: 1;
 }
 
-.c1c {
-  position: relative;
-  margin-left: 30%;
-  margin-bottom: 28%;
-  cursor: pointer;
-  z-index: 2;
-  opacity: 0;
-}
-
 /* character 2*/
 
 .c2 {
@@ -199,91 +184,6 @@ a:not([href]) {
 
 .c2:hover {
   opacity: 1;
-}
-
-.c2c {
-  position: relative;
-  margin-left: -32%;
-  margin-bottom: 37%;
-  cursor: pointer;
-  z-index: 3;
-  opacity: 0;
-}
-
-/* character 3*/
-
-.c3 {
-  position: relative;
-  margin-left: -27.8%;
-  margin-bottom: 22%;
-  cursor: pointer;
-  z-index: 4;
-  opacity: 0;
-  width: 20%;
-}
-
-.c3:hover {
-  opacity: 1;
-}
-
-.c3c {
-  position: relative;
-  margin-left: -31%;
-  margin-bottom: 35%;
-  cursor: pointer;
-  z-index: 4;
-  opacity: 0;
-}
-
-/* character 4*/
-
-.c4 {
-  position: relative;
-  margin-left: -4.1%;
-  margin-bottom: 18%;
-  cursor: pointer;
-  z-index: 5;
-  opacity: 0;
-  width: 19.4%;
-}
-
-.c4:hover {
-  opacity: 1;
-}
-
-.c4c {
-  position: relative;
-  margin-left: 10%;
-  margin-bottom: 42%;
-  cursor: pointer;
-  z-index: 5;
-  opacity: 0;
-}
-
-/* character 5*/
-
-.c5 {
-  position: relative;
-  margin-left: -34.3%;
-  margin-bottom: 1%;
-  cursor: pointer;
-  z-index: 6;
-  opacity: 0;
-  width: 20%;
-}
-
-.c5:hover {
-  opacity: 1;
-}
-
-.c5c {
-  position: relative;
-  margin-left: -50%;
-  margin-bottom: 27%;
-  cursor: pointer;
-  z-index: 6;
-  opacity: 0;
-  width: 20%;
 }
 
 /* Adjust Banner test */
@@ -353,16 +253,22 @@ a:not([href]) {
 
 /* Scroll */
 
+#scroll1 {
+  background-image: url("../img/parallax_1.png");
+}
+#scroll2 {
+  background-image: url("../img/parallax_2.png");
+}
 #scroll1, #scroll2 {
   display: block;
   margin: 0 auto;
   background-repeat: no-repeat;
-  background-image: url("../img/pc.jpg");
   background-size: 100%;
   background-position: left top;
   background-attachment: fixed;
   height: 1000px;
 }
+
 
 
 /* Adjust footer  */

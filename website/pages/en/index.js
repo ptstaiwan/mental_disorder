@@ -113,16 +113,8 @@ class Index extends React.Component {
           <h2><p>我有病嗎？<br/>與精神疾病的真實距離</p></h2>
           <p>什麼是精神疾病？所謂的精神症狀距離我們究竟有多遠？宗辰曾經是咖啡店員，玉如是護理師，他們都在二十多歲發病，同一般人的外表下，他們和精神症狀共處多年。點選人物，或往下閱讀，他們的故事。</p>
         </div>
-        <img src="http://localhost:3000/newslab-demo/img/c1c.png" alt="text" className="textImg c1c"/>
-        <img src="http://localhost:3000/newslab-demo/img/c1.png" alt="text" className=" character c1"/>
-        <img src="http://localhost:3000/newslab-demo/img/c2c.png" alt="text" className="textImg c2c"/>
-        <img src="http://localhost:3000/newslab-demo/img/c2.png" alt="text" className=" character c2"/>
-        <img src="http://localhost:3000/newslab-demo/img/c3c.png" alt="text" className="textImg c3c"/>
-        <img src="http://localhost:3000/newslab-demo/img/c3.png" alt="text" className=" character c3"/>
-        <img src="http://localhost:3000/newslab-demo/img/c4c.png" alt="text" className="textImg c4c"/>
-        <img src="http://localhost:3000/newslab-demo/img/c4.png" alt="text" className=" character c4"/>
-        <img src="http://localhost:3000/newslab-demo/img/c5c.png" alt="text" className="textImg c5c"/>
-        <img src="http://localhost:3000/newslab-demo/img/c5.png" alt="text" className=" character c5"/>
+        <img src="http://localhost:3000/mental_disorder/img/web_final_right.png" alt="text" className=" character c1"/>
+        <img src="http://localhost:3000/mental_disorder/img/web_final_left.png" alt="text" className=" character c2"/>
       </div>
     );
 
@@ -132,7 +124,7 @@ class Index extends React.Component {
           {
             title: '玉如與「思覺失調症」共處6年',
             content: '6年前，玉如在診所上班，那時候她總覺得去看病的病人，其實都是去看她出糗、去嘲笑她，當她的腦海裡出現想傷害別人和傷害自己的想法時，玉如知道那是一種精神症狀，對精神疾病的了解，讓她意識到自己需要幫助，她知道這時候的頭腦不值得信任，那些並不是她真實的想法，在她心底並不想傷害任何人，從那時候起，玉如開始學習與這些症狀共處。',
-            image: `${baseUrl}img/respondent1.JPG`,
+            image: `${baseUrl}img/people1.jpg`,
             imageAlign: 'right'
           },
         ]}
@@ -186,7 +178,7 @@ class Index extends React.Component {
           {
             title: '宗辰與「強迫症」共處15年',
             content: '在Easy Coffee工作的時候，宗辰口中唸唸有詞，總會小聲提醒自己接下來要做甚麼，他的動作很快，不完全是敏捷的那種迅速，感覺他很急，急著做好每一件事，原本我以為這是一種焦躁的精神症狀，慢慢觀察之後發現，宗辰在做每個動作的時候都很冷靜，想必這是他這十幾年的練習與經驗，不論是工作或是面對精神症狀，經過練習，還有時間的累積，總是會漸漸平緩、漸漸熟稔。',
-            image: `${baseUrl}img/respondent2.JPG`,
+            image: `${baseUrl}img/people2.jpg`,
           },
         ]}
       </Block>

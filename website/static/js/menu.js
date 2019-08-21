@@ -115,11 +115,9 @@ window.addEventListener('resize', function () {
     img1.src = "img/1.jpg";
     img2.src = 'img/2.jpg';
   } else if (limit < currentWidth) {
-    if (img1.src === window.location + "img/1.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/1.jpg" || window.location + "/#03/img/1.jpg") {
-      img1.src = "img/respondent1.JPG";
-    }
-    if (img2.src === window.location + "img/2.jpg" || window.location + "/#00/img/1.jpg" || window.location + "/#01/img/1.jpg" || window.location + "/#02/img/2.jpg" || window.location + "/#03/img/2.jpg") {
-      img2.src = "img/respondent2.JPG";
+    if (img1.src === window.location + "img/1.jpg" || window.location + "/#BannerTitle/img/1.jpg" || window.location + "/#Test1image/img/1.jpg" || window.location + "/#Test2image/img/1.jpg") {
+      img1.src = "img/people1.jpg";
+      img2.src = "img/people2.jpg";
     }
   }
 });
