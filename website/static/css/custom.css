@@ -54,8 +54,8 @@ p {
   transition: all .4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: rgba(1, 51, 83, .5); /*sidebar底色在此修改*/
-  /*border-left:1px solid rgba(255,255,255,.1)*/
+  background: #FFFFFF;
+  opacity: 0.7;
 }
 
 .sidebar-nav {
@@ -71,7 +71,7 @@ p {
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: #707070;
   padding: 8px;
   padding-left: 40px;
 }
@@ -98,7 +98,7 @@ p {
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #99ECF3;
+  color: #707070;
   font-weight: bold;
 }
 
@@ -141,6 +141,12 @@ a:not([href]) {
   padding-top: 0px;
 }
 
+/* Change background color */
+
+.lightBackground{
+  background: white;
+}
+
 /* Adjust Banner img */
 
 #BannerTitle {
@@ -158,12 +164,12 @@ a:not([href]) {
 
 .c1 {
   position: relative;
-  margin-left: -3.1%;
-  margin-top: 17.5%;
+  margin-left: 69.7%;
+  margin-top: -20.91%;
   cursor: pointer;
   z-index: 2;
   opacity: 0;
-  width: 20.5%;
+  width: 15.5%;
 }
 
 .c1:hover {
@@ -174,12 +180,12 @@ a:not([href]) {
 
 .c2 {
   position: relative;
-  margin-left: 0.69%;
-  margin-bottom: 30.3%;
+  margin-left: 16%;
+  margin-top: 14.8%;
   cursor: pointer;
-  z-index: 3;
+  z-index: 2;
   opacity: 0;
-  width: 15.9%;
+  width: 19.1%;
 }
 
 .c2:hover {
@@ -225,11 +231,11 @@ a:not([href]) {
   padding-bottom: 50px;
 }
 
-#Test1Page {
+.Test1Page {
   padding-top: 0px;
 }
 
-#Test2Page {
+.Test2Page {
   padding-top: 0px;
 }
 
@@ -253,6 +259,7 @@ a:not([href]) {
 
 /* Scroll */
 
+/*
 #scroll1 {
   background-image: url("../img/parallax_1.png");
 }
@@ -268,6 +275,7 @@ a:not([href]) {
   background-attachment: fixed;
   height: 1000px;
 }
+ */
 
 
 
@@ -286,6 +294,10 @@ a:not([href]) {
 }
 
 /* Adjust footer team */
+
+.nav-footer {
+  background: #F7BF68;
+}
 #team {
   display: flex;
   color: white;
@@ -376,11 +388,13 @@ h5 {
   }
 
   /* Scroll */
+  /*
   #scroll1, #scroll2 {
     background-attachment: initial;
     height: 0px;
     min-height: 300px;
   }
+   */
 
   /* video margin */
   .video-container {
@@ -486,20 +500,22 @@ h5 {
     padding-left: 70px;
   }
 
-  #Test1Page > .wrapper, #Test2Page > .wrapper {
+  .Test1Page > .wrapper, .Test2Page > .wrapper {
     padding-top: 0px;
   }
 
-  #Test1Page > .wrapper {
+  .Test1Page > .wrapper {
     padding-bottom: 0px;
   }
 
   /* Scroll */
+  /*
   #scroll1, #scroll2 {
     background-attachment: initial;
     min-height: 600px;
     height: 0px;
   }
+   */
 
   /* Adjust video margin */
   .video-container {

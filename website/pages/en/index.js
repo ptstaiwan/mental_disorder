@@ -97,12 +97,14 @@ class Index extends React.Component {
       );
     }
 
-    const numbers = [{id: 2, href: <a className="js-scroll-trigger" href="#Test1image">人物一</a>},
-      {id: 3, href: <a className="js-scroll-trigger" href="#Test2image">人物二</a>}];
+    const numbers = [{id: 2, href: <a className="js-scroll-trigger" href="#Test1image">玉如｜與思覺失調症共處6年</a>},
+      {id: 3, href: <a className="js-scroll-trigger" href="#Test2image">宗辰｜與強迫症共處15年</a>}];
 
     const SideBar = () => (
       <nav id="sidebar-wrapper">
         <NumberList numbers={numbers}/>
+        <img src="http://localhost:3000/mental_disorder/img/share_nav_fb.svg" alt="fb_share" className="share"/>
+        <img src="http://localhost:3000/mental_disorder/img/share_nav_line.svg" alt="line_share" className="share"/>
       </nav>
     );
 
@@ -113,12 +115,16 @@ class Index extends React.Component {
           <h2><p>我有病嗎？<br/>與精神疾病的真實距離</p></h2>
           <p>什麼是精神疾病？所謂的精神症狀距離我們究竟有多遠？宗辰曾經是咖啡店員，玉如是護理師，他們都在二十多歲發病，同一般人的外表下，他們和精神症狀共處多年。點選人物，或往下閱讀，他們的故事。</p>
         </div>
-        <img src="http://localhost:3000/mental_disorder/img/web_final_right.png" alt="text" className=" character c1"/>
-        <img src="http://localhost:3000/mental_disorder/img/web_final_left.png" alt="text" className=" character c2"/>
+        <img src="http://localhost:3000/mental_disorder/img/web_final_left.png" alt="character2" className=" character c2"/>
+        <img src="http://localhost:3000/mental_disorder/img/web_final_right.png" alt="character1" className=" character c1"/>
+        <div id="comment">
+          <img src = "http://localhost:3000/mental_disorder/img/hand_click.svg" alt="pointer"/>
+          <p>點選人物或往下閱讀</p>
+        </div>
       </div>
     );
 
-    const Test1image = () => (
+    const People1image = () => (
       <Block id="Test1image" layout="twoColumn" background="light" align="left">
         {[
           {
@@ -131,10 +137,6 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Scroll1 = () => (
-      <div id="scroll1"/>
-    );
-
     const Video1 = () => (
       <div id="Video1" className="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
@@ -142,7 +144,7 @@ class Index extends React.Component {
       </div>
     );
 
-    const Test1Pagetitle = () => (
+    const People1Pagetitle = () => (
       <Block id="Test1Pagetitle" layout="Column" background="light" align="left">
         {[
           {
@@ -152,8 +154,8 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Test1Page = () => (
-      <Block id="Test1Page" layout="Column" background="light" align="left">
+    const People1Page_1 = () => (
+      <Block id="Test1Page" className="Test1Page" layout="Column" background="light" align="left">
         {[
           {
             title: '精神症狀的出現',
@@ -161,9 +163,32 @@ class Index extends React.Component {
           },
           {
             title: '「記得自己發病的樣子」培養病識感',
+          },
+          {
+            title: '',
+            image: `${baseUrl}img/img_1_2.jpg`,
+            imageAlign: 'top',
+            content:'玉如現在依然與精神症狀共處著。',
+          },
+          {
+            title: '',
             content: '6年前，玉如在診所上班，那是她第一次出現妄想症狀，也是她第一次住院，玉如曾經住院三次，第二次住院長達九個月，當時因為妄想症狀又再度出現，和醫生討論以後決定住院，對玉如來說，住院讓她感到安全，玉如說；「一個房間會有兩個室友陪我，很像以前念專科、念護校的時候，我覺得很有趣、很好\n' +
               '玩。」白天醫院的職能治療活動，有手作課、英文課等等，也讓玉如樂在其中。雖然玉如在住院這段日子大多都很快樂，但她也說，「比較重要的是出院以後的生活和面對壓力的調適方法。」出院後才是面對疾病、跟疾病共處的練習。在第二次出院以後，玉如很積極的查找資料，每天都在學習面對自己的精神症狀，幾年前，玉如在網路上找到《新北市康復之友協會》附設的新莊作坊，她發現那裡是一個專門提供受精神症狀所苦的人協助的機構，從那時候起，玉如成了工作坊學員的一份子，經常到工作坊上課、做心理衛教，而後來玉如的狀況漸漸穩定，主任也邀請玉如留在工作坊擔任護理師，帶著自己的經驗去幫助其他學員。玉如除了在工作坊擔任護士，也曾在其他地方打工，上一份工作玉如在pizza店上班，應徵的時候她告訴店長自己有思覺失調症，反應跟學習能力會比較慢，雖然店長說沒關係，但在工作時，店長沒有特別體諒玉如，玉如心裡一方面覺得店長把她當成一般人，沒有放低標準對她是件好事，但另一方面卻也覺得自己因為精神症狀，導致工作狀態不好的時候，沒有被接納與寬容，力不從心的感覺讓她失落難過，而這也讓她的壓力越來越大，精神症狀嚴重到出現妄想，在跟醫生討論過後，為了避免再次嚴重發病使腦部功能受影響，玉如最後只能辭職。',
-          },
+          }
+        ]}
+      </Block>
+    );
+
+    const Scroll1 = () => (
+      <div id="scroll1">
+        <img src = "http://localhost:3000/mental_disorder/img/parallax_1.jpg" alt="parallax_1"/>
+        <p>玉如和姊姊很親密，也經常去姊姊家，跟「花生兄妹」一起玩。</p>
+      </div>
+    );
+
+    const People1Page_2 = () => (
+      <Block className="Test1Page" layout="Column" background="light" align="left">
+        {[
           {
             title: '陪伴是最好的支持',
             content: '玉如平常喜歡跟姊姊一家人、好朋友們在一起，「跟讓我有安全感的人互動，有互動、支持，就比較不會情緒低落。」玉如說。在沒有工作影響的時候，玉如會去姐姐家，和姐姐一起準備大家的晚餐，姐姐有兩個小孩，玉如都叫他們「花生兄妹」，跟姊姊一家人在一起，讓玉如的心有了歸屬感而不孤單。除了和姐姐一家人在一起，玉如有一個很好的朋友，是以前工作認識的學姐，心情不好的時候，也常常會和學姐一起去逛街、唱歌、看電影，有時候也會一起去教會，玉如自己也說，「其實跟一般人紓壓的方式很像。」。現在玉如為自己設立了短期目標，她希望可以持續的在工作坊工作，打破自己以前一份工作無法長久做下去的紀錄，同時她一直在努力與學習的，依然是面對自己的精神症狀。',
@@ -172,7 +197,7 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Test2image = () => (
+    const People2image = () => (
       <Block id="Test2image" layout="twoColumn" background="light">
         {[
           {
@@ -184,10 +209,6 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Scroll2 = () => (
-      <div id="scroll2"/>
-    );
-
     const Video2 = () => (
       <div id="Video2" className="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
@@ -195,7 +216,7 @@ class Index extends React.Component {
       </div>
     );
 
-    const Test2Pagetitle = () => (
+    const People2Pagetitle = () => (
       <Block id="Test2Pagetitle" layout="Column" background="light" align="left">
         {[
           {
@@ -205,25 +226,91 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Test2Page = () => (
-      <Block id="Test2Page" layout="Column" background="light" align="left">
+    const People2Page_1 = () => (
+      <Block id="Test2Page" className="Test2Page" layout="Column" background="light" align="left">
         {[
           {
-            content: '宗辰15年前出現影響生活的精神症狀，那時候的他在美國念書，是親戚發現他的症狀，「有時候我會待在房間，或者是廁所，會很久這樣子，覺得頭腦不太好控制。」宗辰說，他發現自己越來越不能專心，總是會不自覺的想事情，這一想可能十分鐘就過去了，當他意識到自己因為想事情停頓很久，把自己的思緒拉回來以後，沒多久頭腦卻又會被另一件事佔據，同時他也會像是凍結一斑，停止當時正在做的事。「我可能比較，白就是白，黑就是黑阿，沒有甚麼灰色地帶。」宗辰自己分析著他的個性，高中一畢業，個性內向的他就去到美國，在人生地不熟的國家裡，只要和別人說話的時候，感受到對方的不耐煩，宗辰就會一直把它放在心上，「那時候我可能會一直記在心裡，不太懂得怎麼去解決這方面阿。」宗辰回想那時候的自己，比較在意別人，也比較敏感，把每一件事都放在心裡很久，讓當時的情緒一直沒辦法消化。一開始宗辰不知道這些就是精神症狀，但後來他發現自己很容易累、睡覺的時間變長、生活作息變得不一樣，這些症狀漸漸變得嚴重，影響到他本來的生活，住在宗辰附近的親戚也發現，宗辰的精神狀況和以前不一樣，建議他先回台灣休養，回台灣看診，聽醫生說了以後，宗辰才知道，原來像他這樣常常陷入沒有意義的思考，是強迫症的一種精神症狀。',
             title: '精神症狀的出現',
+            content: '宗辰15年前出現影響生活的精神症狀，那時候的他在美國念書，是親戚發現他的症狀，「有時候我會待在房間，或者是廁所，會很久這樣子，覺得頭腦不太好控制。」宗辰說，他發現自己越來越不能專心，總是會不自覺的想事情，這一想可能十分鐘就過去了，當他意識到自己因為想事情停頓很久，把自己的思緒拉回來以後，沒多久頭腦卻又會被另一件事佔據，同時他也會像是凍結一斑，停止當時正在做的事。「我可能比較，白就是白，黑就是黑阿，沒有甚麼灰色地帶。」宗辰自己分析著他的個性，高中一畢業，個性內向的他就去到美國，在人生地不熟的國家裡，只要和別人說話的時候，感受到對方的不耐煩，宗辰就會一直把它放在心上，「那時候我可能會一直記在心裡，不太懂得怎麼去解決這方面阿。」宗辰回想那時候的自己，比較在意別人，也比較敏感，把每一件事都放在心裡很久，讓當時的情緒一直沒辦法消化。一開始宗辰不知道這些就是精神症狀，但後來他發現自己很容易累、睡覺的時間變長、生活作息變得不一樣，這些症狀漸漸變得嚴重，影響到他本來的生活，住在宗辰附近的親戚也發現，宗辰的精神狀況和以前不一樣，建議他先回台灣休養，回台灣看診，聽醫生說了以後，宗辰才知道，原來像他這樣常常陷入沒有意義的思考，是強迫症的一種精神症狀。',
           },
           {
-            content: '宗辰與爸媽的感情很好，雖然宗辰因為精神症狀的影響，被迫暫停學業，宗辰的爸媽沒有責怪，而是很認真地去了解這些精神症狀，試圖去理解宗辰的想法，「他們還是會去了解這個病阿，會去上網找資料，不會說一般刻板印象，要去收驚之類的。」宗辰說著爸媽對他的諒解，眼眶也跟著泛了淚。幾年前，宗辰的爸爸建議他去做心理諮商，「他就是覺得我太快啦，叫我放慢腳步。」宗辰說著諮商師給他的建議，「每天睡覺前阿，就是叫我要深呼吸。」深呼吸是為了讓自己可以放慢動作，諮商師建議，宗辰每天睡覺前可以做二十分鐘的深呼吸練習，先吸氣，吐氣的時候慢慢的吐，延長吐氣時間到三十秒，經過這個練習，宗辰也發現到稍微放慢速度，的確會感覺比較放鬆。在諮商的過程中，宗辰也發現了自己的性格是精神症狀出現的原因之一，「我不太喜歡深顏色嘛，因為畢竟你看新聞阿，一般跟黑有關的都不太好，比如說黑道阿、黑槍阿。」宗辰說，過去在美國他也常常會想起新聞播報的社會事件，因為宗辰有正義感的性格，讓他對這些事無法釋懷，但諮商師曾提醒宗辰，「很多東西不太可能分的那麼清楚，總是會有灰色地帶阿。」諮商師建議他，可以試著透過培養自己的興趣，避開自己不喜歡的東西。',
             title: '接觸心理諮商',
           },
           {
-            content: '宗辰從美國回到台灣一年多以後，就在《台北市康復之友協會》附設的咖啡店─Easy Coffee工作，到最近轉職之前，他已經在Easy Coffee待了12年，雖然一開始宗辰並不喜歡和陌生人說話，但因為每天都會碰到不同的客人，對宗辰來說也是一種練習，漸漸習慣和陌生人說話以後，他也變得比較放鬆了，訪問宗辰的時候，除了說話語速比較快，似乎有些緊張之外，很難想像以前的他也有內向的一面。問起宗辰覺得自己和以前有什麼不一樣，他說，「比較有愛心吧，比較有同理心，就是比較會去幫助人家吧。」雖然沒有人希望自己有精神症狀，但宗辰還是接受了現在的自己，找到了新的生活方式，問他有沒有一些建議可以分享給正為精神症狀困擾的人，他說，「要有病識感吧，不要去抗拒啊！」對於精神症狀，去面對、不逃避，可能就是精神疾病唯一的解答。',
-            title: '工作與生活慢慢調適',
+            title: '',
+            image: `${baseUrl}img/img_2_2.jpg`,
+            imageAlign: 'top',
+            content:'宗辰和家人的關係很緊密，就算現在沒有住在一起，也經常與家人通電話。',
+          },
+          {
+            title: '',
+            content: '宗辰與爸媽的感情很好，雖然宗辰因為精神症狀的影響，被迫暫停學業，宗辰的爸媽沒有責怪，而是很認真地去了解這些精神症狀，試圖去理解宗辰的想法，「他們還是會去了解這個病阿，會去上網找資料，不會說一般刻板印象，要去收驚之類的。」宗辰說著爸媽對他的諒解，眼眶也跟著泛了淚。幾年前，宗辰的爸爸建議他去做心理諮商，「他就是覺得我太快啦，叫我放慢腳步。」宗辰說著諮商師給他的建議，「每天睡覺前阿，就是叫我要深呼吸。」深呼吸是為了讓自己可以放慢動作，諮商師建議，宗辰每天睡覺前可以做二十分鐘的深呼吸練習，先吸氣，吐氣的時候慢慢的吐，延長吐氣時間到三十秒，經過這個練習，宗辰也發現到稍微放慢速度，的確會感覺比較放鬆。在諮商的過程中，宗辰也發現了自己的性格是精神症狀出現的原因之一，「我不太喜歡深顏色嘛，因為畢竟你看新聞阿，一般跟黑有關的都不太好，比如說黑道阿、黑槍阿。」宗辰說，過去在美國他也常常會想起新聞播報的社會事件，因為宗辰有正義感的性格，讓他對這些事無法釋懷，但諮商師曾提醒宗辰，「很多東西不太可能分的那麼清楚，總是會有灰色地帶阿。」諮商師建議他，可以試著透過培養自己的興趣，避開自己不喜歡的東西。',
           }
         ]}
       </Block>
     );
 
+    const Scroll2 = () => (
+      <div id="scroll2">
+        <img src = "http://localhost:3000/mental_disorder/img/parallax_2.jpg" alt="parallax_2"/>
+        <p>宗辰在Easy Coffee工作了12年，操作起咖啡基既熟練、又迅速。</p>
+      </div>
+    );
+
+    const People2Page_2 = () => (
+      <Block className="Test2Page" layout="Column" background="light" align="left">
+        {[
+          {
+            title: '工作與生活慢慢調適',
+            content: '宗辰從美國回到台灣一年多以後，就在《台北市康復之友協會》附設的咖啡店─Easy Coffee工作，到最近轉職之前，他已經在Easy Coffee待了12年，雖然一開始宗辰並不喜歡和陌生人說話，但因為每天都會碰到不同的客人，對宗辰來說也是一種練習，漸漸習慣和陌生人說話以後，他也變得比較放鬆了，訪問宗辰的時候，除了說話語速比較快，似乎有些緊張之外，很難想像以前的他也有內向的一面。問起宗辰覺得自己和以前有什麼不一樣，他說，「比較有愛心吧，比較有同理心，就是比較會去幫助人家吧。」雖然沒有人希望自己有精神症狀，但宗辰還是接受了現在的自己，找到了新的生活方式，問他有沒有一些建議可以分享給正為精神症狀困擾的人，他說，「要有病識感吧，不要去抗拒啊！」對於精神症狀，去面對、不逃避，可能就是精神疾病唯一的解答。',
+          }
+        ]}
+      </Block>
+    );
+
+    const Conclusion = () => (
+      <Block id="conclusion" layout="Column" background="light" align="left">
+        {[
+          {
+            title: '跨越成見 拉近距離',
+            content: '雖然精神疾病不是傳染病，但它或許就像感冒一樣平常，每個人都有可能會經歷，而精神病友就像是得了「重感冒」的人，他們需要花比較大的力氣，透過一些幫助讓自己康復。我們身邊都可能有朋友生病了，需要我們的關心與幫助，或許我們自己也可能會有需要幫忙的時候，面對精神症狀不需害怕，也不用去抗拒它，只要勇敢尋求幫助，好好面對都能夠找到出口。',
+          }
+        ]}
+      </Block>
+    );
+
+    const Link = () => (
+      <Block id="Test1image" layout="twoColumn" background="light" align="left">
+        {[
+          {
+            title: '延伸閱讀'
+          },
+          {
+            title: '',
+            image: `${baseUrl}img/people1.jpg`,
+            imageAlign: 'top',
+            content: '工作倦怠就是生病？WHO列疾病分類項目！'
+          },
+          {
+            title: '',
+            image: `${baseUrl}img/people1.jpg`,
+            imageAlign: 'top',
+            content: '重回社區有多難？ 談精神疾病社區照護困境'
+          },
+          {
+            title: '',
+            image: `${baseUrl}img/people1.jpg`,
+            imageAlign: 'top',
+            content: '為精障者去汙名化 新北製作影片宣導'
+          },
+          {
+            title: '',
+            image: `${baseUrl}img/people1.jpg`,
+            content: '延伸'
+          },
+        ]}
+      </Block>
+    );
 
     return (
       <div className="landingPage">
@@ -232,16 +319,20 @@ class Index extends React.Component {
         <SideBar/>
         <div className="mainContainer">
           <BannerTitle/>
-          <Test1image/>
-          <Scroll1/>
+          <People1image/>
           <Video1/>
-          <Test1Pagetitle/>
-          <Test1Page/>
-          <Test2image/>
-          <Scroll2/>
+          <People1Pagetitle/>
+          <People1Page_1/>
+          <Scroll1/>
+          <People1Page_2/>
+          <People2image/>
           <Video2/>
-          <Test2Pagetitle/>
-          <Test2Page/>
+          <People2Pagetitle/>
+          <People2Page_1/>
+          <Scroll2/>
+          <People2Page_2/>
+          <Conclusion/>
+          <Link/>
         </div>
       </div>
     );
