@@ -24,10 +24,10 @@ const siteConfig = {
   title: '我有病嗎？與精神疾病的真實距離', // Title for your website.
   tagline: '公視 P# 新聞實驗室',
   url: 'https://newmedia.pts.org.tw', // Your website URL
-  baseUrl: '/newslab-demo/', // Base URL for your project */
+  baseUrl: '/mental_disorder/', // Base URL for your project */
 
   // Used for publishing and more
-  projectName: 'newslab-demo',
+  projectName: 'mental_disorder',
   organizationName: 'ptstaiwan',
 
   // For no header links in the top nav bar -> headerLinks: [],
