@@ -157,7 +157,6 @@ a:not([href]) {
 
 .lightBackground{
   background: white;
-  /*background: transparent;*/
 }
 
 /* Adjust Banner img */
@@ -170,7 +169,7 @@ a:not([href]) {
   background-image: url("../img/web_final.jpg");
   background-size: 100%;
   background-position: left top;
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 /* character 1*/
@@ -231,7 +230,7 @@ a:not([href]) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3vh;
+  margin-top: -7%;
 }
 #comment img{
   padding-right: 10px;
