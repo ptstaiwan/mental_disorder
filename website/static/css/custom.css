@@ -157,6 +157,7 @@ a:not([href]) {
 
 .lightBackground{
   background: white;
+  /*background: transparent;*/
 }
 
 /* Adjust Banner img */
@@ -324,7 +325,7 @@ a:not([href]) {
   padding-top: 30px;
   height: 0px;
   overflow: hidden;
-  margin: 50px;
+  border:50px solid #FFFFFF;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
@@ -337,23 +338,33 @@ a:not([href]) {
 
 /* Scroll */
 
-/*
-＃Test1Page-1,＃Test2Page-1,＃Test1Page-2,＃Test2Page-2{
-  position: relative;
-  //z-index: 50;
-  background-image:  url(../img/parallax_1.jpg);
+[alt="scroll1"], [alt="scroll2"]{
+  position: fixed;
+  bottom: 0%;
+  z-index: -2;
+  max-height: 100%;
+  width: 100%;
 }
-#scroll1, #scroll2 {
+[alt="scroll2"]{
+  z-index: -3;
+}
+
+#scroll1Page, #scroll2Page {
   position: relative;
   z-index: auto;
-  //background-image:  url(../img/parallax_1.jpg);
   min-height: 100vh;
-  z-index: auto;
 }
- */
+
+#scroll1Page p, #scroll2Page p{
+  position: relative;
+  background-color: white;
+  opacity: 0.7;
+  bottom: 0%;
+  top: 100vh;
+}
 
 
-/* link */
+  /* link */
 
 #link{
   padding: 0px;
@@ -367,8 +378,8 @@ a:not([href]) {
 }
 
 /* img comments */
-#Test1Page-1 .imageAlignSide .blockContent p, #scroll1 p,
-#Test2Page-1 .imageAlignSide .blockContent p, #scroll2 p,
+#Test1Page-1 .imageAlignSide .blockContent p, #scroll1Page p,
+#Test2Page-1 .imageAlignSide .blockContent p, #scroll2Page p,
 #link_image .imageAlignSide .blockContent p{
   font-size: 14px;
 }
@@ -485,7 +496,7 @@ h5 {
 
   /* video margin */
   .video-container {
-    margin: 0px;
+    border:0px solid #FFFFFF;
   }
 
   /* Adjust footer */
@@ -601,7 +612,7 @@ h5 {
 
   /* Adjust video margin */
   .video-container {
-    margin: 0px;
+    border:0px solid #FFFFFF;
   }
 
   /* Adjust footer */

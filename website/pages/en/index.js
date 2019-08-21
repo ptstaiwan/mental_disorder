@@ -148,7 +148,7 @@ class Index extends React.Component {
     );
 
     const People1Page_1 = () => (
-      <Block id="Test1Page-1" layout="Column" background="light" align="left">
+      <Block id="Test1Page-1" background="light" layout="Column" align="left">
         {[
           {
             title: '精神症狀的出現',
@@ -172,13 +172,14 @@ class Index extends React.Component {
     );
 
     const Scroll1 = () => (
-      <div id="scroll1">
+      <div id="scroll1Page">
+        <img src="http://localhost:3000/mental_disorder/img/parallax_1.jpg" alt="scroll1" id="scroll1"/>
         <p>玉如和姊姊很親密，也經常去姊姊家，跟「花生兄妹」一起玩。</p>
       </div>
     );
 
     const People1Page_2 = () => (
-      <Block id="Test1Page-2" layout="Column" background="light" align="left">
+      <Block id="Test1Page-2" background="light" layout="Column" align="left">
         {[
           {
             title: '陪伴是最好的支持',
@@ -230,8 +231,8 @@ class Index extends React.Component {
     );
 
     const Scroll2 = () => (
-      <div id="scroll2">
-        <img src = "http://localhost:3000/mental_disorder/img/parallax_2.jpg" alt="parallax_2"/>
+      <div id="scroll2Page">
+        <img src = "http://localhost:3000/mental_disorder/img/parallax_2.jpg" alt="scroll2"/>
         <p>宗辰在Easy Coffee工作了12年，操作起咖啡基既熟練、又迅速。</p>
       </div>
     );

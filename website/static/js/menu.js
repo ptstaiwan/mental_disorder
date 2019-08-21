@@ -75,27 +75,6 @@ window.addEventListener('DOMContentLoaded', function () {
   character[0].addEventListener('click', function () {
     window.location.href = '#Test2image';
   });
-
-  /* add mouseover event on character pictures */
-
-  var dialog = document.getElementsByClassName('textImg');
-  for (var i = 0; i < 5; i++) {
-    character[i].addEventListener('mouseover', add(i));
-  }
-
-  function add(i) {
-    return function () {
-      dialog[i].style.cssText += 'opacity: 1';
-    }
-  }
-
-  /* add mouseout event on character pictures */
-
-  for (let i = 0; i < 5; i++) {
-    character[i].addEventListener('mouseout', function () {
-      dialog[i].style.cssText += 'opacity: 0';
-    });
-  }
 });
 
 /* when the page is already rendered, the loading page will disappear */
@@ -103,6 +82,19 @@ window.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('load', function () {
   document.getElementById('loading').style.cssText += 'opacity:0; height: 0vh;';
 });
+
+window.addEventListener('scroll', function () {
+  var offsetTop=document.getElementById('Test2image').offsetTop;
+  $(window).scroll(function () {
+    let scrollTop = $(this).scrollTop();
+    if (scrollTop > offsetTop) {
+      $("#scroll1").css("z-index", "-5");
+    } else {
+      $("#scroll1").css("z-index", "-2");
+    }
+  });
+});
+
 
 /* when the page resizing, get the current width to display the right img */
 
