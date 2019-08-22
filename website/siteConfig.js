@@ -22,12 +22,13 @@ const users = [
 
 const siteConfig = {
   title: '我有病嗎？與精神疾病的真實距離', // Title for your website.
-  tagline: '公視 P# 新聞實驗室',
+  tagline: '什麼是精神疾病？精神疾病患者離我們很遠嗎？\n' +
+    '宗辰和玉如都在二十多歲發病，同一般人的外表下，他們其實已與精神症狀共處多年。宗辰曾經是咖啡店員，玉如是護理師，他們規律生活，正常工作，只是.....',
   url: 'https://newmedia.pts.org.tw', // Your website URL
-  baseUrl: '/newslab-demo/', // Base URL for your project */
+  baseUrl: '/mental_disorder/', // Base URL for your project */
 
   // Used for publishing and more
-  projectName: 'newslab-demo',
+  projectName: 'mental_disorder',
   organizationName: 'ptstaiwan',
 
   // For no header links in the top nav bar -> headerLinks: [],
@@ -75,8 +76,8 @@ const siteConfig = {
   docsSideNavCollapsible: true,
 
   // Open Graph and Twitter card images.
-  ogImage: 'img/undraw_online.svg',
-  twitterImage: 'img/undraw_tweetstorm.svg',
+  ogImage: 'img/share.jpg',
+  twitterImage: 'img/share.jpg',
 
   customDocsPath: 'story',
   stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css','https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional'],
