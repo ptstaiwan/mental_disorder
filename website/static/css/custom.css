@@ -181,7 +181,6 @@ a:not([href]) {
 /* character 1*/
 
 .c1 {
-  position: relative;
   margin-left: 69.7%;
   margin-top: -20.91%;
   cursor: pointer;
@@ -216,10 +215,12 @@ a:not([href]) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
   position: absolute;
-  top: 3%;
-  color: white;
+  top: 0vh;
+  color: #fff;
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
   z-index: 4;
 }
 .Feature h1, .Feature h2, .Feature h1 p, .Feature h2 p{
@@ -227,9 +228,6 @@ a:not([href]) {
 }
 .Feature h2 p{
   color: #F7BF68;
-}
-.Feature > p{
-  width: 40%;
 }
 
 #comment{
@@ -256,6 +254,10 @@ a:not([href]) {
 #Test1image h2 p{
   color: #D65856;
 }
+#Test1image img{
+  float: right;
+}
+
 #Test2image h2 p{
   color: #67BEB4;
 }
@@ -271,6 +273,8 @@ a:not([href]) {
 .gridBlock > * {
   margin: 0px;
 }
+
+
 
 /* Adjust Pagetitle */
 
@@ -299,8 +303,10 @@ a:not([href]) {
   text-align: center;
 }
 
-#Test1Page-1 > div > div > div:nth-child(2), #Test2Page-1 > div > div > div:nth-child(2){
-  width: 100%;
+#Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4){
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 
@@ -486,6 +492,13 @@ h5 {
     padding-bottom: 50px;
   }
 
+  /* Adjust page title */
+  #Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4) {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
   /* Adjust Test1img & Test1img */
 
   .imageAlignSide .blockImage {
@@ -507,7 +520,7 @@ h5 {
 
   #Test2image > .wrapper > .gridBlock > .blockElement {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
   }
@@ -655,5 +668,11 @@ h5 {
   /* Adjust footer */
   #footer {
     padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .Feature {
+    top: 10vh;
   }
 }
