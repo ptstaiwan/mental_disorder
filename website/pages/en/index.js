@@ -104,8 +104,8 @@ class Index extends React.Component {
       <nav id="sidebar-wrapper">
         <NumberList numbers={numbers}/>
         <div className="share">
-        <img src="http://localhost:3000/mental_disorder/img/share_nav_fb.svg" alt="fb_share"/>
-        <img src="http://localhost:3000/mental_disorder/img/share_nav_line.svg" alt="line_share"/>
+          <img src="img/share_nav_fb.svg" alt="fb_share"/>
+          <img src="img/share_nav_line.svg" alt="line_share"/>
         </div>
       </nav>
     );
@@ -118,10 +118,10 @@ class Index extends React.Component {
           <h1><p>與精神疾病的真實距離</p></h1>
           <p>什麼是精神疾病？所謂的精神症狀距離我們究竟有多遠？宗辰曾經是咖啡店員，玉如是護理師，他們都在二十多歲發病，同一般人的外表下，他們其實已與精神症狀共處多年。</p>
         </div>
-        <img src="http://localhost:3000/mental_disorder/img/web_final_left.png" alt="character2" className=" character c2"/>
-        <img src="http://localhost:3000/mental_disorder/img/web_final_right.png" alt="character1" className=" character c1"/>
+        <img src="img/web_final_left.png" alt="character2" className=" character c2"/>
+        <img src="img/web_final_right.png" alt="character1" className=" character c1"/>
         <div id="comment">
-          <img src = "http://localhost:3000/mental_disorder/img/hand_click.svg" alt="pointer"/>
+          <img src = "img/hand_click.svg" alt="pointer"/>
           <p>點選人物或往下閱讀</p>
         </div>
       </div>
@@ -173,7 +173,7 @@ class Index extends React.Component {
 
     const Scroll1 = () => (
       <div id="scroll1Page">
-        <img src="http://localhost:3000/mental_disorder/img/parallax_1.jpg" alt="scroll1" id="scroll1"/>
+        <img src="img/parallax_1.jpg" alt="scroll1" id="scroll1"/>
         <p>玉如和姊姊很親密，也經常去姊姊家，跟「花生兄妹」一起玩。</p>
       </div>
     );
@@ -232,7 +232,7 @@ class Index extends React.Component {
 
     const Scroll2 = () => (
       <div id="scroll2Page">
-        <img src = "http://localhost:3000/mental_disorder/img/parallax_2.jpg" alt="scroll2"/>
+        <img src = "img/parallax_2.jpg" alt="scroll2"/>
         <p>宗辰在Easy Coffee工作了12年，操作起咖啡基既熟練、又迅速。</p>
       </div>
     );
