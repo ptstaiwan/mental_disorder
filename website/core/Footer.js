@@ -54,32 +54,21 @@ class Footer extends React.Component {
               <div>
                 <div>監製</div>
                 <div>製作人</div>
-                <div>數位編輯</div>
-                <div>社群編輯</div>
+                <div>文字</div>
+                <div>網頁設計</div>
+                <div>網頁工程</div>
               </div>
               <div>
-              <div>蘇啟禎</div>
-              <div>卓冠齊</div>
-              <div>李宜芳</div>
-              <div>陳睿哲</div>
+                <div>蘇啟禎</div>
+                <div>卓冠齊</div>
+                <div>楊千醇</div>
+                <div>曾芯敏</div>
+                <div>Kion</div>
               </div>
             </div>
           </div>
-
         </section>
 
-        <a
-          href="https://opensource.facebook.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="fbOpenSource">
-          <img
-            src={`${this.props.config.baseUrl}img/logo-p-white.svg`}
-            alt="Facebook Open Source"
-            width="170"
-            height="45"
-          />
-        </a>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
