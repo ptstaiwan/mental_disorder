@@ -378,8 +378,8 @@ a:not([href]) {
   background-color: white;
   opacity: 0.7;
   bottom: 0%;
-  top: 98vh;
-  padding-left: 20px;
+  top: 97vh;
+  padding: 10px 20px 10px 20px;
 }
 
 
@@ -482,6 +482,11 @@ h5 {
     width: 90%;
     bottom: -75vh;
   }
+  .Feature {
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
 
   /* Hide comment */
   #comment {
@@ -552,6 +557,12 @@ h5 {
     overflow-x: hidden;
     min-width: 200vh;
     left: -70vh;
+  }
+  #scroll1Page p, #scroll2Page p {
+    position: relative;
+    background-color: white;
+    opacity: 0.7;
+    top: 92vh;
   }
 
   /* video margin */
