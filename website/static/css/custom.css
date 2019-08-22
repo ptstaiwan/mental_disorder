@@ -436,6 +436,29 @@ h5 {
   }
 
   /* Adjust Banner */
+  #BannerTitle {
+    background-image: url(../img/mobile2x_final.jpg);
+    background-size: 100%;
+    background-position: left top;
+    min-height: 120vh;
+    max-height: 170vh;
+    background-color: white;
+  }
+  /* Adjust Banner words */
+  h1 p{
+    line-height: 1.2em;
+    text-align: center;
+  }
+  .Feature > p{
+    position: relative;
+    width: 90%;
+    bottom: -75vh;
+  }
+  /* Hide comment */
+  #comment{
+    display: none;
+  }
+
   /* Adjust words */
   h2 {
     margin-bottom: 0px;
