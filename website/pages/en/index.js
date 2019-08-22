@@ -274,23 +274,27 @@ class Index extends React.Component {
         {[
           {
             title: '',
-            image: `${baseUrl}img/link.png`,
-            content: '工作倦怠就是生病？'
+            image: `${baseUrl}img/related1.jpg`,
+            content: '工作倦怠就是生病？',
+            imageLink:`http://talk.news.pts.org.tw/show/15467`
           },
           {
             title: '',
-            image: `${baseUrl}img/link.png`,
-            content: '重回社區有多難？'
+            image: `${baseUrl}img/related2.jpg`,
+            content: '精神疾病社區照護困境',
+            imageLink:`https://pnn.pts.org.tw/type/detail/2209`
           },
           {
             title: '',
-            image: `${baseUrl}img/link.png`,
-            content: '為精障者去汙名化'
+            image: `${baseUrl}img/related3.jpg`,
+            content: '新北市為精障者去汙名化',
+            imageLink:`https://news.pts.org.tw/article/429352`
           },
           {
             title: '',
-            image: `${baseUrl}img/link.png`,
-            content: '延伸'
+            image: `${baseUrl}img/related4.jpg`,
+            content: '選前焦慮選後憂鬱',
+            imageLink:`https://www.youtube.com/watch?v=UWF5DHLutT4`
           },
         ]}
       </Block>

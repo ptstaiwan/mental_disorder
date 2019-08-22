@@ -1,3 +1,8 @@
+/* Smooth scroll */
+
+html{
+  scroll-behavior: smooth;
+}
 /* loading page */
 
 #loading.fade {
@@ -245,6 +250,9 @@ a:not([href]) {
 [src *="people"]{
   width: 50vh;
 }
+#Test1image h2{
+  width: 110%;
+}
 #Test1image h2 p{
   color: #D65856;
 }
@@ -288,6 +296,7 @@ a:not([href]) {
 #Test1Page-1 h2, #Test1Page-2 h2, #Test2Page-1 h2, #Test2Page-2 h2, #conclusion h2, #link h2{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 #Test1Page-1 > div > div > div:nth-child(2), #Test2Page-1 > div > div > div:nth-child(2){
@@ -440,10 +449,10 @@ h5 {
     background-image: url(../img/mobile2x_final.jpg);
     background-size: 100%;
     background-position: left top;
-    min-height: 120vh;
-    max-height: 170vh;
+    min-height: 150vh;
     background-color: white;
   }
+
   /* Adjust Banner words */
   h1 p{
     line-height: 1.2em;
@@ -454,6 +463,7 @@ h5 {
     width: 90%;
     bottom: -75vh;
   }
+
   /* Hide comment */
   #comment{
     display: none;
@@ -462,6 +472,9 @@ h5 {
   /* Adjust words */
   h2 {
     margin-bottom: 0px;
+  }
+  #Test1image h2{
+    width: 100%;
   }
 
   /* All div's padding */
@@ -475,10 +488,6 @@ h5 {
 
   /* Adjust Test1img & Test1img */
 
-  #Test1image h2 {
-    width: 100%;
-  }
-
   .imageAlignSide .blockImage {
     display: block;
     flex: 0 1 100px;
@@ -491,7 +500,7 @@ h5 {
 
   #Test1image > .wrapper > .gridBlock > .blockElement {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-content: center;
   }
@@ -503,18 +512,28 @@ h5 {
     align-content: center;
   }
 
-  /* Scroll */
-  /*
-  #scroll1, #scroll2 {
-    background-attachment: initial;
-    height: 0px;
-    min-height: 300px;
+  /* img */
+  #Test1Page-1 .imageAlignLeft, #Test2Page-1 .imageAlignLeft {
+    max-width: 100%;
   }
-   */
+
+  /* Scroll */
+
 
   /* video margin */
   .video-container {
     border:0px solid #FFFFFF;
+  }
+
+  /* Adjust link image */
+  #link_image .wrapper .gridBlock{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #link_image .wrapper .gridBlock .blockElement{
+    display: flex;
+    flex-direction: column;
   }
 
   /* Adjust footer */
