@@ -170,6 +170,7 @@ a:not([href]) {
   background-size: 100%;
   background-position: left top;
   min-height: 120vh;
+  background-color: white;
 }
 
 /* character 1*/
@@ -284,18 +285,15 @@ a:not([href]) {
   color: #67BEB4;
 }
 
-#Test1Page-1 h2, #Test1Page-2 h2, #Test2Page-1 h2, #Test2Page-2 h2{
+#Test1Page-1 h2, #Test1Page-2 h2, #Test2Page-1 h2, #Test2Page-2 h2, #conclusion h2, #link h2{
   display: flex;
   justify-content: center;
-  position: relative;
-  width: 100vh;
 }
 
-#conclusion h2, #link h2{
-  display: flex;
-  justify-content: center;
-  width: 100vh;
+#Test1Page-1 > div > div > div:nth-child(2), #Test2Page-1 > div > div > div:nth-child(2){
+  width: 100%;
 }
+
 
 /* adjust img */
 
