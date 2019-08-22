@@ -86,6 +86,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('load', function () {
   document.getElementById('loading').style.cssText += 'opacity:0; height: 0vh;';
+  var linkContent = ['工作倦怠就是生病？','精神疾病社區照護困境','新北市為精障者去汙名化','選前焦慮選後憂鬱'];
+  var link = ['http://talk.news.pts.org.tw/show/15467','https://pnn.pts.org.tw/type/detail/2209','https://news.pts.org.tw/article/429352','https://www.youtube.com/watch?v=UWF5DHLutT4'];
+  for(let i = 1; i < 5; i++){
+    document.querySelector('#link_image > div > div > div:nth-child('+ i +') > div.blockContent > div > span > p').outerHTML = '<a href="' + link[i-1] + '"> <p>' + linkContent[i-1] + '</p></a>';
+  }
 });
 window.addEventListener('scroll', function () {
   var offsetTop=document.getElementById('Test2image').offsetTop;
