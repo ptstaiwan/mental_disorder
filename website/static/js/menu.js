@@ -99,7 +99,7 @@ window.addEventListener('scroll', function () {
     if (scrollTop > offsetTop) {
       $("#scroll1").css("z-index", "-5");
     } else {
-      $("#scroll1").css("z-index", "-2");
+      $("#scroll1").css("z-index", "-1");
     }
   });
 });
