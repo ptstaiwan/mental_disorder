@@ -54,16 +54,22 @@ class Footer extends React.Component {
               <div>
                 <div>監製</div>
                 <div>製作人</div>
+                <div>企劃</div>
                 <div>文字</div>
-                <div>網頁設計</div>
-                <div>網頁工程</div>
+                <div>影音</div>
+                <div>設計</div>
+                <div>工程</div>
+                <div>社群</div>
               </div>
               <div>
                 <div>蘇啟禎</div>
                 <div>卓冠齊</div>
                 <div>楊千醇</div>
+                <div>楊千醇、李宜芳</div>
+                <div>許家嘉、曾芯敏、鄭紹妤</div>
                 <div>曾芯敏</div>
-                <div>Kion</div>
+                <div>汪琦恩</div>
+                <div>Nagao Kunaw</div>
               </div>
             </div>
           </div>
