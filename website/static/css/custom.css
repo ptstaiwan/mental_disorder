@@ -441,6 +441,11 @@ h5 {
 
 @media only screen and (min-width: 320px) and (max-width: 735px) {
 
+  p {
+    line-height: 1.8em;
+    letter-spacing: 0.02em;
+  }
+
   /* Adjust hamburger bar */
   #sidebar-wrapper {
     top: 0px;
@@ -504,7 +509,7 @@ h5 {
 
   /* All div's padding */
   .container.paddingTop {
-    padding-top: 0px;
+    padding-top: 60px;
   }
 
   .container.paddingBottom {
