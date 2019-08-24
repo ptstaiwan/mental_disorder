@@ -104,8 +104,12 @@ class Index extends React.Component {
       <nav id="sidebar-wrapper">
         <NumberList numbers={numbers}/>
         <div className="share">
-          <img src="img/share_nav_fb.svg" alt="fb_share"/>
-          <img src="img/share_nav_line.svg" alt="line_share"/>
+          <a href="">
+            <img src="img/share_nav_fb.svg" alt="fb_share"/>
+          </a>
+          <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fnewmedia.pts.org.tw%2Fmental_disorder">
+            <img src="img/share_nav_line.svg" alt="line_share"/>
+          </a>
         </div>
       </nav>
     );
@@ -139,7 +143,6 @@ class Index extends React.Component {
         ]}
       </Block>
     );
-
     const Video1 = () => (
       <div id="Video1" className="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
@@ -187,7 +190,7 @@ class Index extends React.Component {
     const Scroll1 = () => (
       <div id="scroll1Page">
         <img src="img/parallax_1.jpg" alt="scroll1" id="scroll1"/>
-        <p>玉如和姊姊很親密，也經常去姊姊家，跟「花生兄妹」一起玩。</p>
+        <p>玉如平常喜歡跟姊姊一家人、好朋友們在一起，比較不會情緒低落。</p>
       </div>
     );
 
