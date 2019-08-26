@@ -32,7 +32,6 @@
         chmod 600 "/home/runner/.ssh/known_hosts"
         eval $(ssh-agent)
         ssh-add "/home/runner/.ssh/id_rsa"
-        ssh -Tv git@github.com
         cd $BUILD_DIR
         npm install
         npm run build
