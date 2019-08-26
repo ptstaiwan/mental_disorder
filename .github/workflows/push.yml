@@ -20,7 +20,7 @@
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
-        SSH_PATH="/root/.ssh"
+        SSH_PATH="~/.ssh"
         mkdir "$SSH_PATH"
         touch "$SSH_PATH/known_hosts"
         echo "$DEPLOY_SSH_KEY" > "$SSH_PATH/id_rsa"
