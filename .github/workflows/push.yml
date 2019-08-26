@@ -1,0 +1,29 @@
+ on: push
+ name: Build Docs
+ jobs:
+   filterBranch:
+     name: Filter branch
+     runs-on: ubuntu-latest
+     steps:
+     - uses: actions/checkout@master
+     - name: Filter branch
+       uses: actions/bin/filter@master
+       with:
+         args: branch master
+     - name: Install
+       uses: actions/npm@master
+       with:
+         args: install --prefix ./website
+     - name: Update version
+       uses: clay/docusaurus-github-action@master
+       with:
+         args: version
+     - name: Deploy Docs
+       uses: clay/docusaurus-github-action@master
+       env:
+         ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+         BUILD_DIR: website
+         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+         PROJECT_NAME: clay
+       with:
+         args: deploy
