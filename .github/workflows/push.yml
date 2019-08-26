@@ -34,10 +34,12 @@
         git config --global user.name "$GITHUB_ACTOR"
         git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"  
         npm install
-        npm run publish-gh-pages
+        npm run build
+        npx gh-pages -d "build" --repo "git@github.com:$GITHUB_REPOSITORY.git"
       env:
         BUILD_DIR: website
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         PROJECT_NAME: mental-disorder
         GIT_USER: github-action
         SSH_PATH: "$HOME/.ssh"
+        GITHUB_REPOSITORY: ptstaiwan/mental_disorder
