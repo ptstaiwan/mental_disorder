@@ -50,6 +50,7 @@
         SLACK_COLOR: "#3278BD"
         SLACK_TITLE: "上版通知",
         SLACK_MESSAGE: "成功上版 :rocket:"
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
     - name: Slack Notify - Failed Deployment
       if: cancelled()
       uses: rtCamp/action-slack-notify@v1.0.0
@@ -60,3 +61,4 @@
         SLACK_COLOR: "#FF0000"
         SLACK_TITLE: "上版通知",
         SLACK_MESSAGE: "上版失敗 :disappointed_relieved:"
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
