@@ -443,11 +443,6 @@ h5 {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 735px) {
-  /* Adjust text */
-  p {
-    line-height: 1.8em;
-    letter-spacing: 0.02em;
-  }
 
   /* Adjust hamburger bar */
   #sidebar-wrapper {
@@ -504,6 +499,11 @@ h5 {
   /* Adjust words */
   h2 {
     margin-bottom: 0px;
+  }
+
+  p {
+    line-height: 1.8em;
+    letter-spacing: 0.02em;
   }
 
   #Test1image h2 {

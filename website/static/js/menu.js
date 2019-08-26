@@ -81,12 +81,25 @@ window.addEventListener('load', function () {
 
 window.addEventListener('scroll', function () {
   var offsetTop=document.getElementById('Test2image').offsetTop;
+  var bannerBottom = document.getElementById('Test1image').offsetTop;
+  var footerTop = document.getElementById('conclusion').offsetTop;
   $(window).scroll(function () {
     let scrollTop = $(this).scrollTop();
+    if(bannerBottom > scrollTop){
+      $("#scroll1").css("opacity", "0");
+      $("#scroll2").css("opacity", "0");
+    }else{if(scrollTop > footerTop){
+      $("#scroll1").css("opacity", "0");
+      $("#scroll2").css("opacity", "0");
+    }else{
+      $("#scroll1").css("opacity", "1");
+      $("#scroll2").css("opacity", "1");
+    }
+    }
     if (scrollTop > offsetTop) {
       $("#scroll1").css("z-index", "-5");
     } else {
-      $("#scroll1").css("z-index", "-1");
+      $("#scroll1").css({"z-index":"-1"});
     }
   });
 });

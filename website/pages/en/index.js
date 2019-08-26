@@ -274,7 +274,7 @@ class Index extends React.Component {
 
     const Scroll2 = () => (
       <div id="scroll2Page">
-        <img src = "img/parallax_2.jpg" alt="scroll2"/>
+        <img src = "img/parallax_2.jpg" alt="scroll2" id="scroll2"/>
         <p>宗辰在Easy Coffee工作了12年，操作起咖啡基既熟練、又迅速。</p>
       </div>
     );
