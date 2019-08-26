@@ -30,6 +30,6 @@
         ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
         BUILD_DIR: website
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
-        PROJECT_NAME: clay
+        PROJECT_NAME: mental-disorder
       with:
         args: deploy
