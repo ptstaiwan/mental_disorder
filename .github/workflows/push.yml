@@ -25,7 +25,7 @@
         echo "$DEPLOY_SSH_KEY" > "$SSH_PATH/id_rsa"
         chmod 700 "$SSH_PATH"
         chmod 600 "$SSH_PATH/known_hosts"
-        chmod 600 "$SSH_PATH/deploy_key"
+        chmod 600 "$SSH_PATH/id_rsa"
         eval $(ssh-agent)
         ssh-add "$SSH_PATH/id_rsa"
         ssh-keyscan -t rsa "github.com" >> "$SSH_PATH/known_hosts"
