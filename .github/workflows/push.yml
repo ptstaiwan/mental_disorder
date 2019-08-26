@@ -22,6 +22,9 @@
       run: npm install --prefix ./website
     - name: Update version
       uses: clay/docusaurus-github-action@master
+      env:
+        BUILD_DIR: website
+        PROJECT_NAME: mental-disorder
       with:
         args: version
     - name: Deploy Docs
