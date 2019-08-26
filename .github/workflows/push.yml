@@ -31,16 +31,15 @@
         ssh-keyscan -t rsa "github.com" >> "$SSH_PATH/known_hosts"
         echo "StrictHostKeyChecking no" >> "$SSH_PATH/config"
         cd $BUILD_DIR
-        git config --global user.name "$GIT_USER"
-        git config --global user.email "$GIT_EMAIL"  
+        git config --global user.name "$GITHUB_ACTIONS_USER"
+        git config --global user.email "$GITHUB_ACTIONS_EMAIL"  
         npm install
-        npm run build
-        npx gh-pages -d "build/$PROJECT_NAME" --repo "$GIT_REPO"
+        npm run publish-gh-pages
       env:
         BUILD_DIR: website
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         PROJECT_NAME: mental_disorder
-        GIT_USER: github-action
-        GIT_EMAIL: noreply@newmedia.pts.org.tw
+        GITHUB_ACTIONS_USER: github-action
+        GITHUB_ACTIONS_EMAIL: noreply@newmedia.pts.org.tw
         SSH_PATH: '$HOME/.ssh'
-        GITHUB_REPOSITORY: 'git@github.com:ptstaiwan/mental_disorder.git'
+        GIT_REPOSITORY: 'git@github.com:ptstaiwan/mental_disorder.git'
