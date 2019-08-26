@@ -23,16 +23,15 @@
         git config --global user.name "github_actions"
         git config --global user.email "github_actions@noreply.pts.org.tw"
         mkdir -p "$SSH_PATH"
-        touch "$SSH_PATH/known_hosts"
-        echo "$DEPLOY_SSH_KEY" > "$SSH_PATH/id_rsa"
+        touch "/home/runner/.ssh/known_hosts"
+        echo "$DEPLOY_SSH_KEY" > "/home/runner/.ssh/id_rsa"
         chmod 700 "$SSH_PATH"
         chmod 600 "$SSH_PATH/known_hosts"
         chmod 600 "$SSH_PATH/id_rsa"
         eval $(ssh-agent)
-        ssh-add "$SSH_PATH/id_rsa"
-        ssh-keyscan -t rsa "github.com" >> "$SSH_PATH/known_hosts"
-        echo "StrictHostKeyChecking no" >> "$SSH_PATH/config"
-        echo "IdentityFile $SSH_PATH/id_rsa"  >> "$SSH_PATH/config"
+        ssh-add "/home/runner/.ssh/id_rsa"
+        ssh-keyscan -t rsa "github.com" >> "/home/runner/.ssh/known_hosts"
+        echo "StrictHostKeyChecking no" >> "$/home/runner/.ssh/config"
         ssh -Tv git@github.com
         cd $BUILD_DIR
         npm install
