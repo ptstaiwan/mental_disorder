@@ -25,13 +25,13 @@
         mkdir -p "/home/runner/.ssh"
         touch "/home/runner/.ssh/known_hosts"
         echo "$DEPLOY_SSH_KEY" > "/home/runner/.ssh/id_rsa"
+        echo "StrictHostKeyChecking no" >> "$/home/runner/.ssh/config"
+        ssh-keyscan -t rsa "github.com" >> "/home/runner/.ssh/known_hosts"
+        chmod 700 "/home/runner/.ssh"
+        chmod 600 "/home/runner/.ssh/id_rsa"
+        chmod 600 "/home/runner/.ssh/known_hosts"
         eval $(ssh-agent)
         ssh-add "/home/runner/.ssh/id_rsa"
-        ssh-keyscan -t rsa "github.com" >> "/home/runner/.ssh/known_hosts"
-        echo "StrictHostKeyChecking no" >> "$/home/runner/.ssh/config"
-        chmod 700 "/home/runner/.ssh"
-        chmod 600 "/home/runner/.ssh/known_hosts"
-        chmod 600 "/home/runner/.ssh/id_rsa"
         ssh -Tv git@github.com
         cd $BUILD_DIR
         npm install
