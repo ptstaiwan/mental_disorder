@@ -40,3 +40,23 @@
         BUILD_DIR: website
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         PROJECT_NAME: mental_disorder
+    - name: Slack Notify - Successful Deployment
+      if: success()
+      uses: rtCamp/action-slack-notify@v1.0.0
+      env:
+        SLACK_CHANNEL: "psharp-single-project",
+        SLACK_USERNAME: "Slack-Bot",
+        SLACK_ICON: "https://github.com/rtCamp.png?size=48",
+        SLACK_COLOR: "#3278BD"
+        SLACK_TITLE: "上版通知",
+        SLACK_MESSAGE: "成功上版 :rocket:"
+    - name: Slack Notify - Failed Deployment
+      if: cancelled()
+      uses: rtCamp/action-slack-notify@v1.0.0
+      env:
+        SLACK_CHANNEL: "psharp-single-project",
+        SLACK_USERNAME: "Slack-Bot",
+        SLACK_ICON: "https://github.com/rtCamp.png?size=48",
+        SLACK_COLOR: "#FF0000"
+        SLACK_TITLE: "上版通知",
+        SLACK_MESSAGE: "上版失敗 :disappointed_relieved:"
