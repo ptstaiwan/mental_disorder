@@ -42,4 +42,4 @@
         PROJECT_NAME: mental-disorder
         GIT_USER: github-action
         SSH_PATH: "$HOME/.ssh"
-        GITHUB_REPOSITORY: ptstaiwan/mental_disorder
+        GITHUB_REPOSITORY: "ptstaiwan/mental_disorder"
