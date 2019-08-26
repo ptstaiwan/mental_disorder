@@ -22,7 +22,7 @@
       run: |
         git config --global user.name "github_actions"
         git config --global user.email "github_actions@noreply.pts.org.tw"
-        mkdir -p "$SSH_PATH"
+        mkdir -p "/home/runner/.ssh"
         touch "/home/runner/.ssh/known_hosts"
         echo "$DEPLOY_SSH_KEY" > "/home/runner/.ssh/id_rsa"
         chmod 700 "$SSH_PATH"
@@ -41,4 +41,3 @@
         BUILD_DIR: website
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         PROJECT_NAME: mental_disorder
-        SSH_PATH: '$HOME/.ssh'
