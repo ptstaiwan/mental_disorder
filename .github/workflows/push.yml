@@ -20,6 +20,16 @@
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
+        mkdir -p "$SSH_PATH"
+        touch "$SSH_PATH/known_hosts"
+        echo "$DEPLOY_SSH_KEY" > "$SSH_PATH/id_rsa"
+        chmod 700 "$SSH_PATH"
+        chmod 600 "$SSH_PATH/known_hosts"
+        chmod 600 "$SSH_PATH/deploy_key"
+        eval $(ssh-agent)
+        ssh-add "$SSH_PATH/id_rsa"
+        ssh-keyscan -t rsa "github.com" >> "$SSH_PATH/known_hosts"
+        echo "StrictHostKeyChecking no" >> "$SSH_PATH/config"
         cd $BUILD_DIR
         git config --global user.name "$GITHUB_ACTOR"
         git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"  
@@ -30,3 +40,4 @@
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         PROJECT_NAME: mental-disorder
         GIT_USER: github-action
+        SSH_PATH: "$HOME/.ssh"
