@@ -98,7 +98,9 @@ class Index extends React.Component {
     }
 
     const numbers = [{id: 2, href: <a className="js-scroll-trigger" href="#Test1image">玉如｜與思覺失調症共處6年</a>},
-      {id: 3, href: <a className="js-scroll-trigger" href="#Test2image">宗辰｜與強迫症共處15年</a>}];
+      {id: 3, href: <a className="js-scroll-trigger" href="#Test2image">宗辰｜與強迫症共處15年</a>},
+      {id: 4, href: <a className="js-scroll-trigger" href="#conclusion">結語｜跨越成見 拉近距離</a>}
+    ];
 
     const SideBar = () => (
       <nav id="sidebar-wrapper">
