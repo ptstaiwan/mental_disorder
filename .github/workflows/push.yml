@@ -19,20 +19,23 @@
       with:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
-      run: npm install --prefix ./website
-    - name: Update version
-      uses: clay/docusaurus-github-action@master
+      run: |
+        SSH_PATH="/root/.ssh"
+        mkdir "$SSH_PATH"
+        touch "$SSH_PATH/known_hosts"
+        echo "$DEPLOY_SSH_KEY" > "$SSH_PATH/id_rsa"
+        chmod 700 "$SSH_PATH"
+        chmod 600 "$SSH_PATH/known_hosts"
+        chmod 600 "$SSH_PATH/id_rsa"
+        eval $(ssh-agent)
+        ssh-add "$SSH_PATH/id_rsa"
+        ssh-keyscan -t rsa "github.com" >> "$SSH_PATH/known_hosts"
+        echo "StrictHostKeyChecking no" >> "$SSH_PATH/config"
+        cd $BUILD_DIR;
+        git config --global user.name "$GITHUB_ACTOR" && \
+        git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && \      
+        cd $BUILD_DIR && npm install && GIT_USER="${GH_NAME}" npm run publish-gh-pages
       env:
-        BUILD_DIR: website
-        PROJECT_NAME: mental-disorder
-      with:
-        args: version
-    - name: Deploy Docs
-      uses: clay/docusaurus-github-action@master
-      env:
-        ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
         BUILD_DIR: website
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         PROJECT_NAME: mental-disorder
-      with:
-        args: deploy
