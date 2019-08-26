@@ -51,7 +51,7 @@
         SLACK_MESSAGE: '上版成功 :rocket:'
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
     - name: Slack Notify - Failed Deployment
-      if: cancelled()
+      if: failure()
       uses: rtCamp/action-slack-notify@v1.0.0
       env:
         SLACK_CHANNEL: psharp-single-project
