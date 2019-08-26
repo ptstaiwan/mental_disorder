@@ -46,7 +46,7 @@
       env:
         SLACK_CHANNEL: psharp-single-project
         SLACK_USERNAME: Slack-Bot
-        SLACK_ICON: 'https://github.com/rtCamp.png?size=48'
+        SLACK_ICON: ':robot_face:'
         SLACK_COLOR: '#3278BD'
         SLACK_TITLE: '上版通知'
         SLACK_MESSAGE: '上版成功 :rocket:'
@@ -57,7 +57,7 @@
       env:
         SLACK_CHANNEL: psharp-single-project
         SLACK_USERNAME: Slack-Bot
-        SLACK_ICON: 'https://github.com/rtCamp.png?size=48'
+        SLACK_ICON: ':robot_face:'
         SLACK_COLOR: '#FF0000'
         SLACK_TITLE: '上版通知'
         SLACK_MESSAGE: '上版失敗 :disappointed_relieved:'
