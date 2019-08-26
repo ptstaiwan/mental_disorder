@@ -20,10 +20,11 @@
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
-        cd $BUILD_DIR;
-        git config --global user.name "$GITHUB_ACTOR" && \
-        git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && \      
-        cd $BUILD_DIR && npm install && GIT_USER="${GH_NAME}" npm run publish-gh-pages
+        cd $BUILD_DIR
+        git config --global user.name "$GITHUB_ACTOR"
+        git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"  
+        npm install
+        GIT_USER="${GH_NAME}" npm run publish-gh-pages
       env:
         BUILD_DIR: website
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
