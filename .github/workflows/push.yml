@@ -33,6 +33,7 @@
         eval $(ssh-agent)
         ssh-add "/home/runner/.ssh/id_rsa"
         cd $BUILD_DIR
+        npm install
         npm run build
         npx gh-pages -d "build/$PROJECT_NAME" --repo "git@github.com:ptstaiwan/mental_disorder.git"
       env:
