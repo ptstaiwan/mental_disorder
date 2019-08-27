@@ -117,7 +117,7 @@ h1 p {
 
 .share {
   position: absolute;
-  top: 245px;
+  top: 300px;
   left: 25px;
 }
 
@@ -358,9 +358,11 @@ a:not([href]) {
 [alt="scroll1"], [alt="scroll2"] {
   position: fixed;
   bottom: 0%;
-  z-index: -2;
   max-height: 100%;
   width: 100%;
+}
+[alt="scroll1"] {
+  z-index: -1;
 }
 
 [alt="scroll2"] {
@@ -374,12 +376,13 @@ a:not([href]) {
 }
 
 #scroll1Page p, #scroll2Page p {
+  display: block;
   position: relative;
   background-color: white;
   opacity: 0.7;
-  bottom: 0%;
-  top: 97vh;
+  top: 100vh;
   padding: 10px 20px 10px 20px;
+  margin-bottom: 3em;
 }
 
 
@@ -441,11 +444,6 @@ h5 {
 
 @media only screen and (min-width: 320px) and (max-width: 735px) {
 
-  p {
-    line-height: 1.8em;
-    letter-spacing: 0.02em;
-  }
-
   /* Adjust hamburger bar */
   #sidebar-wrapper {
     top: 0px;
@@ -472,7 +470,7 @@ h5 {
     background-image: url(../img/mobile2x_final.jpg);
     background-size: 100%;
     background-position: left top;
-    min-height: 150vh;
+    min-height: 140vh;
     background-color: white;
   }
 
@@ -501,6 +499,11 @@ h5 {
   /* Adjust words */
   h2 {
     margin-bottom: 0px;
+  }
+
+  p {
+    line-height: 1.8em;
+    letter-spacing: 0.02em;
   }
 
   #Test1image h2 {
@@ -555,19 +558,13 @@ h5 {
 
   /* Scroll */
   [alt="scroll1"], [alt="scroll2"] {
-    position: fixed;
-    bottom: 0%;
-    z-index: -2;
     min-height: 100%;
     overflow-x: hidden;
     min-width: 200vh;
     left: -70vh;
   }
   #scroll1Page p, #scroll2Page p {
-    position: relative;
-    background-color: white;
-    opacity: 0.7;
-    top: 92vh;
+    top : 97vh;
   }
 
   /* video margin */
@@ -594,6 +591,10 @@ h5 {
     position: relative;
   }
 
+  .nav-footer .sitemap div {
+    flex: 1 0 auto;
+  }
+
   /* Adjust footer PTS block */
   #footer > section.sitemap > div:nth-child(2) {
     margin-bottom: 40px;
@@ -606,11 +607,13 @@ h5 {
   .Feature {
     width: 80%;
     margin: auto;
-    position: absolute;
     bottom: 0px;
     left: 10%;
-    color: white;
-    z-index: 7;
+  }
+  /* Adjust Banner */
+
+  #BannerTitle {
+    min-height: 50vh;
   }
 
   /* All div's padding */
@@ -643,30 +646,23 @@ h5 {
   }
 
   /* Test1image & Test2image typeset */
+
   #Test1image h2 {
     width: 100%;
   }
 
   #Test1image > .wrapper > .gridBlock > .blockElement {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-content: center;
   }
 
   #Test2image > .wrapper > .gridBlock > .blockElement {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-  }
-
-  .imageAlignSide .blockImage {
-    flex: 0;
-  }
-
-  #Test1image > .wrapper, #Test2image > .wrapper {
-    padding-left: 50px;
   }
 
   /* Adjust img */
@@ -688,17 +684,41 @@ h5 {
     padding-bottom: 0px;
   }
 
-  /* Scroll */
-  /*
-  #scroll1, #scroll2 {
-    background-attachment: initial;
-    min-height: 600px;
-    height: 0px;
+  #Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4) {
+    width: 100%;
+    margin-left: 15%;
+    margin-right: 17%;
   }
-   */
+
+  /* Scroll */
+  [alt="scroll1"], [alt="scroll2"] {
+    min-height: 100%;
+    overflow-x: hidden;
+    min-width: 200vh;
+    left: -55vh;
+  }
+
   /* Adjust video margin */
   .video-container {
     border: 0px solid #FFFFFF;
+  }
+
+  /* link img */
+
+  #link_image .wrapper .gridBlock {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #link_image .wrapper .gridBlock .blockElement {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #link_image .imageAlignSide .blockImage {
+    flex: 1 1 300px;
+    max-width: 500px;
   }
 
   /* Adjust footer */

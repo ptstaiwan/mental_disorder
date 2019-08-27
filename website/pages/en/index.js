@@ -98,13 +98,15 @@ class Index extends React.Component {
     }
 
     const numbers = [{id: 2, href: <a className="js-scroll-trigger" href="#Test1image">玉如｜與思覺失調症共處6年</a>},
-      {id: 3, href: <a className="js-scroll-trigger" href="#Test2image">宗辰｜與強迫症共處15年</a>}];
+      {id: 3, href: <a className="js-scroll-trigger" href="#Test2image">宗辰｜與強迫症共處15年</a>},
+      {id: 4, href: <a className="js-scroll-trigger" href="#conclusion">結語｜跨越成見 拉近距離</a>}
+    ];
 
     const SideBar = () => (
       <nav id="sidebar-wrapper">
         <NumberList numbers={numbers}/>
         <div className="share">
-          <a href="">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnewmedia.pts.org.tw%2Fmental_disorder%2F&amp;src=sdkpreparse">
             <img src="img/share_nav_fb.svg" alt="fb_share"/>
           </a>
           <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fnewmedia.pts.org.tw%2Fmental_disorder">
@@ -272,7 +274,7 @@ class Index extends React.Component {
 
     const Scroll2 = () => (
       <div id="scroll2Page">
-        <img src = "img/parallax_2.jpg" alt="scroll2"/>
+        <img src = "img/parallax_2.jpg" alt="scroll2" id="scroll2"/>
         <p>宗辰在Easy Coffee工作了12年，操作起咖啡基既熟練、又迅速。</p>
       </div>
     );

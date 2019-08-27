@@ -23,6 +23,7 @@ const users = [
 const siteConfig = {
   title: '我有病嗎？與精神疾病的真實距離', // Title for your website.
   tagline: '什麼是精神疾病？精神疾病患者離我們很遠嗎？宗辰和玉如都在二十多歲發病，同一般人的外表下，他們其實已與精神症狀共處多年。宗辰曾經是咖啡店員，玉如是護理師，他們規律生活，正常工作，只是.....',
+  disableTitleTagline: true,
   url: 'https://newmedia.pts.org.tw', // Your website URL
   baseUrl: '/mental_disorder/', // Base URL for your project */
 
@@ -77,6 +78,10 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   ogImage: 'img/share.jpg',
   twitterImage: 'img/share.jpg',
+
+  // GA
+  gaTrackingId: 'UA-88451663-15',
+  gaGtag: true,
 
   customDocsPath: 'story',
   stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css','https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional'],
