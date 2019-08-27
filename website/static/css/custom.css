@@ -270,6 +270,14 @@ a:not([href]) {
   color: #67BEB4;
 }
 
+/* logo */
+
+.logo{
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
 /* Make paragraph center */
 
 .blockContent {

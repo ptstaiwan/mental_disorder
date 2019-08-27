@@ -124,6 +124,9 @@ class Index extends React.Component {
           <h1><p>與精神疾病的真實距離</p></h1>
           <p>什麼是精神疾病？所謂的精神症狀距離我們究竟有多遠？宗辰曾經是咖啡店員，玉如是護理師，他們都在二十多歲發病，同一般人的外表下，他們其實已與精神症狀共處多年。</p>
         </div>
+        <a href="https://newslab.pts.org.tw/">
+          <img src="img/logo_m.svg" alt="logo" className="logo"/>
+        </a>
         <img src="img/web_final_left.png" alt="character2" className=" character c2"/>
         <img src="img/web_final_right.png" alt="character1" className=" character c1"/>
         <div id="comment">
