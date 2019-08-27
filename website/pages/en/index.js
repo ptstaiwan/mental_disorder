@@ -70,9 +70,12 @@ class Index extends React.Component {
     );
 
     const HamburgerBar = () => (
-      <a className="menu-toggle rounded">
-        <i className="fas fa-bars"/>
-      </a>
+      <div className="menu-toggle rounded">
+        <a className="hamburgerBar">
+          <i className="fas fa-bars"/>
+        </a>
+        <i className="logoBar"/>
+      </div>
     );
 
     function NumberList(props) {

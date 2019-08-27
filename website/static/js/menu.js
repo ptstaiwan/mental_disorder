@@ -1,19 +1,29 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-  var navBar = document.getElementsByClassName('menu-toggle')[0];
-  var sidebarStatus = document.getElementById('sidebar-wrapper');
-  sidebarStatus.style.cssText += 'left:-500px';
+  /* change logo icon position */
+
+  var logo = document.getElementsByClassName("logoBar")[0];
+  var width = $(window).width();
+
+  if(1024 > width){
+    logo.innerHTML = "<a href=\"https://newslab.pts.org.tw/\"><img src=\"img/logo_mobile.svg\" alt=\"logo\"/></a>";
+  }else{
+    logo.innerHTML = "";
+  }
 
   /* when we click on icon, close or open hamburger bar & change icon */
+
+  var navBar = document.getElementsByClassName('hamburgerBar')[0];
+  var sidebarStatus = document.getElementById('sidebar-wrapper');
+  sidebarStatus.style.cssText += 'left:-500px';
 
   navBar.addEventListener("click", function (e) {
     var sidebarStatus = document.getElementById('sidebar-wrapper');
     if (sidebarStatus.style.left === '-500px') {
       sidebarStatus.style.cssText += 'left:-250px';
-      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-times"></i>';
+      navBar.innerHTML = '<i class="fas fa-times"></i>';
     }else if (sidebarStatus.style.left === '-250px') {
-
-      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
+      navBar.innerHTML = '<i class="fas fa-bars"></i>';
       sidebarStatus.style.cssText += 'left:-500px';
     }else {
       console.log("nope");
@@ -21,17 +31,15 @@ window.addEventListener('DOMContentLoaded', function () {
     e.stopPropagation();
   });
 
-
-
   /* when we touch on icon, close or open hamburger bar & change icon */
 
   navBar.addEventListener("touch", function (e) {
     var sidebarStatus = document.getElementById('sidebar-wrapper');
     if (sidebarStatus.style.left === '-500px') {
       sidebarStatus.style.cssText += 'left:-250px';
-      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-times"></i>';
+      navBar.innerHTML = '<i class="fas fa-times"></i>';
     } else if (sidebarStatus.style.left === '-250px') {
-      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
+      navBar.innerHTML = '<i class="fas fa-bars"></i>';
       sidebarStatus.style.cssText += 'left:-500px';
     } else {
       console.log("nope");
@@ -44,7 +52,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName('landingPage')[0].addEventListener("click", function () {
     if (sidebarStatus.style.left === '-250px') {
       sidebarStatus.style.cssText += 'left:-500px';
-      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
+      navBar.innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
 
@@ -53,7 +61,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.getElementsByTagName('body')[0].addEventListener("touch", function (e) {
     if (sidebarStatus.style.left === '-250px') {
       sidebarStatus.style.cssText += 'left:-500px';
-      document.getElementsByClassName('menu-toggle rounded')[0].innerHTML = '<i class="fas fa-bars"></i>';
+      navBar.innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
 
@@ -102,6 +110,20 @@ window.addEventListener('scroll', function () {
       $("#scroll1").css({"z-index":"-1"});
     }
   });
+});
+
+window.addEventListener('resize', function () {
+
+  /* change logo icon position */
+
+  var logo = document.getElementsByClassName("logoBar")[0];
+  var width = $(window).width();
+
+  if (1024 > width) {
+    logo.innerHTML = "<a href=\"https://newslab.pts.org.tw/\"><img src=\"img/logo_mobile.svg\" alt=\"logo\"/></a>";
+  }else{
+    logo.innerHTML = "";
+  }
 });
 
 
