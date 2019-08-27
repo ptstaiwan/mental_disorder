@@ -79,6 +79,10 @@ const siteConfig = {
   ogImage: 'img/share.jpg',
   twitterImage: 'img/share.jpg',
 
+  // GA
+  gaTrackingId: 'UA-88451663-15',
+  gaGtag: true,
+
   customDocsPath: 'story',
   stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css','https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional'],
   disableHeaderTitle: true
