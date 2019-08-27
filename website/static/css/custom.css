@@ -37,6 +37,10 @@ h1 p {
   color: #7B7B7B;
   letter-spacing: 0em;
 }
+h1 {
+  position: relative;
+  top: -25px;
+}
 
 /* h2 */
 
@@ -218,7 +222,7 @@ a:not([href]) {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 0vh;
+  top: 87px;
   color: #fff;
   width: 50%;
   margin-right: 25%;
@@ -498,6 +502,11 @@ h5 {
   h1 p {
     line-height: 1.2em;
     text-align: center;
+    position: relative;
+  }
+  h1 {
+    position: relative;
+    top: 0px;
   }
 
   .Feature > p {
@@ -509,6 +518,7 @@ h5 {
     width: 100%;
     margin-right: 0%;
     margin-left: 0%;
+    top: 50px;
   }
 
   /* Hide comment */
@@ -629,6 +639,10 @@ h5 {
     margin: auto;
     bottom: 0px;
     left: 10%;
+  }
+  h1 {
+    position: relative;
+    top: 0px;
   }
   /* Adjust Banner */
 
