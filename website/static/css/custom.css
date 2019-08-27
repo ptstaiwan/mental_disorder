@@ -380,9 +380,9 @@ a:not([href]) {
   position: relative;
   background-color: white;
   opacity: 0.7;
-  bottom: 0%;
-  top: 97vh;
+  top: 100vh;
   padding: 10px 20px 10px 20px;
+  margin-bottom: 3em;
 }
 
 
@@ -564,7 +564,7 @@ h5 {
     left: -70vh;
   }
   #scroll1Page p, #scroll2Page p {
-    margin-bottom: 3em;
+    top : 97vh;
   }
 
   /* video margin */
