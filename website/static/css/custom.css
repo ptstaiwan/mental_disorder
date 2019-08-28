@@ -328,10 +328,10 @@ a:not([href]) {
   text-align: center;
 }
 
-#Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4) {
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+#Test1Page-1 > div > div > div:nth-child(6), #Test2Page-1 > div > div > div:nth-child(1), #Test2Page-1 > div > div > div:nth-child(10) {
+  width: 52%;
+  margin-left: 23%;
+  margin-right: 23%;
 }
 
 
@@ -554,7 +554,8 @@ h5 {
   }
 
   /* Adjust page title */
-  #Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4) {
+
+  #Test1Page-1 > div > div > div:nth-child(6), #Test2Page-1 > div > div > div:nth-child(1), #Test2Page-1 > div > div > div:nth-child(10) {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
@@ -731,8 +732,7 @@ h5 {
   .Test1Page > .wrapper {
     padding-bottom: 0px;
   }
-
-  #Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4) {
+  #Test1Page-1 > div > div > div:nth-child(6), #Test2Page-1 > div > div > div:nth-child(1), #Test2Page-1 > div > div > div:nth-child(10) {
     width: 100%;
     margin-left: 15%;
     margin-right: 17%;
