@@ -167,11 +167,11 @@ class Index extends React.Component {
           },
           {
             title: '',
-            content: '玉如的爸爸在她12歲生病去世，媽媽也在她18歲時，因意外過世，媽媽曾經是她最親近的人，雖然玉如也有兄弟姊妹，但玉如跟哥哥的關係一直都不太好，實習的時候跟哥哥和弟弟住在一起，卻常常和哥哥吵架。',
+            content: '玉如的爸爸在她12歲生病去世，媽媽也在她18歲時，因意外過世，媽媽曾經是她最親近的人，雖然玉如也有兄弟姐妹，但玉如跟哥哥的關係一直都不太好，實習的時候跟哥哥和弟弟住在一起，卻常常和哥哥吵架。',
           },
           {
             title: '',
-            content: '儘管如此，玉如心裡還是希望有一天能和哥哥修復關係，家庭帶給玉如的創傷，也是玉如後來發病的原因之一',
+            content: '儘管如此，玉如心裡還是希望有一天能和哥哥修復關係，家庭帶給玉如的創傷，也是玉如後來發病的原因之一。',
           },
           {
             title: '',
@@ -237,7 +237,7 @@ class Index extends React.Component {
         {[
           {
             title: '家人與好友的陪伴&nbsp;&nbsp;是玉如最大的支持',
-            content: '「跟讓我有安全感的人互動，有互動、支持，就比較不會情緒低落。」玉如說。在沒有工作影響的時候，玉如會去姐姐家，和姐姐一起準備大家的晚餐，姐姐有兩個小孩，玉如都叫他們「花生兄妹」，跟姊姊一家人在一起，讓玉如的心有了歸屬感而不孤單。'
+            content: '「跟讓我有安全感的人互動，有互動、支持，就比較不會情緒低落。」玉如說。在沒有工作影響的時候，玉如會去姐姐家，和姐姐一起準備大家的晚餐，姐姐有兩個小孩，玉如都叫他們「花生兄妹」，跟姐姐一家人在一起，讓玉如的心有了歸屬感而不孤單。'
           },
           {
             title: '',
@@ -273,7 +273,7 @@ class Index extends React.Component {
       <Block id="Test2Page-1" className="Test2Page" layout="Column" background="light" align="left">
         {[
           {
-            title: '在美國念書時發病&nbsp;&nbsp;經常陷入無意義的思考',
+            title: '留學美國發病&nbsp;&nbsp;陷入困境',
           },
           {
             title: '',
@@ -308,7 +308,7 @@ class Index extends React.Component {
             content: '宗辰聽醫生說了以後才知道，原來像他這樣常常陷入沒有意義的思考，是強迫症的一種精神症狀。'
           },
           {
-            title: '在爸爸的建議下&nbsp;&nbsp;接觸心理諮商',
+            title: '父親建議&nbsp;&nbsp;接觸諮商',
           },
           {
             title: '',
@@ -358,7 +358,7 @@ class Index extends React.Component {
       <Block id="Test2Page-2" layout="Column" background="light" align="left">
         {[
           {
-            title: '在工作中練習&nbsp;&nbsp;慢慢調整自己',
+            title: '工作是調整心態的練習',
             content: '宗辰從美國回到台灣一年多以後，就在《台北市康復之友協會》附設的咖─啡店Easy Coffee工作，到最近轉職之前，他已經在Easy Coffee待了12年，雖然一開始宗辰並不喜歡和陌生人說話，但因為每天都會碰到不同的客人，對宗辰來說也是一種練習，漸漸習慣和陌生人說話以後，他也變得比較放鬆了，訪問宗辰的時候，除了說話語速比較快，似乎有些緊張之外，很難想像以前的他也有內向的一面。 '
           },
           {
@@ -375,7 +375,7 @@ class Index extends React.Component {
           },
           {
             title: '',
-            content: '去面對、不逃避，可能就是精神疾病唯一的解答。'
+            content: '去面對、不逃避，或許就是精神疾病唯一的解答。'
           }
         ]}
       </Block>
