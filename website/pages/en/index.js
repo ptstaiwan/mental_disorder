@@ -109,10 +109,10 @@ class Index extends React.Component {
       <nav id="sidebar-wrapper">
         <NumberList numbers={numbers}/>
         <div className="share">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnewmedia.pts.org.tw%2Fmental_disorder%2F&amp;src=sdkpreparse">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnewmedia.pts.org.tw%2Fmental_disorder%2F&amp;src=sdkpreparse" target="_blank">
             <img src="img/share_nav_fb.svg" alt="fb_share"/>
           </a>
-          <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fnewmedia.pts.org.tw%2Fmental_disorder">
+          <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fnewmedia.pts.org.tw%2Fmental_disorder" target="_blank">
             <img src="img/share_nav_line.svg" alt="line_share"/>
           </a>
         </div>
