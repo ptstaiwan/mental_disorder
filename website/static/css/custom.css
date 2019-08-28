@@ -29,18 +29,25 @@ p {
   color: #707070;
 }
 
+#Test1Page-1 .blockElement ,#Test1Page-2 .blockElement,#Test2Page-1 .blockElement,#Test2Page-2 .blockElement{
+  padding-bottom: 2em;
+}
+
 /* h1 */
 
 h1 p {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 300;
   color: #7B7B7B;
   letter-spacing: 0em;
 }
+h1 {
+  position: relative;
+  top: -25px;
+}
 
 /* h2 */
 
-.Feature h2 p,
 #Test1image h2 p, #Test2image h2 p {
   font-size: 40px;
 }
@@ -129,18 +136,19 @@ h1 p {
 
 .menu-toggle {
   position: fixed;
-  width: 50px;
-  height: 50px;
   text-align: center;
   color: rgb(1, 51, 83);
   background: transparent;
   line-height: 50px;
   z-index: 999;
-  cursor: pointer;
   margin-top: 0px;
   margin-left: 0px;
 }
 
+.hamburgerBar{
+  cursor: pointer;
+  padding: 20px;
+}
 
 a:not([href]) {
   text-decoration: none;
@@ -217,11 +225,11 @@ a:not([href]) {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 0vh;
+  top: 87px;
   color: #fff;
-  width: 50%;
-  margin-right: 25%;
-  margin-left: 25%;
+  width: 45%;
+  margin-right: 27.5%;
+  margin-left: 27.5%;
   z-index: 4;
 }
 
@@ -231,6 +239,7 @@ a:not([href]) {
 
 .Feature h2 p {
   color: #F7BF68;
+  font-size: 28px;
 }
 
 #comment {
@@ -268,6 +277,14 @@ a:not([href]) {
 
 #Test2image h2 p {
   color: #67BEB4;
+}
+
+/* logo */
+
+.logo{
+  position: absolute;
+  right: 1%;
+  top: 1%;
 }
 
 /* Make paragraph center */
@@ -311,10 +328,10 @@ a:not([href]) {
   text-align: center;
 }
 
-#Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4) {
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+#Test1Page-1 > div > div > div:nth-child(6), #Test2Page-1 > div > div > div:nth-child(1), #Test2Page-1 > div > div > div:nth-child(10) {
+  width: 52%;
+  margin-left: 23%;
+  margin-right: 23%;
 }
 
 
@@ -454,11 +471,16 @@ h5 {
     top: 0px;
     width: 100%;
     background-color: white;
+    line-height: 20px;
   }
 
-  i {
+  .hamburgerBar{
     float: left;
-    margin: 20px;
+    padding: 15px 20px 16px 20px;
+  }
+  .logoBar{
+    float: right;
+    margin: 10px;
   }
 
   .mainContainer {
@@ -474,10 +496,21 @@ h5 {
     background-color: white;
   }
 
+  /* invalid logo */
+
+  .logo{
+    display: none;
+  }
+
   /* Adjust Banner words */
   h1 p {
     line-height: 1.2em;
     text-align: center;
+    position: relative;
+  }
+  h1 {
+    position: relative;
+    top: 0px;
   }
 
   .Feature > p {
@@ -489,6 +522,7 @@ h5 {
     width: 100%;
     margin-right: 0%;
     margin-left: 0%;
+    top: 50px;
   }
 
   /* Hide comment */
@@ -520,7 +554,8 @@ h5 {
   }
 
   /* Adjust page title */
-  #Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4) {
+
+  #Test1Page-1 > div > div > div:nth-child(6), #Test2Page-1 > div > div > div:nth-child(1), #Test2Page-1 > div > div > div:nth-child(10) {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
@@ -610,6 +645,10 @@ h5 {
     bottom: 0px;
     left: 10%;
   }
+  h1 {
+    position: relative;
+    top: 0px;
+  }
   /* Adjust Banner */
 
   #BannerTitle {
@@ -640,9 +679,19 @@ h5 {
     background-color: white;
   }
 
-  i {
+  .hamburgerBar{
     float: left;
-    margin: 20px;
+    padding: 15px 20px 16px 20px;
+  }
+  .logoBar{
+    float: right;
+    margin: 10px;
+  }
+
+  /* invalid logo */
+
+  .logo{
+    display: none;
   }
 
   /* Test1image & Test2image typeset */
@@ -683,8 +732,7 @@ h5 {
   .Test1Page > .wrapper {
     padding-bottom: 0px;
   }
-
-  #Test1Page-1 > div > div > div:nth-child(4), #Test2Page-1 > div > div > div:nth-child(4) {
+  #Test1Page-1 > div > div > div:nth-child(6), #Test2Page-1 > div > div > div:nth-child(1), #Test2Page-1 > div > div > div:nth-child(10) {
     width: 100%;
     margin-left: 15%;
     margin-right: 17%;
@@ -730,5 +778,14 @@ h5 {
 @media only screen and (min-width: 1500px) {
   .Feature {
     top: 10vh;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  h1 p {
+    font-size: 60px;
+  }
+  .Feature h2 p {
+    font-size: 40px;
   }
 }
