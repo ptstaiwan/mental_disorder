@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   /* when we touch on body, close hamburger bar */
 
-  document.getElementsByTagName('body')[0].addEventListener("touch", function (e) {
+  document.getElementsByClassName('landingPage')[0].addEventListener("touch", function (e) {
     if (sidebarStatus.style.left === '-250px') {
       sidebarStatus.style.cssText += 'left:-500px';
       navBar.innerHTML = '<i class="fas fa-bars"></i>';
