@@ -153,7 +153,7 @@ class Index extends React.Component {
     );
     const Video1 = () => (
       <div id="Video1" className="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/C1GELr55p1U" frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
       </div>
     );
@@ -265,7 +265,7 @@ class Index extends React.Component {
 
     const Video2 = () => (
       <div id="Video2" className="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6c7T-q6PGDU" frameBorder="0"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kKPzz7IRMSk" frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
       </div>
     );
