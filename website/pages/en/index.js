@@ -355,11 +355,10 @@ class Index extends React.Component {
     );
 
     const People2Page_2 = () => (
-      <Block id="Test2Page-2" layout="Column" background="light" align="left">
+      <Block id="Test2Page-1" className="Test2Page" layout="Column" background="light" align="left">
         {[
           {
             title: '工作是調整心態的練習',
-            content: '宗辰從美國回到台灣一年多以後，就在《台北市康復之友協會》附設的咖─啡店Easy Coffee工作，到最近轉職之前，他已經在Easy Coffee待了12年，雖然一開始宗辰並不喜歡和陌生人說話，但因為每天都會碰到不同的客人，對宗辰來說也是一種練習，漸漸習慣和陌生人說話以後，他也變得比較放鬆了，訪問宗辰的時候，除了說話語速比較快，似乎有些緊張之外，很難想像以前的他也有內向的一面。 '
           },
           {
             title: '',
