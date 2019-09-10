@@ -73,9 +73,5 @@ We've released Mental Disorder project because we hope that contributions can ma
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
----
-title: Mental disorder README.md
----
 ###### tags: `Mental disorder` `README.md`
 
